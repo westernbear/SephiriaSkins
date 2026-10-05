@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies></PropertyGroup>
+ <ItemGroup>
+  <ProjectReference Include="../SephiriaSkins.Core/SephiriaSkins.Core.csproj" />
+  <Reference Include="BepInEx"><HintPath>$(GamePath)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="0Harmony"><HintPath>$(GamePath)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="Assembly-CSharp"><HintPath>$(ManagedPath)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="FMODUnity"><HintPath>$(ManagedPath)\FMODUnity.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="Mirror"><HintPath>$(ManagedPath)\Mirror.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="Unity.TextMeshPro"><HintPath>$(ManagedPath)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="Unity.InputSystem"><HintPath>$(ManagedPath)\Unity.InputSystem.dll</HintPath><Private>false</Private></Reference>
+  <EmbeddedResource Include="../../catalog/catalog-1.0.33.json" Condition="Exists('../../catalog/catalog-1.0.33.json')" />
+ </ItemGroup>
+ <ItemGroup><Reference Include="$(ManagedPath)\UnityEngine*.dll"><Private>false</Private></Reference></ItemGroup>
+</Project>

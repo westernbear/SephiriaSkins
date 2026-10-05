@@ -1,0 +1,17 @@
+bin/
+obj/
+.local/
+.tools/
+dist/
+*.user
+GamePath.props
+unity/Library/
+unity/Temp/
+unity/Logs/
+unity/UserSettings/
+unity/Assets/Editor/Lib/
+unity/Assets/Example/
+unity/Assets/TextMesh Pro/
+unity/Assets/TextMesh Pro.meta
+unity/Assets/Example.meta
+unity/Assets/Editor/Lib.meta

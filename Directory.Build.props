@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <Deterministic>true</Deterministic><Version>0.1.0</Version>
+    <GamePath Condition="'$(GamePath)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Sephiria</GamePath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildThisFileDirectory)GamePath.props" Condition="Exists('$(MSBuildThisFileDirectory)GamePath.props')" />
+  <PropertyGroup><ManagedPath>$(GamePath)\Sephiria_Data\Managed</ManagedPath></PropertyGroup>
+</Project>

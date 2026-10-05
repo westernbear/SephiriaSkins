@@ -1,0 +1,262 @@
+using System.Collections;
+using BepInEx;
+using BepInEx.Configuration;
+using HarmonyLib;
+using SephiriaSkins.Core;
+using UnityEngine;
+using UnityEngine.InputSystem;
+namespace SephiriaSkins.Plugin;
+
+[BepInPlugin(Id, "Sephiria Skins", "0.1.0")]
+public sealed class Plugin : BaseUnityPlugin
+{
+    public const string Id = "dev.sephiria.skins";
+    internal static Plugin? Instance;
+    internal readonly VisualAdapter Visuals = new();
+    internal readonly UiAdapter Ui = new();
+    internal readonly AudioAdapter Audio = new();
+    internal RuntimeTheme? Theme;
+    private readonly ThemeTransaction<RuntimeTheme> transaction = new();
+    internal AssetCatalog Catalog = new();
+    private Harmony? harmony;
+    private ConfigEntry<string> selected = null!;
+    private ConfigEntry<Key> shortcut = null!;
+    private List<PackEntry> packs = new();
+    private string root = "", status = "", unsupported = "";
+    private bool loading, open, quitting;
+    private float nextTick;
+    private readonly NativeSelector selector = new();
+    private readonly HashSet<string> errors = new();
+    private CursorLockMode priorLock;
+    private bool priorCursor;
+    internal bool SelectorOpen => open;
+    private void Awake()
+    {
+        Instance = this;
+        root = Path.GetDirectoryName(Info.Location);
+        selected = Config.Bind("Skin", "Selected", "", "Pack ID. Empty uses the original game appearance.");
+        shortcut = Config.Bind("Keys", "Selector", Key.F6, "Open/close skin selector.");
+        var catalogResource = GetType().Assembly.GetManifestResourceNames().FirstOrDefault(n => n.EndsWith("catalog-1.0.33.json"));
+        if (catalogResource != null)
+        {
+            using var stream = GetType().Assembly.GetManifestResourceStream(catalogResource);
+            using var reader = new StreamReader(stream!); Catalog = Json.Read<AssetCatalog>(reader.ReadToEnd());
+        }
+        var hash = Keys.Hash(File.ReadAllBytes(typeof(PlayerAvatar).Assembly.Location));
+        if (Catalog.AssemblySha256.Length == 0 || hash != Catalog.AssemblySha256 || Application.unityVersion != Catalog.UnityVersion)
+            unsupported = "게임 DLL 또는 Unity 버전이 카탈로그와 다릅니다. 카탈로그를 다시 생성하세요.";
+        var baselineProbe = Environment.GetCommandLineArgs().Contains("--skins-probe-baseline");
+        if (unsupported.Length == 0 && !baselineProbe)
+        {
+            harmony = new Harmony(Id);
+            try { harmony.PatchAll(GetType().Assembly); }
+            catch (Exception e) { harmony.UnpatchSelf(); unsupported = "게임 연결 실패: " + e.Message; Logger.LogError(e); }
+        }
+        ReloadList();
+        Logger.LogInfo("SephiriaSkins ready; catalog=" + Catalog.Id + "; animations=" + Catalog.Animations.Count + "; ui=" + Catalog.Ui.Count + "; audio=" + Catalog.Audio.Count + "; " + unsupported);
+        if (selected.Value.Length > 0 && unsupported.Length == 0 && !baselineProbe)
+        {
+            var entry = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == selected.Value && p.Error == null);
+            if (entry != null) StartCoroutine(Apply(entry));
+            else status = "저장된 팩을 불러오지 못했습니다. 원본을 사용합니다.";
+        }
+        if (Environment.GetCommandLineArgs().Contains("--skins-probe")) { Application.runInBackground = true; StartCoroutine(Probe()); }
+    }
+    private void ReloadList()
+    {
+        packs = PackDiscovery.Scan(Path.Combine(root, "Skins"), Catalog);
+        foreach (var p in packs.Where(p => p.Error != null)) Logger.LogWarning(p.Source + ": " + p.Error);
+    }
+    private IEnumerator Apply(PackEntry entry)
+    {
+        if (loading || unsupported.Length > 0 || entry.Error != null || entry.Pack == null) yield break;
+        loading = true; status = "팩 검사 및 리소스 로딩 중…";
+        try
+        {
+            PackSnapshot? snapshot = null;
+            try { snapshot = PackReader.Read(entry.Source, Catalog); }
+            catch (Exception e) { status = "불러오기 실패: " + e.Message; Logger.LogWarning(e); }
+            RuntimeTheme? next = null;
+            string? error = null;
+            if (snapshot != null) yield return RuntimeTheme.Prepare(snapshot, Path.Combine(root, ".cache"), (theme, message) => { next = theme; error = message; });
+            if (next != null)
+            {
+                var committed = transaction.TryPrepare(() => next, (previous, candidate) =>
+                {
+                    try
+                    {
+                        Visuals.RestoreAll(); Ui.Restore(); Audio.Restore(); Theme = candidate;
+                        Visuals.Refresh(); Ui.Apply(Theme); Audio.ThemeChanged();
+                    }
+                    catch
+                    {
+                        Visuals.RestoreAll(); Ui.Restore(); Audio.Restore(); Theme = previous;
+                        Visuals.Refresh(); Ui.Apply(previous); Audio.ThemeChanged(); throw;
+                    }
+                }, out error);
+                if (committed) { selected.Value = next.Pack.Manifest.Id; Config.Save(); status = "적용됨: " + next.Pack.Manifest.Name; Logger.LogInfo(status); }
+                else { status = "적용 실패, 이전 팩 유지: " + error; Logger.LogWarning(status); }
+            }
+            else if (snapshot != null) { status = "불러오기 실패, 현재 팩 유지: " + error; Logger.LogWarning(status); }
+        }
+        finally { loading = false; }
+    }
+    private void RestoreOriginal()
+    {
+        if (loading) return;
+        Visuals.RestoreAll(); Ui.Restore(); Audio.Restore();
+        transaction.Restore((_, _) => Theme = null);
+        selected.Value = ""; Config.Save(); status = "게임 원본으로 복원됨";
+    }
+    private void SetOpen(bool value)
+    {
+        if (open == value) return;
+        open = value;
+        if (open)
+        {
+            if (!selector.Open(packs, () => Theme, entry => StartCoroutine(Apply(entry)), RestoreOriginal, ReloadSelected,
+                () => { RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export")); Logger.LogInfo("Template saved: " + Path.Combine(root, "Export")); }, () => SetOpen(false)))
+            { open = false; return; }
+            priorLock = Cursor.lockState; priorCursor = Cursor.visible;
+            Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
+            if (Ownership.Local) Ownership.Local!.localDataStorage.Stop();
+            if (Ownership.Local) { Ownership.Local!.AttackButtonUp(); Ownership.Local.SubAttackButtonUp(); }
+        }
+        else { selector.Close(); Cursor.lockState = priorLock; Cursor.visible = priorCursor; }
+    }
+    private void ReloadSelected()
+    {
+        ReloadList();
+        var entry = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == selected.Value && p.Error == null);
+        if (entry != null) StartCoroutine(Apply(entry));
+        else if (Theme != null) status = "현재 팩 재검사 실패: 기존 정상 테마 유지";
+    }
+    private void Update()
+    {
+        if (Keyboard.current != null && shortcut.Value != Key.None && Keyboard.current[shortcut.Value].wasPressedThisFrame) SetOpen(!open);
+        if (open && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) SetOpen(false);
+        if (Time.unscaledTime < nextTick) return;
+        nextTick = Time.unscaledTime + 0.2f;
+        try { selector.Update(packs, loading, status, unsupported.Length > 0); Ui.Apply(Theme); Audio.Tick(); Visuals.Prune(); }
+        catch (Exception e) { ReportHookError(e); }
+    }
+    private void LateUpdate()
+    {
+        try { Visuals.ApplyStatic(Theme); }
+        catch (Exception e) { ReportHookError(e); }
+    }
+    internal void ReportHookError(Exception e)
+    {
+        if (errors.Add(e.GetType().Name + e.Message)) Logger.LogError(e);
+    }
+    private IEnumerator Probe()
+    {
+        yield return new WaitForSecondsRealtime(25);
+        var args = Environment.GetCommandLineArgs();
+        var results = new List<object>();
+        var zipResults = new List<object>();
+        object? lobby = null;
+        if (args.Contains("--skins-probe-host"))
+        {
+            var title = Resources.FindObjectsOfTypeAll<UI_TitleLobby>().FirstOrDefault(t => t && t.gameObject.scene.IsValid());
+            if (title) title.NetworkHost();
+            var deadline = Time.realtimeSinceStartup + 45;
+            while (!Ownership.Local && Time.realtimeSinceStartup < deadline) yield return null;
+            Logger.LogInfo("SKINS_HOST_PROBE server=" + Mirror.NetworkServer.active + " client=" + Mirror.NetworkClient.active + " local=" + (bool)Ownership.Local);
+            if (Ownership.Local) yield return new WaitForSecondsRealtime(8);
+            if (Ownership.Local && args.Contains("--skins-probe-lobby"))
+            {
+                yield return RuntimeProbe.CreatePrivateLobby(result => { lobby = result; Logger.LogInfo("SKINS_LOBBY_PROBE " + Json.Write(result)); });
+            }
+        }
+        if (args.Contains("--skins-probe-packs") && !args.Contains("--skins-probe-baseline"))
+        {
+            ReloadList();
+            foreach (var entry in packs.Where(p => p.Error == null && p.Pack != null))
+            {
+                var local = Ownership.Local;
+                var radius = local ? local!.TopdownRigidbody.MovementCollider.radius : 0;
+                yield return Apply(entry);
+                yield return new WaitForSecondsRealtime(1);
+                var bodySprite = local && local!.TopdownActor.bodyRenderer ? local.TopdownActor.bodyRenderer.sprite : null;
+                var frameCheck = RuntimeProbe.CheckBodyFrames(this);
+                var pooledEffect = RuntimeProbe.CheckFxReuse(this);
+                var beforeFailure = Theme;
+                yield return Apply(new PackEntry { Source = Path.Combine(root, "Export", "missing-probe-pack.zip"), Pack = entry.Pack });
+                var failedReloadPreserved = Theme == beforeFailure && Theme?.AssetCount > 0;
+                yield return Apply(entry);
+                var repeatedReload = Theme?.Pack.Manifest.Id == entry.Pack!.Manifest.Id;
+                RestoreOriginal(); yield return Apply(entry);
+                var immediateReapply = Theme?.Pack.Manifest.Id == entry.Pack.Manifest.Id;
+                var skinFontIds = (Dictionary<int, int>)AccessTools.Field(typeof(RuntimeTheme), "skinFonts").GetValue(null);
+                var fallbacksExcludeSkinFonts = Theme?.Assets.Values.OfType<TMPro.TMP_FontAsset>().All(f => f.fallbackFontAssetTable.All(fallback => fallback && !skinFontIds.ContainsKey(fallback.GetInstanceID()))) ?? false;
+                var uiRoundTrip = RuntimeProbe.CheckUiRoundTrip(this);
+                var audioSettings = Audio.ProbeSettings();
+                object? musicStop = null;
+                yield return RuntimeProbe.CheckMusicStop(this, result => musicStop = result);
+                SetOpen(true); yield return null; yield return null;
+                RuntimeProbe.Capture(Path.Combine(root, "Export", "selector-" + entry.Pack!.Manifest.Id + ".png"), Logger.LogInfo);
+                var selector = RuntimeProbe.CheckSelector(this, SetOpen);
+                bodySprite = local?.TopdownActor?.bodyRenderer?.sprite;
+                var result = new
+                {
+                    skin = entry.Pack!.Manifest.Id,
+                    applied = Theme?.Pack.Manifest.Id == entry.Pack.Manifest.Id,
+                    assets = Theme?.AssetCount ?? 0,
+                    audioReplacements = Audio.ActiveReplacements,
+                    decodedAudioFormats = Theme?.Pack.Manifest.Resources.Values.Where(r => r.Kind == "audio").Select(r => Path.GetExtension(r.File)).Distinct().ToArray(),
+                    local = (bool)local,
+                    sprite = bodySprite ? bodySprite!.name : "",
+                    collisionRadiusUnchanged = !local || radius == local!.TopdownRigidbody.MovementCollider.radius,
+                    frames = frameCheck,
+                    pooledEffect,
+                    audioSettings,
+                    musicStop,
+                    failedReloadPreserved,
+                    repeatedReload,
+                    immediateReapply,
+                    fallbacksExcludeSkinFonts,
+                    uiRoundTrip,
+                    selector,
+                    fonts = Theme?.Assets.Values.OfType<TMPro.TMP_FontAsset>().Select(f => new { name = f.name, fallbacks = f.fallbackFontAssetTable.Count, koreanFallback = f.HasCharacter('가', true) }).ToArray()
+                };
+                results.Add(result); Logger.LogInfo("SKINS_PACK_PROBE " + Json.Write(result));
+                if (SystemInfo.graphicsDeviceType != UnityEngine.Rendering.GraphicsDeviceType.Null)
+                    RuntimeProbe.Capture(Path.Combine(root, "Export", "probe-" + entry.Pack.Manifest.Id + ".png"), Logger.LogInfo);
+                RestoreOriginal();
+                var restoredSprite = local?.TopdownActor?.bodyRenderer?.sprite;
+                Logger.LogInfo("SKINS_RESTORE_PROBE " + Json.Write(new
+                {
+                    skin = entry.Pack!.Manifest.Id,
+                    themeNull = Theme == null,
+                    audioReplacements = Audio.ActiveReplacements,
+                    originalBody = !restoredSprite || !restoredSprite!.name.StartsWith(entry.Pack!.Manifest.Id + ":", StringComparison.Ordinal)
+                }));
+                yield return new WaitForSecondsRealtime(0.2f);
+                if (args.Contains("--skins-probe-zip"))
+                {
+                    var archive = Path.Combine(root, "Export", "probe-" + Guid.NewGuid().ToString("N") + ".zip");
+                    System.IO.Compression.ZipFile.CreateFromDirectory(entry.Source, archive);
+                    yield return Apply(new PackEntry { Source = archive, Pack = entry.Pack });
+                    zipResults.Add(new { skin = entry.Pack!.Manifest.Id, applied = Theme?.Pack.Manifest.Id == entry.Pack.Manifest.Id, assets = Theme?.AssetCount ?? 0 });
+                    RestoreOriginal();
+                }
+            }
+        }
+        foreach (var a in Resources.FindObjectsOfTypeAll<Animator2D_Basic>())
+            if (a && a.currentSet && Ownership.Role(a) is string role) RuntimeCatalog.Observe(Catalog, a, role);
+        RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export"));
+        File.WriteAllText(Path.Combine(root, "Export", "probe-results.json"), Json.Write(new { packs = results, zip = zipResults, lobby, errors = errors.ToArray(), server = Mirror.NetworkServer.active, client = Mirror.NetworkClient.active, local = (bool)Ownership.Local }));
+        Logger.LogInfo("SKINS_PROBE animations=" + Catalog.Animations.Count + " ui=" + Catalog.Ui.Count + " audio=" + Catalog.Audio.Count + " unsupported=" + unsupported);
+        RuntimeProbe.LeaveLobby();
+        if (Environment.GetCommandLineArgs().Contains("--skins-probe-exit")) Application.Quit();
+    }
+    private void OnApplicationQuit() { quitting = true; Cleanup(); }
+    private void OnDestroy() { if (!quitting) Cleanup(); }
+    private void Cleanup()
+    {
+        SetOpen(false); StopAllCoroutines(); Visuals.RestoreAll(); Ui.Restore(); Audio.Restore();
+        transaction.Restore((_, _) => Theme = null); selector.Dispose();
+        harmony?.UnpatchSelf(); Instance = null;
+    }
+}

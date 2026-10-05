@@ -1,0 +1,1453 @@
+{
+  "schemaVersion": 1,
+  "id": "example.simple",
+  "version": "1.0.0",
+  "name": "간편형 예제",
+  "author": "SephiriaSkins",
+  "compatibleCatalogs": [
+    "sephiria-1.0.33"
+  ],
+  "description": "모든 코스튬의 앞 방향 대기만 교체합니다. 움직임·공격·뒤 방향은 원본입니다.",
+  "resources": {
+    "idle": {
+      "file": "atlas.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        665,
+        222,
+        222
+      ],
+      "pivot": [
+        0.5,
+        0.2
+      ],
+      "pixelsPerUnit": 222
+    }
+  },
+  "preview": "idle",
+  "body": {
+    "body/BrownRabbit/IDLE/bb9c7e755319": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/FireCat_Alt/IDLE/bb00cbf3a68b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Turtle_Alt/IDLE/f403eeb011c8": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Frog/IDLE/6619ff910f13": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteWolf_Rabbit/IDLE/78fa4ecd969e": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Fox_Alt/IDLE/e86bcbf8e037": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/MandarinRabbit/IDLE/238f4767e9c5": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Crocodile/IDLE/056322854e4c": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Otter/IDLE/944bcd26679f": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ForestCat/IDLE/f8213e69458e": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Otter_Alt/IDLE/0b08c686f227": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Seren_Alt/IDLE/f81cbf565ddd": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/HolyRabbit_White/IDLE/b2c85fc0c414": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Fox/IDLE/0ae3f02e1668": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bird_Alt/IDLE/593ef517486b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bat/IDLE/afa8f6b43703": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/BrownRabbit_Alt/IDLE/9b6e3a846612": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ArmoredRabbit/IDLE/612a037c2911": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Deer_MouseJester/IDLE/7d49819d9396": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/FireCat_Chicken/IDLE/35ec549ea98b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteRabbit/IDLE/fe554ebf691e": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/AdventurerRabbit/IDLE/2ef0aad37922": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/HolyRabbit/IDLE/1deaabb4f130": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/RedHolyRabbit_Alt/IDLE/666788f815cb": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Squirrel_Alt/IDLE/b5240d3f2446": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Frog_Lizard/IDLE/e3c91cb89cfa": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bat_Alt/IDLE/db946b691535": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Ghost/IDLE/f17f616b3301": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/GrayRabbit_Dog/IDLE/8d1a2a14930e": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Otter_Rabbit/IDLE/a13acf4ffda3": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/HolyRabbit_Alt/IDLE/2f553617474d": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/RedHolyRabbit_Black/IDLE/441f179eac6e": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Seren_Pig/IDLE/aed05904705d": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Ghost_Alt/IDLE/cc4106be7bee": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/Oink/IDLE/b702f419497f": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Turtle/IDLE/5d9eca66c260": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Skeleton_Alt/IDLE/a1c3f8d43088": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/Luck/IDLE/edb559039527": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ForestCat_Parrot/IDLE/56bc6cd911e6": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bird/IDLE/f30604102b9c": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/PinkRabbit_Alt/IDLE/a2033fc4876a": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WizardRabbit_Alt/IDLE/002aedad6595": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/GrayRabbit/IDLE/bfe4530ba196": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Frog_Alt/IDLE/75fea73c46ae": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Crocodile_Larsly/IDLE/34cb26d95313": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/MandarinRabbit_Alt/IDLE/8f0edba2a20b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Mole_Alt/IDLE/6d7836648e2b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/FireCat/IDLE/2e2b6256e7d0": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bat_RedRabbit/IDLE/6758ac7fd862": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Seren/IDLE/512d7dcbce72": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/Fox_Three/IDLE/899cbf24aa78": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteWolf_Alt/IDLE/c9de56726eef": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteRabbit_Mouse/IDLE/84d69873c699": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/RedHolyRabbit/IDLE/590f28b9d68a": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Skeleton/IDLE/5f776ff28d92": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    "body/Squirrel/IDLE/a4d0f0b55137": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Crocodile_Alt/IDLE/b96a0e030246": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Deer_Alt/IDLE/6e6fe85a9c85": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteRabbit_Alt/IDLE/8f972141d649": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Mole_King/IDLE/69029351cc9b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Duck/IDLE/46f19e4c7d3b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Squirrel_Lion/IDLE/23fea5ea72b0": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Luck_Rabbit/IDLE/a027b8f4fddb": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ForestCat_Alt/IDLE/655ceee00cee": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/PinkRabbit_Tree/IDLE/a6c22f1eade8": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/GrayRabbit_Alt/IDLE/7e5bdaa49309": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WhiteWolf/IDLE/617bb121a255": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ArmoredRabbit_Alt/IDLE/c8d87417aa3b": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Bird_Elephant/IDLE/91fd576d2093": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Luck_Alt/IDLE/9aeb89d8f8ce": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/ArmoredRabbit_Mouse/IDLE/d80b681ae407": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/PinkRabbit/IDLE/a8cefd857dfe": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Deer/IDLE/3e701f0998ff": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/BrownRabbit_Cat/IDLE/4d14c881f5a5": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Turtle_Dog/IDLE/8c0bb7b0d6b5": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/MandarinRabbit_Sheep/IDLE/5a20d4aabb4d": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WizardRabbit_Bear/IDLE/d25f993a0a73": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/WizardRabbit/IDLE/43593f125bf3": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "body/Mole/IDLE/3109d9935eaa": {
+      "frames": [
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle",
+        "idle"
+      ],
+      "frameIndices": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    }
+  }
+}

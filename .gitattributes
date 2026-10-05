@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+*.wav binary
+*.ogg binary
+*.bundle binary
+# Preserve whitespace emitted by Unity and third-party license texts.
+*.asset whitespace=-blank-at-eol
+*.meta whitespace=-blank-at-eol
+licenses/** whitespace=-blank-at-eol
+*OFL.txt whitespace=-blank-at-eol

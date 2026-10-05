@@ -1,0 +1,14 @@
+name: Validate packs
+on: [push, pull_request]
+jobs:
+  core-and-packs:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.425
+      - run: dotnet test tests/SephiriaSkins.Tests -c Release
+      - run: dotnet run --project tools/PackTool -c Release -- validate catalog/catalog-1.0.33.json packs/hachiware
+      - run: dotnet run --project tools/PackTool -c Release -- validate catalog/catalog-1.0.33.json examples/simple-pack
+      - run: dotnet run --project tools/PackTool -c Release -- validate catalog/catalog-1.0.33.json examples/unity-pack

@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.21f1
+CRC: 2647768945
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac943b5e4b5fd9fff9330bb5c4bd5607
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 382846f5cdb958d46f8ac5ed64ed41b1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d04f78df959c84b2ebc6a2bd8914af16
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphRect
+Assets:
+- Assets/Example/diamond.png
+- Assets/Example/BlueSparkle.prefab
+- Assets/Example/Blue.mat
+- Assets/Example/AdventureFont.asset
+Dependencies: []

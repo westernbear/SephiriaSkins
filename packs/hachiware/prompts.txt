@@ -1,0 +1,7 @@
+Built-in image_gen; transparent_background=true.
+
+atlas.png: Transparent 8x4 pixel fan-art atlas of Hachiware from Chiikawa: white cat with blue head markings, navy outline. Front idle, blink, two walk poses, dash, cast, hurt, dead; corresponding back poses; sword windup/slash/followthrough, bow draw/release, staff cast, shield block, revive; portrait, greatsword, katana, dagger, sword/shield, bow, crossbow, quarterstaff. Blue-white cute fantasy adventure; same character scale, equal cells, no text/watermark.
+
+effects.png: Transparent 4x2 pixel-art effect atlas, no characters: blue-white sword crescent, dash dust, magic projectile, shield impact; revive sparkles, hurt puff, casting ring, ice arrow. Navy thin outline, self-contained equal cells, no text/watermark.
+
+ui.png: Brand-new transparent 4x2 pixel-art atlas for a cozy blue-white cat fantasy skin. Eight usable UI elements: cream dialogue panel with cat-ear corners, navy inventory panel, cream button, blue selected button, hollow square slot frame, hollow horizontal HUD bar, navy tooltip, blue-white header ribbon. Thin repeatable borders for 9-slicing, flat uncluttered centers, navy/sky-blue/cream/teal/tiny gold palette. No text, labels, logos or central icons.

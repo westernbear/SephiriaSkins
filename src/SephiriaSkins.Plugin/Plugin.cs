@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 namespace SephiriaSkins.Plugin;
 
-[BepInPlugin(Id, "Sephiria Skins", "0.1.0")]
+[BepInPlugin(Id, "Sephiria Skins", "0.1.1")]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "dev.sephiria.skins";
@@ -54,13 +54,21 @@ public sealed class Plugin : BaseUnityPlugin
         }
         ReloadList();
         Logger.LogInfo("SephiriaSkins ready; catalog=" + Catalog.Id + "; animations=" + Catalog.Animations.Count + "; ui=" + Catalog.Ui.Count + "; audio=" + Catalog.Audio.Count + "; " + unsupported);
-        if (selected.Value.Length > 0 && unsupported.Length == 0 && !baselineProbe)
+        var diagnosticRun = Environment.GetCommandLineArgs().Any(a => a == "--skins-probe" || a == "--skins-playtest");
+        if (selected.Value.Length > 0 && unsupported.Length == 0 && !baselineProbe && !diagnosticRun)
         {
             var entry = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == selected.Value && p.Error == null);
             if (entry != null) StartCoroutine(Apply(entry));
             else status = "저장된 팩을 불러오지 못했습니다. 원본을 사용합니다.";
         }
         if (Environment.GetCommandLineArgs().Contains("--skins-probe")) { Application.runInBackground = true; StartCoroutine(Probe()); }
+        if (Environment.GetCommandLineArgs().Contains("--skins-playtest"))
+        {
+            var priorSelection = selected.Value;
+            Application.runInBackground = true;
+            StartCoroutine(PlayProbe.Run(this, Apply, RestoreOriginal, SetOpen, () => errors.ToArray(), root,
+                () => { selected.Value = priorSelection; Config.Save(); }));
+        }
     }
     private void ReloadList()
     {
@@ -134,10 +142,11 @@ public sealed class Plugin : BaseUnityPlugin
     private void Update()
     {
         if (Keyboard.current != null && shortcut.Value != Key.None && Keyboard.current[shortcut.Value].wasPressedThisFrame) SetOpen(!open);
-        if (open && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) SetOpen(false);
+        if (open && ((Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) ||
+            (UIInputModule.currentModule && UIInputModule.currentModule.cancel && UIInputModule.currentModule.cancel.action.WasPressedThisFrame()))) SetOpen(false);
         if (Time.unscaledTime < nextTick) return;
         nextTick = Time.unscaledTime + 0.2f;
-        try { selector.Update(packs, loading, status, unsupported.Length > 0); Ui.Apply(Theme); Audio.Tick(); Visuals.Prune(); }
+        try { selector.Update(packs, loading, status, unsupported.Length > 0); Ui.Apply(Theme, false); Audio.Tick(); Visuals.Prune(); }
         catch (Exception e) { ReportHookError(e); }
     }
     private void LateUpdate()
@@ -151,6 +160,36 @@ public sealed class Plugin : BaseUnityPlugin
     }
     private IEnumerator Probe()
     {
+        var priorSelection = selected.Value;
+        var priorBackground = InputSystem.settings.backgroundBehavior;
+        InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
+        var pad = InputSystem.AddDevice<Gamepad>("Skins output-probe gamepad");
+        DiagnosticSession? session = null;
+        var exceptions = new List<string>();
+        void OnLog(string message, string stack, LogType type) { if (type == LogType.Exception) exceptions.Add(message + "\n" + stack); }
+        Application.logMessageReceived += OnLog;
+        var pending = new Stack<IEnumerator>(); pending.Push(ProbeSteps(value => session = value));
+        while (pending.Count > 0)
+        {
+            object? value = null; bool next;
+            try { next = pending.Peek().MoveNext(); if (next) value = pending.Peek().Current; }
+            catch (Exception e) { exceptions.Add(e.ToString()); break; }
+            if (!next) { (pending.Pop() as IDisposable)?.Dispose(); continue; }
+            if (value is IEnumerator nested) pending.Push(nested); else yield return value;
+        }
+        SetOpen(false); RestoreOriginal(); RuntimeProbe.LeaveLobby();
+        if (Mirror.NetworkServer.active) Mirror.NetworkManager.singleton.StopHost();
+        yield return new WaitForSecondsRealtime(3);
+        var profileAbsent = session == null || (!SaveData.Exists(session.Profile) && !SaveData.Exists(session.Profile + "TMP"));
+        session?.Dispose(); InputSystem.RemoveDevice(pad); InputSystem.settings.backgroundBehavior = priorBackground;
+        selected.Value = priorSelection; Config.Save();
+        File.WriteAllText(Path.Combine(root, "Export", "probe-cleanup.json"), Json.Write(new { exceptions, profileAbsent, themeNull = Theme == null, audioReplacements = Audio.ActiveReplacements, errors = errors.ToArray(),
+            fontLifetime = new { FontLifetime.RemovedFonts, FontLifetime.RemovedAtlases, FontLifetime.FaceResets } }));
+        Application.logMessageReceived -= OnLog;
+        if (Environment.GetCommandLineArgs().Contains("--skins-probe-exit")) Application.Quit();
+    }
+    private IEnumerator ProbeSteps(Action<DiagnosticSession> isolated)
+    {
         yield return new WaitForSecondsRealtime(25);
         var args = Environment.GetCommandLineArgs();
         var results = new List<object>();
@@ -158,8 +197,10 @@ public sealed class Plugin : BaseUnityPlugin
         object? lobby = null;
         if (args.Contains("--skins-probe-host"))
         {
-            var title = Resources.FindObjectsOfTypeAll<UI_TitleLobby>().FirstOrDefault(t => t && t.gameObject.scene.IsValid());
-            if (title) title.NetworkHost();
+            if (!SteamManager.Initialized) throw new InvalidOperationException("Start and sign in to Steam, then restart the probe.");
+            if (Mirror.NetworkServer.active || Mirror.NetworkClient.active) throw new InvalidOperationException("Probe requires a fresh title session.");
+            isolated(new DiagnosticSession("SKINS_OUTPUT_PROBE_" + Guid.NewGuid().ToString("N")));
+            EOSLobbyManager.StartHostWhenReady();
             var deadline = Time.realtimeSinceStartup + 45;
             while (!Ownership.Local && Time.realtimeSinceStartup < deadline) yield return null;
             Logger.LogInfo("SKINS_HOST_PROBE server=" + Mirror.NetworkServer.active + " client=" + Mirror.NetworkClient.active + " local=" + (bool)Ownership.Local);
@@ -248,8 +289,6 @@ public sealed class Plugin : BaseUnityPlugin
         RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export"));
         File.WriteAllText(Path.Combine(root, "Export", "probe-results.json"), Json.Write(new { packs = results, zip = zipResults, lobby, errors = errors.ToArray(), server = Mirror.NetworkServer.active, client = Mirror.NetworkClient.active, local = (bool)Ownership.Local }));
         Logger.LogInfo("SKINS_PROBE animations=" + Catalog.Animations.Count + " ui=" + Catalog.Ui.Count + " audio=" + Catalog.Audio.Count + " unsupported=" + unsupported);
-        RuntimeProbe.LeaveLobby();
-        if (Environment.GetCommandLineArgs().Contains("--skins-probe-exit")) Application.Quit();
     }
     private void OnApplicationQuit() { quitting = true; Cleanup(); }
     private void OnDestroy() { if (!quitting) Cleanup(); }

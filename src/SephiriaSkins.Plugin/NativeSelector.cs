@@ -35,8 +35,10 @@ internal sealed class NativeSelector : IDisposable
         var holder = UIManager.Instance.GetElement<UI_MessageBoxHolder>();
         if (!holder || !holder.yesNoPrefab) return false;
         entries = packs; current = theme; select = onApply; reload = onReload; export = onExport;
+        if (theme() is RuntimeTheme active) chosen = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == active.Pack.Manifest.Id);
         window = (UI_MessageBox_YesNo)holder.OpenYesNo("스킨", () => { if (chosen?.Error == null && chosen?.Pack != null) select(chosen); }, () => { });
         window.gameObject.AddComponent<SkinSelectorMarker>();
+        window.canCloseControlWithESC = true;
         foreach (var nativeLayout in window.GetComponentsInChildren<LayoutGroup>(true)) nativeLayout.enabled = false;
         foreach (var sizing in window.GetComponentsInChildren<ContentSizeFitter>(true)) sizing.enabled = false;
         window.onClosed += onClose;
@@ -102,6 +104,8 @@ internal sealed class NativeSelector : IDisposable
         foreach (var pack in entries)
         {
             var row = CloneButton(rowTemplate!, content!, pack.Name, () => Choose(pack));
+            var label = row.GetComponentInChildren<TextMeshProUGUI>(true);
+            label.textWrappingMode = TextWrappingModes.NoWrap; label.overflowMode = TextOverflowModes.Ellipsis;
             var size = row.gameObject.AddComponent<LayoutElement>(); size.preferredHeight = 40;
             rows.Add(row);
         }
@@ -135,6 +139,7 @@ internal sealed class NativeSelector : IDisposable
         var holder = UIManager.Instance.GetElement<UI_MessageBoxHolder>();
         var details = holder.OpenYesNo(text, export, () => { });
         details.gameObject.AddComponent<SkinSelectorMarker>();
+        details.canCloseControlWithESC = true;
         var box = (UI_MessageBox_YesNo)details; SetLabel(box.yesButton, "템플릿 저장"); SetLabel(box.noButton, "닫기");
         detailWindows.Add(box); box.onClosed += () => detailWindows.Remove(box);
     }

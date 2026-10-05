@@ -20,13 +20,17 @@ internal sealed class UiAdapter
         public Image.Type ImageType, AppliedImageType;
     }
     private readonly Dictionary<int, State> states = new();
-    public void Apply(RuntimeTheme? theme)
+    internal double LastApplyMilliseconds { get; private set; }
+    public void Apply(RuntimeTheme? theme, bool includeInactive = true)
     {
         if (theme == null) return;
-        foreach (var g in Resources.FindObjectsOfTypeAll<Graphic>())
+        var started = System.Diagnostics.Stopwatch.GetTimestamp();
+        var paths = new RuntimeCatalog.PathIndex();
+        Dictionary<string, TMP_FontAsset>? existingFonts = null;
+        foreach (var g in UnityEngine.Object.FindObjectsByType<Graphic>(includeInactive ? FindObjectsInactive.Include : FindObjectsInactive.Exclude, FindObjectsSortMode.None))
         {
             if (!g || !g.gameObject.scene.IsValid() || g.GetComponentInParent<SkinSelectorMarker>()) continue;
-            if (!theme.Pack.Manifest.Ui.TryGetValue(RuntimeCatalog.UiKey(g), out var u)) continue;
+            if (!theme.Pack.Manifest.Ui.TryGetValue(paths.UiKey(g), out var u)) continue;
             var id = g.GetInstanceID();
             if (!states.TryGetValue(id, out var s)) states[id] = s = new State { Graphic = g, Binding = u, Color = g.color, Position = g.rectTransform.anchoredPosition, Size = g.rectTransform.sizeDelta };
             if (u.Color != null)
@@ -74,7 +78,9 @@ internal sealed class UiAdapter
                 {
                     if (text.font != s.AppliedFont) { s.Font = text.font; s.FontMaterial = text.fontSharedMaterial; }
                     else if (s.AppliedFontMaterial && text.fontSharedMaterial != s.AppliedFontMaterial) s.FontMaterial = text.fontSharedMaterial;
-                    s.AppliedFont = u.Font != null ? theme.Get<TMP_FontAsset>(u.Font) : Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(f => f.name == u.ExistingFont);
+                    if (u.Font == null && existingFonts == null)
+                        existingFonts = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().Where(f => f).GroupBy(f => f.name).ToDictionary(f => f.Key, f => f.First(), StringComparer.Ordinal);
+                    s.AppliedFont = u.Font != null ? theme.Get<TMP_FontAsset>(u.Font) : existingFonts!.TryGetValue(u.ExistingFont!, out var existing) ? existing : null;
                     if (!s.AppliedFont) throw new InvalidDataException("Existing font unavailable: " + u.ExistingFont);
                     if (u.Font != null && s.Font && s.Font != s.AppliedFont && !s.AppliedFont!.fallbackFontAssetTable.Contains(s.Font))
                         s.AppliedFont.fallbackFontAssetTable.Add(s.Font);
@@ -95,6 +101,7 @@ internal sealed class UiAdapter
             }
         }
         foreach (var p in states.Where(p => !p.Value.Graphic).ToArray()) states.Remove(p.Key);
+        LastApplyMilliseconds = (System.Diagnostics.Stopwatch.GetTimestamp() - started) * 1000.0 / System.Diagnostics.Stopwatch.Frequency;
     }
     public void Restore()
     {

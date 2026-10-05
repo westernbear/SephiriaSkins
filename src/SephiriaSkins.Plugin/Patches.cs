@@ -25,7 +25,9 @@ internal static class OwnerScopePatch
 {
     static IEnumerable<MethodBase> TargetMethods()
     {
-        var types = new[] { typeof(CombatBehaviour), typeof(UnitAvatar), typeof(PlayerAvatar), typeof(WeaponSimple), typeof(Bullet), typeof(Animator2D_Basic), typeof(NewWeaponFireData) };
+        var roots = new[] { typeof(WeaponSimple), typeof(Charm_Basic), typeof(CharacterDash), typeof(NewWeaponFireData) };
+        var types = new[] { typeof(CombatBehaviour), typeof(UnitAvatar), typeof(PlayerAvatar), typeof(Bullet), typeof(Animator2D_Basic) }
+            .Concat(typeof(PlayerAvatar).Assembly.GetTypes().Where(t => roots.Any(root => root.IsAssignableFrom(t)))).Distinct();
         foreach (var type in types)
             foreach (var method in type.GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly))
             {
@@ -34,6 +36,7 @@ internal static class OwnerScopePatch
                 if (n == "Update" || n.Contains("PlaySound") || n.Contains("CreateSwingFx") || n.Contains("SwingFx") || n.Contains("DieClientside") || n.Contains("HitFeedback") ||
                     n.Contains("ParryFx") || n.Contains("AdditionalLifeFx") || n.Contains("SuperArmorBreakFx") || n.Contains("BloodFestivalHealFx") ||
                     n == "ShowEmoji" || n == "StartStun" || n == "UpdateCostumeOutfit" || n.Contains("RevivePatient") ||
+                    ((n.Contains("Create") || n.Contains("Spawn")) && n.Contains("Fx")) ||
                     (type == typeof(Bullet) && (n.Contains("Attack") || n.Contains("Collision") || n == "DestroySelf"))) yield return method;
             }
     }
@@ -41,7 +44,7 @@ internal static class OwnerScopePatch
     {
         UnitAvatar? owner = __instance is Component c ? Ownership.Owner(c) : null;
         if (__instance is Animator2D_Basic animator && Ownership.Role(animator) == "body") owner = Ownership.Local;
-        if (__instance is NewWeaponFireData) owner = __args.OfType<Transform>().Select(Ownership.Owner).FirstOrDefault();
+        if (__instance is NewWeaponFireData) owner = __args.OfType<UnitAvatar>().FirstOrDefault() ?? __args.OfType<Transform>().Select(Ownership.Owner).FirstOrDefault(o => o);
         __state = OwnerContext.Push(owner);
     }
     static Exception? Finalizer(UnitAvatar? __state, Exception? __exception) { OwnerContext.Pop(__state); return __exception; }

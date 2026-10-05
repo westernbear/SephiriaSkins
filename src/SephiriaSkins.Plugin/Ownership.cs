@@ -12,6 +12,8 @@ internal static class Ownership
         if (cosmetic && cosmetic.Role == "weapon") return cosmetic.Owner;
         var avatar = component!.GetComponentInParent<UnitAvatar>();
         if (avatar) return avatar;
+        var charm = component.GetComponentInParent<Charm_Basic>();
+        if (charm) return charm.NetworkAvatar;
         var weapon = component.GetComponentInParent<WeaponSimple>();
         if (weapon) return weapon.Networkowner ? weapon.Networkowner.unitAvatar : null;
         var modern = component.GetComponentInParent<NewWeapon>();

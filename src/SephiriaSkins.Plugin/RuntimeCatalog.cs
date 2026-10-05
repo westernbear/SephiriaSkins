@@ -5,6 +5,32 @@ using TMPro;
 namespace SephiriaSkins.Plugin;
 internal static class RuntimeCatalog
 {
+    // A fresh index per scan keeps paths correct after pooling/reparenting while
+    // visiting each sibling list once, instead of once for every descendant.
+    internal sealed class PathIndex
+    {
+        private readonly Dictionary<Transform, string> paths = new();
+        private readonly Dictionary<Transform, Dictionary<Transform, string>> children = new();
+        public string PathOf(Transform target)
+        {
+            if (paths.TryGetValue(target, out var path)) return path;
+            var parent = target.parent;
+            if (!parent) return paths[target] = Clean(target.name);
+            if (!children.TryGetValue(parent, out var names))
+            {
+                names = new Dictionary<Transform, string>(); children[parent] = names;
+                var counts = new Dictionary<string, int>(StringComparer.Ordinal);
+                for (var i = 0; i < parent.childCount; i++)
+                {
+                    var child = parent.GetChild(i); var name = Clean(child.name);
+                    counts.TryGetValue(name, out var count); counts[name] = count + 1;
+                    names[child] = count == 0 ? name : name + "[" + count + "]";
+                }
+            }
+            return paths[target] = PathOf(parent) + "/" + names[target];
+        }
+        public string UiKey(Component component) => "ui/" + PathOf(component.transform) + "/" + component.GetType().Name;
+    }
     public static string Clean(string name) => name.Replace("(Clone)", "").Trim();
     public static string PathOf(Transform target)
     {
@@ -27,6 +53,7 @@ internal static class RuntimeCatalog
     public static void Observe(AssetCatalog catalog, Animator2D_Basic animator, string role)
     {
         if (!animator.currentSet) return;
+        var referencePath = PathOf(animator.transform);
         foreach (var state in animator.currentSet.sprites)
         {
             var key = AnimationKey(role, animator.currentSet, state);
@@ -37,7 +64,7 @@ internal static class RuntimeCatalog
                 State = state.state,
                 Fps = state.fps,
                 Repeat = state.repeat,
-                ReferencePath = PathOf(animator.transform),
+                ReferencePath = referencePath,
                 FrameIndices = state.timeline.Select(f => f.frameIdx).ToArray(),
                 SpriteNames = state.timeline.Select(f => f.sprite ? f.sprite.name : "").ToArray(),
                 Events = state.frameEvents.SelectMany(f => f.events.Select(e => f.frame + ":" + e.componentName + "." + e.methodName)).ToArray()
@@ -46,11 +73,12 @@ internal static class RuntimeCatalog
     }
     public static void ObserveUi(AssetCatalog catalog)
     {
-        foreach (var component in Resources.FindObjectsOfTypeAll<Graphic>())
+        var paths = new PathIndex();
+        foreach (var component in UnityEngine.Object.FindObjectsByType<Graphic>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             if (!component || !component.gameObject.scene.IsValid() || component.GetComponentInParent<SkinSelectorMarker>()) continue;
-            var key = UiKey(component);
-            catalog.Ui[key] = new CatalogUi { Role = component.GetComponentInParent<Canvas>()?.name ?? "UI", ReferencePath = PathOf(component.transform), Component = component.GetType().Name };
+            var key = paths.UiKey(component);
+            catalog.Ui[key] = new CatalogUi { Role = component.GetComponentInParent<Canvas>()?.name ?? "UI", ReferencePath = paths.PathOf(component.transform), Component = component.GetType().Name };
         }
     }
     public static void Export(AssetCatalog catalog, string directory)

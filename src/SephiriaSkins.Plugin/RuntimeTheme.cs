@@ -176,6 +176,10 @@ internal sealed class RuntimeTheme : IDisposable
     {
         foreach (var sound in ownedSounds) sound.release();
         ownedSounds.Clear(); Sounds.Clear();
+        var fonts = owned.OfType<TMP_FontAsset>().Where(f => f).ToArray();
+        FontLifetime.Retire(fonts);
+        var unloadsFontSource = fonts.Length > 0 && bundleLeases.Any(hash => sharedBundles[hash].References == 1);
+        if (unloadsFontSource) FontLifetime.BeforeSourceUnload();
         foreach (var item in owned) if (item) Object.Destroy(item);
         foreach (var id in fontIds)
         {

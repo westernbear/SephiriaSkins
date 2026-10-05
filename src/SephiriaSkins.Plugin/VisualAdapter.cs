@@ -16,6 +16,7 @@ internal sealed class VisualAdapter
     private readonly Dictionary<int, Output> outputs = new();
     private readonly Dictionary<int, (GameObject Object, string Key)> particles = new();
     private readonly Dictionary<(AnimationSet, string, string), string> keys = new();
+    private readonly HashSet<(AnimationSet, string)> observed = new();
     private readonly List<(SpriteRenderer Renderer, string Key)> staticTargets = new();
     private float nextStaticScan;
     private static readonly System.Reflection.FieldInfo Frame = AccessTools.Field(typeof(Animator2D_Basic), "currentFrameIdx");
@@ -31,7 +32,7 @@ internal sealed class VisualAdapter
         if (!keys.TryGetValue(tuple, out var key))
         {
             key = RuntimeCatalog.AnimationKey(role, animator.currentSet, state); keys[tuple] = key;
-            RuntimeCatalog.Observe(plugin!.Catalog, animator, role);
+            if (observed.Add((animator.currentSet, role))) RuntimeCatalog.Observe(plugin!.Catalog, animator, role);
         }
         var theme = plugin!.Theme;
         if (theme == null) return;
@@ -97,7 +98,7 @@ internal sealed class VisualAdapter
     }
     public void Refresh()
     {
-        foreach (var animator in Resources.FindObjectsOfTypeAll<Animator2D_Basic>())
+        foreach (var animator in Object.FindObjectsByType<Animator2D_Basic>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             if (!animator || !animator.gameObject.scene.IsValid() || !animator.currentSet || !animator.IsReady) continue;
             var state = animator.currentSet.sprites.FirstOrDefault(s => s.state.Equals(animator.CurrentStateName, StringComparison.OrdinalIgnoreCase));
@@ -118,7 +119,8 @@ internal sealed class VisualAdapter
         if (Time.unscaledTime >= nextStaticScan)
         {
             nextStaticScan = Time.unscaledTime + 0.5f; staticTargets.Clear();
-            foreach (var renderer in Resources.FindObjectsOfTypeAll<SpriteRenderer>())
+            var paths = new RuntimeCatalog.PathIndex();
+            foreach (var renderer in Object.FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
             {
                 if (!renderer || !renderer.gameObject.scene.IsValid()) continue;
                 var tag = renderer.GetComponentInParent<CosmeticOwner>();
@@ -133,8 +135,8 @@ internal sealed class VisualAdapter
                 var bullet = renderer.GetComponentInParent<Bullet>();
                 var source = weapon ? weapon.transform : modern ? modern.transform : fx ? fx.transform : bullet ? bullet.transform : null;
                 if (!source) continue;
-                var relative = RuntimeCatalog.PathOf(renderer.transform);
-                var parentPath = source!.parent ? RuntimeCatalog.PathOf(source.parent) + "/" : "";
+                var relative = paths.PathOf(renderer.transform);
+                var parentPath = source!.parent ? paths.PathOf(source.parent) + "/" : "";
                 if (relative.StartsWith(parentPath, StringComparison.Ordinal)) relative = relative.Substring(parentPath.Length);
                 var key = (weapon || modern ? "weapon" : "effect") + "/" + relative + "/SpriteRenderer";
                 if (theme.Pack.Manifest.Visuals.ContainsKey(key)) staticTargets.Add((renderer, key));

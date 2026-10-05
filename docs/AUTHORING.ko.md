@@ -10,6 +10,8 @@
 
 `body/weapons/effects`의 키는 `catalog.animations`의 키를 사용합니다. `frameIndices`는 원본 배열의 **순서까지** 같아야 합니다. 정렬되지 않은 배열도 그대로 사용합니다. `frames`에 같은 수의 스프라이트 ID를 연결합니다. 같은 이미지를 여러 번 참조할 수 있습니다. FPS·상태 전이·프레임 이벤트는 게임에서 실행합니다. 원본의 null 프레임은 교체하지 않습니다.
 
+이펙트와 무기에는 `fitOriginal: true`로 원본 프레임의 크기·중심점을 따를 수 있습니다. 본체에 무기를 함께 그리지 않고 무기 영역에서 별도로 연결하세요. 전체 무기를 하나의 이미지로 바꿀 때 보조 장식 렌더러에는 `visuals`의 `hide: true`를 사용해 중복을 막습니다. 마스크·스텐실은 표시용 이미지와 맞춰 유지하세요. 무기가 없는 캐릭터는 무기 영역을 선언하지 않습니다. 내장 하치와레 팩은 모든 무기를 파란 사스마타로 통일하는 예시입니다.
+
 `visuals`는 정적인 무기 렌더러에 연결합니다. `ui`는 카탈로그의 참조 경로와 컴포넌트 키로 지정합니다. 게임의 기존 UI 컴포넌트에 `sprite/material/color/anchoredPosition/sizeDelta/font/fontSize/existingFont/imageType`을 선택적으로 적용하며 텍스트 내용과 메뉴 기능은 유지합니다. RawImage는 전체 PNG만 사용할 수 있습니다. 기존 LayoutGroup이 제어하는 화면의 배치 변경은 그 레이아웃에 맞춰 확인하세요.
 
 `audio`의 키는 `guid:{...}` FMOD 이벤트 ID입니다. 카탈로그 `path`는 읽을 수 있는 `event:/...` 경로입니다. WAV/OGG와 `scope(local/client)`, `channel(sfx/music/ambience)`, `loop`, `volume`을 연결합니다. 음악과 환경음은 client 범위입니다. 소유 문맥이 확인되지 않는 local 이벤트는 원본으로 재생합니다. 게임의 음량·음소거·정지·일시 정지·피치를 따릅니다.

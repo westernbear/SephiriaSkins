@@ -42,12 +42,12 @@ try {
         $relative = $dll.FullName.Substring($stage.Length + 1).Replace('\','/')
         if ($relative -notin $allowed) { throw "Unexpected DLL in release: $relative" }
     }
-    $zip = Join-Path $workspace "dist/SephiriaSkins-0.1.1-$buildId.zip"
+    $zip = Join-Path $workspace "dist/SephiriaSkins-0.1.2-$buildId.zip"
     Compress-Archive -Path "$stage/*" -DestinationPath $zip
     # Source archive follows the checked-in ignore rules; never include local game data.
     $sourceFiles = @(rg --files --hidden --no-require-git -g '!.git/**' -g '!dist/**')
     if ($LASTEXITCODE) { throw 'Source inventory failed (rg required).' }
-    $sourceZip = Join-Path $workspace "dist/SephiriaSkins-0.1.1-source-$buildId.zip"
+    $sourceZip = Join-Path $workspace "dist/SephiriaSkins-0.1.2-source-$buildId.zip"
     Add-Type -AssemblyName System.IO.Compression
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $archive = [IO.Compression.ZipFile]::Open($sourceZip, [IO.Compression.ZipArchiveMode]::Create)

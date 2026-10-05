@@ -18,12 +18,20 @@ internal sealed class VisualAdapter
     private readonly Dictionary<(AnimationSet, string, string), string> keys = new();
     private readonly HashSet<(AnimationSet, string)> observed = new();
     private readonly List<(SpriteRenderer Renderer, string Key)> staticTargets = new();
+    private readonly List<(SpriteRenderer Mask, SpriteRenderer Source)> mirrors = new();
     private float nextStaticScan;
     private static readonly System.Reflection.FieldInfo Frame = AccessTools.Field(typeof(Animator2D_Basic), "currentFrameIdx");
     public void Replace(Animator2D_Basic animator, ref Sprite sprite)
     {
         var plugin = Plugin.Instance;
         if (!plugin || !animator.currentSet) return;
+        if (!sprite)
+        {
+            IEnumerable<SpriteRenderer> blankOutputs = animator is Animator2D_SpriteRenderer one ? new[] { one.spriteRenderer } :
+                animator is Animator2D_MultipleSpriteRenderer many ? many.spriteRenderers : Array.Empty<SpriteRenderer>();
+            foreach (var renderer in blankOutputs)
+                if (renderer && outputs.TryGetValue(renderer.GetInstanceID(), out var recorded)) recorded.Original = null;
+        }
         var role = Ownership.Role(animator);
         if (role == null) { Forget(animator.gameObject); return; }
         var state = animator.currentSet.sprites.FirstOrDefault(s => s.state.Equals(animator.CurrentStateName, StringComparison.OrdinalIgnoreCase));
@@ -43,7 +51,7 @@ internal sealed class VisualAdapter
         var at = -1;
         for (var i = 0; i < binding.FrameIndices.Length; i++) if (binding.FrameIndices[i] <= idx && (at < 0 || binding.FrameIndices[i] > binding.FrameIndices[at])) at = i;
         if (at < 0 || !sprite) return; // Preserve intentionally blank frames.
-        var replacement = theme.Get<Sprite>(binding.Frames[at]);
+        var replacement = theme.VisualSprite(binding.Frames[at], binding.FitOriginal ? sprite : null);
         IEnumerable<SpriteRenderer> renderers = animator is Animator2D_SpriteRenderer single ? new[] { single.spriteRenderer } :
             animator is Animator2D_MultipleSpriteRenderer multi ? multi.spriteRenderers : Array.Empty<SpriteRenderer>();
         foreach (var renderer in renderers)
@@ -94,7 +102,7 @@ internal sealed class VisualAdapter
         foreach (var o in outputs.Values) Restore(o);
         outputs.Clear();
         foreach (var p in particles.Values) if (p.Object) Object.Destroy(p.Object);
-        particles.Clear(); keys.Clear(); staticTargets.Clear(); nextStaticScan = 0;
+        particles.Clear(); keys.Clear(); staticTargets.Clear(); mirrors.Clear(); nextStaticScan = 0;
     }
     public void Refresh()
     {
@@ -115,15 +123,16 @@ internal sealed class VisualAdapter
     }
     public void ApplyStatic(RuntimeTheme? theme)
     {
-        if (theme == null || theme.Pack.Manifest.Visuals.Count == 0) return;
+        if (theme == null || theme.Pack.Manifest.Visuals.Count == 0 && theme.Pack.Manifest.Weapons.Count == 0) return;
         if (Time.unscaledTime >= nextStaticScan)
         {
-            nextStaticScan = Time.unscaledTime + 0.5f; staticTargets.Clear();
+            nextStaticScan = Time.unscaledTime + 0.5f; staticTargets.Clear(); mirrors.Clear();
             var paths = new RuntimeCatalog.PathIndex();
             foreach (var renderer in Object.FindObjectsByType<SpriteRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
             {
                 if (!renderer || !renderer.gameObject.scene.IsValid()) continue;
                 var tag = renderer.GetComponentInParent<CosmeticOwner>();
+                if (tag && tag.MirrorSource && tag.transform == renderer.transform) mirrors.Add((renderer, tag.MirrorSource));
                 if (tag && tag.Role == "weapon" && tag.VisualKeys.TryGetValue(renderer.GetInstanceID(), out var detachedKey))
                 {
                     if (theme.Pack.Manifest.Visuals.ContainsKey(detachedKey)) staticTargets.Add((renderer, detachedKey));
@@ -153,16 +162,37 @@ internal sealed class VisualAdapter
             }
             if (!theme.Pack.Manifest.Visuals.TryGetValue(target.Key, out var binding)) continue;
             if (!outputs.TryGetValue(id, out var output)) outputs[id] = output = new Output { Renderer = renderer, Original = renderer.sprite };
+            if (binding.Hide)
+            {
+                if (renderer.sprite != output.Applied) output.Original = renderer.sprite;
+                output.Applied = null; renderer.sprite = null;
+                continue;
+            }
             if (binding.Sprite != null && renderer.sprite)
             {
                 if (renderer.sprite != output.Applied) output.Original = renderer.sprite;
-                output.Applied = theme.Get<Sprite>(binding.Sprite); renderer.sprite = output.Applied;
+                output.Applied = theme.VisualSprite(binding.Sprite, binding.FitOriginal ? output.Original : null); renderer.sprite = output.Applied;
             }
             if (binding.Material != null)
             {
                 if (!output.AppliedMaterial || renderer.sharedMaterial != output.AppliedMaterial) output.OriginalMaterial = renderer.sharedMaterial;
                 output.AppliedMaterial = theme.Get<Material>(binding.Material); renderer.sharedMaterial = output.AppliedMaterial;
             }
+        }
+        // Detached shield masks do not always retain a catalog path after native
+        // reparenting. Match their visible source without touching stencil material.
+        foreach (var mirror in mirrors)
+        {
+            if (!mirror.Mask || !mirror.Source) continue;
+            var id = mirror.Mask.GetInstanceID();
+            if (!Ownership.IsLocal(Ownership.Owner(mirror.Mask)) || !outputs.TryGetValue(mirror.Source.GetInstanceID(), out var source))
+            {
+                if (outputs.TryGetValue(id, out var old)) { Restore(old); outputs.Remove(id); }
+                continue;
+            }
+            if (!outputs.TryGetValue(id, out var output)) outputs[id] = output = new Output { Renderer = mirror.Mask, Original = mirror.Mask.sprite };
+            if (mirror.Mask.sprite != output.Applied) output.Original = mirror.Mask.sprite;
+            output.Applied = mirror.Source.sprite; mirror.Mask.sprite = output.Applied;
         }
     }
 }

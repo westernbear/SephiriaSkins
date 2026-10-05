@@ -40,6 +40,7 @@ public sealed class BundleInfo
 }
 public sealed class AnimationBinding
 {
+    public bool FitOriginal { get; set; }
     public string[] Frames { get; set; } = Array.Empty<string>();
     public int[] FrameIndices { get; set; } = Array.Empty<int>();
     public string? Material { get; set; }
@@ -59,6 +60,8 @@ public sealed class UiBinding
 }
 public sealed class VisualBinding
 {
+    public bool Hide { get; set; }
+    public bool FitOriginal { get; set; }
     public string? Sprite { get; set; }
     public string? Material { get; set; }
 }

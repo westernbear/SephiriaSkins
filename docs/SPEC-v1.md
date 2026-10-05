@@ -10,12 +10,14 @@ UTF-8 JSON with skin.json at the pack root. The schema version is independent of
 | compatibleCatalogs | Must contain the current catalog ID |
 | preview | Optional sprite resource ID |
 | resources | ID → file/kind/optional asset/bundle/rect/border/pivot/pixelsPerUnit |
-| body/weapons/effects | Catalog animation key → frames + exact frameIndices, optional material/particle |
-| visuals | Catalog static renderer key → optional sprite/material |
+| body/weapons/effects | Catalog animation key → frames + exact frameIndices, optional material/particle/fitOriginal |
+| visuals | Catalog static renderer key → optional sprite/material/fitOriginal/hide |
 | ui | Catalog UI key → optional sprite/material/font/existingFont/color/anchoredPosition/sizeDelta/fontSize/imageType |
 | audio | FMOD GUID key → resource/scope/channel/loop/volume |
 
 Sections are optional. Omitted bindings use the game original. Null sections are invalid. Resource kind is sprite/audio/font/material/particle. Sprites support PNG. Audio always uses loose WAV/OGG, including Unity exports, and is decoded by FMOD. Font/material/particle require a bundle. Rect is x,y,width,height in bottom-left Unity coordinates. Border is left,bottom,right,top PNG pixels; opposing borders cannot exceed the sprite dimension. ImageType is simple/sliced for Image only. Pivot is normalized 0–1; pixelsPerUnit is positive and at most 4096. UI colors are RGBA 0–1; numeric vectors must be finite. ExistingFont refers to a loaded game TMP font name. A font choice only applies to TMP text.
+
+`fitOriginal: true` fits a replacement into the source frame's world dimensions and normalized pivot, preserving transforms and physics. It defaults to false. `hide: true` suppresses only that static cosmetic sprite and restores it with the theme; it cannot be combined with sprite/material/fitOriginal. Use this for weapon add-on layers when the primary sprite already contains the whole new weapon. Character packs without a weapon should omit weapons/weapon visuals to retain native weapons. Runtime world sprites are isolated from atlas neighbours; the client pixel setting changes their sampling without changing frame events or world bounds. UI uses its independent client switch.
 
 Bundles require UnityFS with actual revision 6000.3.21f1, StandaloneWindows64, nonzero Unity CRC and matching lower-case SHA256. Asset is a bundle path or path#spriteName for a subasset. Runtime checks CRC/platform and asset type. New fonts are cloned and use original game fonts as fallback. Identical bundles use counted leases so a replacement can be prepared while the current pack remains active. Particle prefabs support only Transform/ParticleSystem/ParticleSystemRenderer, with collision/trigger modules disabled.
 

@@ -43,6 +43,7 @@ public sealed class CosmeticOwner : MonoBehaviour
 {
     public UnitAvatar? Owner;
     public string Role = "";
+    public SpriteRenderer? MirrorSource;
     public readonly Dictionary<int, string> VisualKeys = new();
     private void OnDisable() { if (Role != "weapon") Owner = null; Plugin.Instance?.Visuals.Forget(gameObject); }
 }
@@ -51,9 +52,14 @@ internal static class DetachedWeaponTargets
     public static void Bind(WeaponSimple weapon, WeaponControllerSimple? controller)
     {
         var owner = controller ? controller!.unitAvatar : null;
-        var roots = new[] { weapon.mainWeapon, weapon.subWeapon,
-            weapon.mainWeaponBody && weapon.mainWeaponBody.weaponStencilRenderer ? weapon.mainWeaponBody.weaponStencilRenderer.transform : null,
-            weapon.subWeaponBody && weapon.subWeaponBody.weaponStencilRenderer ? weapon.subWeaponBody.weaponStencilRenderer.transform : null };
+        var pairs = new List<(SpriteRenderer Source, SpriteRenderer Mask)>();
+        foreach (var body in new[] { weapon.mainWeaponBody, weapon.subWeaponBody })
+            if (body && body.weaponStencilRenderer && body.weaponSpriteRenderer) pairs.Add((body.weaponSpriteRenderer, body.weaponStencilRenderer));
+        var subWeapons = weapon.GetComponentsInChildren<SubWeapon>(true).AsEnumerable();
+        if (weapon is WeaponSimple_SwordAndShield shield && shield.shieldBody) subWeapons = subWeapons.Append(shield.shieldBody);
+        foreach (var sub in subWeapons.Distinct())
+            if (sub && sub.weaponStencilRenderer && sub.weaponSpriteRenderer) pairs.Add((sub.weaponSpriteRenderer, sub.weaponStencilRenderer));
+        var roots = new[] { weapon.mainWeapon, weapon.subWeapon }.Concat(pairs.Select(p => p.Mask.transform));
         foreach (var root in roots)
         {
             if (!root) continue;
@@ -69,6 +75,11 @@ internal static class DetachedWeaponTargets
                 if (prefix.Length > 0 && path.StartsWith(prefix, StringComparison.Ordinal)) path = path.Substring(prefix.Length);
                 tag.VisualKeys[id] = "weapon/" + path + "/SpriteRenderer";
             }
+        }
+        foreach (var pair in pairs)
+        {
+            var mask = pair.Mask.GetComponent<CosmeticOwner>();
+            if (mask) mask.MirrorSource = pair.Source;
         }
     }
 }

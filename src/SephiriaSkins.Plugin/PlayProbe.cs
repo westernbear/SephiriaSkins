@@ -122,6 +122,7 @@ internal static class PlayProbe
         });
         if (Environment.GetCommandLineArgs().Contains("--skins-playtest-discover")) yield break;
         var entry = PackDiscovery.Scan(Path.Combine(root, "Skins"), plugin.Catalog).Single(p => p.Pack?.Manifest.Id == "fan.hachiware" && p.Error == null);
+        plugin.SetPixelArt(true); plugin.SetGameUi(true);
         yield return apply(entry);
         var input = PlayerInputController.Instance.playerInput;
         priorScheme = input.currentControlScheme; priorDevices = input.devices.Where(d => d != gamepad).ToArray();
@@ -152,6 +153,11 @@ internal static class PlayProbe
         if (Environment.GetCommandLineArgs().Contains("--skins-playtest-controls"))
         {
             yield return KeyboardControls();
+            yield break;
+        }
+        if (Environment.GetCommandLineArgs().Contains("--skins-playtest-visual"))
+        {
+            yield return VisualProbe.Inspect(plugin, apply, restore, selector, root);
             yield break;
         }
         var paths = new RuntimeCatalog.PathIndex();

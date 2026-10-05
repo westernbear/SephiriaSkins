@@ -75,7 +75,7 @@ internal static class RuntimeProbe
                     {
                         var frame = state.timeline[i]; frameField.SetValue(animator, frame.frameIdx);
                         animator.SetSprite(frame.sprite); checkedFrames++;
-                        var expected = frame.sprite ? plugin.Theme.Get<Sprite>(binding.Frames[i]) : null;
+                        var expected = frame.sprite ? plugin.Theme.VisualSprite(binding.Frames[i], binding.FitOriginal ? frame.sprite : null) : null;
                         if (renderer.sprite != expected) failures++;
                         frameField.SetValue(multi, frame.frameIdx); multi.SetSprite(frame.sprite);
                         if (renderer.sprite != expected || reflected.sprite != expected || reflected.sortingOrder != -7 || !reflected.flipX) failures++;

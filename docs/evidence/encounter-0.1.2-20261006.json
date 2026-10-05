@@ -1,0 +1,1173 @@
+{
+  "results": [
+    {
+      "name": "solo lobby",
+      "value": {
+        "created": true,
+        "members": 1,
+        "privacy": "k_ELobbyTypeInvisible",
+        "error": null
+      }
+    },
+    {
+      "name": "environment",
+      "value": {
+        "memoryOnlySave": true,
+        "profile": "SKINS_PLAYTEST_3f1a3522b570487983dc7b2f4eee15ef",
+        "server": true,
+        "client": true,
+        "stages": [
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter1",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grasstown_Chapter5",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_TheRabbittown",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMolelandDark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_QTemple",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_QTemple",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          }
+        ],
+        "floors": [
+          {
+            "guid": "2cef0949-9e7f-4409-a3ff-b1a993f661c5",
+            "name": "TheRabbittown",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "c358c302-9e4f-41a0-8434-8d7e601c825b",
+            "name": "Towntree",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "298ed67e-8fb6-4c0e-92de-3b8b545082e2",
+            "name": "TrainingSchool_Greatsword",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "0258db79-3b9b-4147-a255-95a5742f420e",
+            "name": "TrainingSchool_Dagger",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "649b96b2-1e7f-4f2f-90b3-84d53965375d",
+            "name": "TheRabbittownUnderground",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "416a76ec-fb85-4af9-b070-37bcd4edbc82",
+            "name": "PlayerHouse",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "72fae621-2bee-4a66-8e42-e10b1dda9199",
+            "name": "PocketDimensionShop",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "139f8434-0397-4cd9-8a17-c5c076ec4c24",
+            "name": "ArkShrine",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "94c473c8-7459-4a2e-a15f-4c960a32d342",
+            "name": "MultiZone",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "1429c17f-3610-4cc2-927b-19c4bf6e1403",
+            "name": "Per_Tree",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "cee4c8c8-c1bd-42b9-a011-593df24f9a9b",
+            "name": "TrainingSchool_Crossbow",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "2a2771f4-903e-4206-bec0-72df52ab6188",
+            "name": "SalonUnderGround",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "341dab03-e2f0-46bd-935c-5e154bb98d6a",
+            "name": "TrainingSchool_Katana",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "e40884aa-0f71-4f26-8cfd-8bdc630c681a",
+            "name": "TrainingSchool_Staff",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "52ded445-b85a-4145-a3f1-9fb68b11f0e3",
+            "name": "TrainingSchool",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "dd1233ef-ec1d-4c67-ba10-3f5b5e8da6e2",
+            "name": "PlayerHouse2F",
+            "stageName": "Rabbittown"
+          }
+        ],
+        "creatures": [
+          {
+            "name": "PlayerAvatar [connId=0]",
+            "faction": "Player",
+            "hp": 50.0
+          },
+          {
+            "name": "DamageDummy(Clone)",
+            "faction": "Dummy",
+            "hp": 99999.0
+          },
+          {
+            "name": "Rabbit_NPC_Ken(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Farmer(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "RabbittownSoldier2(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 600.0
+          },
+          {
+            "name": "Rabbit_Rogue_Susane(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Mouse_Valter(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_NPC_Cape_Per(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Coward(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Fat(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Archer_Gray(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 200.0
+          },
+          {
+            "name": "Rabbit_Archer_Birgitta(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 200.0
+          },
+          {
+            "name": "Rabbit_NPC_Conor(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Rogue_Hugues(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_Rogue(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_NPC_Cape_Nana(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Soldier(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Salon(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          }
+        ],
+        "bindings": [
+          {
+            "name": "QuickCast1",
+            "paths": [
+              "<Keyboard>/1",
+              "<Mouse>/{Forward}",
+              "<Gamepad>/rightTrigger"
+            ]
+          },
+          {
+            "name": "QuickCast2",
+            "paths": [
+              "<Keyboard>/2",
+              "<Mouse>/backButton",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast3",
+            "paths": [
+              "<Keyboard>/3",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast4",
+            "paths": [
+              "<Keyboard>/4",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast5",
+            "paths": [
+              "<Keyboard>/5",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast6",
+            "paths": [
+              "<Keyboard>/6",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast7",
+            "paths": [
+              "<Keyboard>/7",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast8",
+            "paths": [
+              "<Keyboard>/8",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast1_J",
+            "paths": [
+              "<Gamepad>/buttonSouth",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast2_J",
+            "paths": [
+              "<Gamepad>/buttonEast",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast3_J",
+            "paths": [
+              "<Gamepad>/buttonWest",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast4_J",
+            "paths": [
+              "<Gamepad>/buttonNorth",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast5_J",
+            "paths": [
+              "<Gamepad>/dpad/down",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast6_J",
+            "paths": [
+              "<Gamepad>/dpad/right",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast7_J",
+            "paths": [
+              "<Gamepad>/dpad/left",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast8_J",
+            "paths": [
+              "<Gamepad>/dpad/up",
+              ""
+            ]
+          },
+          {
+            "name": "Dash",
+            "paths": [
+              "<Keyboard>/space",
+              "",
+              "<Gamepad>/buttonSouth",
+              ""
+            ]
+          },
+          {
+            "name": "Fire",
+            "paths": [
+              "<Mouse>/leftButton",
+              "",
+              "<Gamepad>/buttonWest",
+              ""
+            ]
+          },
+          {
+            "name": "SubFire",
+            "paths": [
+              "<Mouse>/rightButton",
+              "",
+              "<Gamepad>/leftShoulder",
+              ""
+            ]
+          },
+          {
+            "name": "UseItem",
+            "paths": [
+              "<Keyboard>/r",
+              "",
+              "<Gamepad>/buttonNorth",
+              ""
+            ]
+          },
+          {
+            "name": "SelectNextQuickSlotItem",
+            "paths": [
+              "<Keyboard>/backquote",
+              "<Mouse>/scroll/y",
+              "<Gamepad>/dpad/up",
+              ""
+            ]
+          },
+          {
+            "name": "Interactive",
+            "paths": [
+              "<Keyboard>/f",
+              "",
+              "<Gamepad>/rightShoulder",
+              ""
+            ]
+          },
+          {
+            "name": "OpenMapPanel",
+            "paths": [
+              "<Keyboard>/tab",
+              "",
+              "<Gamepad>/select",
+              ""
+            ]
+          },
+          {
+            "name": "OpenCharacterStatusPanel",
+            "paths": [
+              "<Keyboard>/v",
+              "",
+              "<Gamepad>/rightStickPress",
+              ""
+            ]
+          },
+          {
+            "name": "OpenStatsPanel",
+            "paths": [
+              "<Keyboard>/c",
+              "",
+              "<Gamepad>/leftStickPress",
+              ""
+            ]
+          },
+          {
+            "name": "OpenPassivePanel",
+            "paths": [
+              "<Keyboard>/p",
+              "",
+              "<Gamepad>/dpad/down",
+              ""
+            ]
+          },
+          {
+            "name": "OpenPresetPanel",
+            "paths": [
+              "<Keyboard>/b",
+              "",
+              "<Gamepad>/dpad/right",
+              ""
+            ]
+          },
+          {
+            "name": "OpenDevCommandPanel",
+            "paths": [
+              "<Keyboard>/slash"
+            ]
+          },
+          {
+            "name": "Chat",
+            "paths": [
+              "<Keyboard>/enter",
+              "<Keyboard>/numpadEnter"
+            ]
+          },
+          {
+            "name": "Reload",
+            "paths": [
+              "<Keyboard>/g",
+              "",
+              "<Gamepad>/dpad/left",
+              ""
+            ]
+          },
+          {
+            "name": "Ping",
+            "paths": [
+              "<Mouse>/middleButton",
+              ""
+            ]
+          },
+          {
+            "name": "PrevTab",
+            "paths": [
+              "<Keyboard>/q"
+            ]
+          },
+          {
+            "name": "NextTab",
+            "paths": [
+              "<Keyboard>/e"
+            ]
+          },
+          {
+            "name": "Move",
+            "paths": [
+              "<Gamepad>/leftStick",
+              "Dpad",
+              "<Keyboard>/w",
+              "<Keyboard>/s",
+              "<Keyboard>/a",
+              "<Keyboard>/d",
+              "<XRController>/{Primary2DAxis}",
+              "<Joystick>/stick",
+              "2DVector",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "Aim",
+            "paths": [
+              "<Mouse>/position",
+              "<Gamepad>/rightStick"
+            ]
+          },
+          {
+            "name": "ActivateCastMode",
+            "paths": [
+              "<Keyboard>/leftShift",
+              "",
+              "<Gamepad>/leftTrigger",
+              ""
+            ]
+          },
+          {
+            "name": "CancelAction",
+            "paths": [
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "Navigate",
+            "paths": [
+              "2DVector",
+              "<Gamepad>/leftStick/up",
+              "<Gamepad>/dpad/up",
+              "<Gamepad>/leftStick/down",
+              "<Gamepad>/dpad/down",
+              "<Gamepad>/leftStick/left",
+              "<Gamepad>/dpad/left",
+              "<Gamepad>/leftStick/right",
+              "<Gamepad>/dpad/right",
+              "2DVector",
+              "<Joystick>/stick/up",
+              "<Joystick>/stick/down",
+              "<Joystick>/stick/left",
+              "<Joystick>/stick/right",
+              "2DVector",
+              "<Keyboard>/w",
+              "<Keyboard>/upArrow",
+              "<Keyboard>/s",
+              "<Keyboard>/downArrow",
+              "<Keyboard>/a",
+              "<Keyboard>/leftArrow",
+              "<Keyboard>/d",
+              "<Keyboard>/rightArrow"
+            ]
+          },
+          {
+            "name": "Submit",
+            "paths": [
+              "<Gamepad>/{Submit}",
+              "<Keyboard>/space",
+              "<Joystick>/{Submit}"
+            ]
+          },
+          {
+            "name": "Cancel",
+            "paths": [
+              "*/{Cancel}"
+            ]
+          },
+          {
+            "name": "Point",
+            "paths": [
+              "<Mouse>/position",
+              "<Pen>/position",
+              "<Touchscreen>/touch*/position"
+            ]
+          },
+          {
+            "name": "Click",
+            "paths": [
+              "<Mouse>/leftButton",
+              "<Pen>/tip",
+              "<Touchscreen>/touch*/press",
+              "<XRController>/trigger"
+            ]
+          },
+          {
+            "name": "ScrollWheel",
+            "paths": [
+              "<Mouse>/scroll"
+            ]
+          },
+          {
+            "name": "MiddleClick",
+            "paths": [
+              "<Mouse>/middleButton"
+            ]
+          },
+          {
+            "name": "RightClick",
+            "paths": [
+              "<Mouse>/rightButton"
+            ]
+          },
+          {
+            "name": "TrackedDevicePosition",
+            "paths": [
+              "<XRController>/devicePosition"
+            ]
+          },
+          {
+            "name": "TrackedDeviceOrientation",
+            "paths": [
+              "<XRController>/deviceRotation"
+            ]
+          },
+          {
+            "name": "Skip",
+            "paths": [
+              "<Keyboard>/space"
+            ]
+          },
+          {
+            "name": "CloseControl",
+            "paths": [
+              "<Keyboard>/escape",
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "ThrowItem",
+            "paths": [
+              "<Gamepad>/buttonWest",
+              "<Keyboard>/f"
+            ]
+          },
+          {
+            "name": "RotateItem",
+            "paths": [
+              "<Gamepad>/buttonNorth",
+              "<Keyboard>/r",
+              "<Mouse>/middleButton"
+            ]
+          },
+          {
+            "name": "PrevTab",
+            "paths": [
+              "<Keyboard>/q",
+              "<Gamepad>/leftShoulder"
+            ]
+          },
+          {
+            "name": "NextTab",
+            "paths": [
+              "<Keyboard>/e",
+              "<Gamepad>/rightShoulder"
+            ]
+          },
+          {
+            "name": "PrevTab2",
+            "paths": [
+              "<Keyboard>/z",
+              "<Gamepad>/leftTrigger"
+            ]
+          },
+          {
+            "name": "NextTab2",
+            "paths": [
+              "<Keyboard>/x",
+              "<Gamepad>/rightTrigger"
+            ]
+          },
+          {
+            "name": "EngraveTablet",
+            "paths": [
+              "<Gamepad>/rightShoulder",
+              "<Mouse>/rightButton"
+            ]
+          },
+          {
+            "name": "RightStickScroll",
+            "paths": [
+              "<Gamepad>/rightStick"
+            ]
+          },
+          {
+            "name": "RebindReject",
+            "paths": [
+              "<Keyboard>/escape",
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "ShowDetail",
+            "paths": [
+              "<Keyboard>/leftCtrl",
+              "<Gamepad>/rightTrigger"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gamepad movement",
+      "value": {
+        "distance": 2.25980163,
+        "scheme": "Gamepad",
+        "nativeInput": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "gamepad attack",
+      "value": {
+        "nativeAttacks": 1
+      }
+    },
+    {
+      "name": "path equivalence",
+      "value": {
+        "checkedPaths": 9579,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "weapon coverage",
+      "value": {
+        "defaults": [
+          {
+            "id": 0,
+            "name": "0000_SwordAndShield",
+            "type": "SwordAndShield"
+          },
+          {
+            "id": 10,
+            "name": "0010_GreatSword",
+            "type": "GreatSword"
+          },
+          {
+            "id": 20,
+            "name": "0020_Dagger",
+            "type": "Dagger"
+          },
+          {
+            "id": 100,
+            "name": "0100_Crossbow",
+            "type": "Crossbow"
+          },
+          {
+            "id": 400,
+            "name": "0400_Katana",
+            "type": "Katana"
+          },
+          {
+            "id": 500,
+            "name": "0500_Staff",
+            "type": "Staff"
+          }
+        ],
+        "otherTypes": [
+          {
+            "id": 200,
+            "isDefaultWeapon": false,
+            "type": "StaffMagic"
+          },
+          {
+            "id": 9000,
+            "isDefaultWeapon": false,
+            "type": "Golem"
+          },
+          {
+            "id": 9999,
+            "isDefaultWeapon": false,
+            "type": "Random"
+          }
+        ]
+      }
+    },
+    {
+      "name": "combat 400 special",
+      "value": {
+        "id": 400,
+        "type": "Katana",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:0",
+            "special-swing:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Sheath\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 47.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    7.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 42,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 6.95730066,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 42,
+            "weapon": 117,
+            "effect": 10
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 49,
+          "mpCosts": [
+            5
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:0",
+            "special-swing:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Sheath\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 47.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    7.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 42,
+          "themedFrames": 42,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 7.08720064,
+          "uiApplyMilliseconds": 5.8544,
+          "guarded": false,
+          "roles": {
+            "body": 42,
+            "weapon": 117,
+            "effect": 10
+          },
+          "themedRoles": {
+            "body": 42,
+            "weapon": 117,
+            "effect": 10
+          },
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 45,
+          "mpCosts": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "PinkRabbit",
+        "actual": "PinkRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "ArmoredRabbit",
+        "actual": "ArmoredRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "BrownRabbit",
+        "actual": "BrownRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "DarkBrownRabbit",
+        "actual": "DarkBrownRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "dungeon entry",
+      "value": {
+        "stage": "Moleland",
+        "currentFloorGuid": "a6be620b-0667-4908-94a7-040a7dc91f2e",
+        "isInDungeon": 1,
+        "themed": true,
+        "music": {
+          "path": "event:/BGM/placeDungeonMole",
+          "key": "guid:{294aa0c8-7c11-49a2-84ea-a7abda1a9358}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    },
+    {
+      "name": "floor transition",
+      "value": {
+        "name": "Moleland_Battle_1",
+        "current": "1f161be1-26f6-4e43-aba7-a73f41b4eb7b",
+        "themed": true
+      }
+    },
+    {
+      "name": "encounter discovery",
+      "value": {
+        "floor": "Moleland_Battle_1(Clone)",
+        "spawners": [
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              513.0,
+              491.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          },
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              513.0,
+              455.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          },
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              513.0,
+              473.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "live encounter",
+      "value": {
+        "isSpawned": true,
+        "inBattle": true,
+        "outgoing": 19,
+        "incoming": 4,
+        "hpBefore": 50.0,
+        "hpAfter": 26.0,
+        "localThemed": true,
+        "enemyName": "MoleGrenadier_Stone_Fanatic(Clone)",
+        "enemyFaction": "MoleUnion",
+        "enemyOriginal": true,
+        "enemySurvived": false,
+        "music": {
+          "path": "event:/BGM/placeDungeonMole",
+          "key": "guid:{294aa0c8-7c11-49a2-84ea-a7abda1a9358}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    },
+    {
+      "name": "death revive",
+      "value": {
+        "died": true,
+        "revived": true,
+        "hp": 50.0,
+        "themed": true
+      }
+    },
+    {
+      "name": "town return",
+      "value": {
+        "floor": "2cef0949-9e7f-4409-a3ff-b1a993f661c5",
+        "themed": true,
+        "music": {
+          "path": "event:/BGM/placeTownVillage",
+          "key": "guid:{c3ad9a89-bcfb-471a-a923-95e2fc8eb1ef}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    }
+  ],
+  "exceptions": [],
+  "hooks": [],
+  "restored": {
+    "themeNull": true,
+    "audioChannels": 0,
+    "virtualDeviceRemoved": true,
+    "profile": "",
+    "profileFileAbsent": true
+  }
+}

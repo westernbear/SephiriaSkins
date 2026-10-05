@@ -13,6 +13,8 @@ internal sealed class RuntimeTheme : IDisposable
     private readonly List<FMOD.Sound> ownedSounds = new();
     public int AssetCount => Assets.Count + Sounds.Count;
     private readonly List<Object> owned = new();
+    private readonly SpritePresentation presentation = new();
+    public Sprite VisualSprite(string id, Sprite? original = null) => presentation.Get(id, Get<Sprite>(id), Plugin.Instance!.PixelArt, original);
     private sealed class SharedBundle { public AssetBundle Bundle = null!; public int References; }
     private static readonly Dictionary<string, SharedBundle> sharedBundles = new();
     private static readonly Dictionary<int, int> skinFonts = new();
@@ -106,7 +108,7 @@ internal sealed class RuntimeTheme : IDisposable
                         {
                             texture = new Texture2D(2, 2, TextureFormat.RGBA32, false) { filterMode = FilterMode.Point, wrapMode = TextureWrapMode.Clamp };
                             theme.owned.Add(texture);
-                            if (!ImageConversion.LoadImage(texture, bytes, true)) throw new InvalidDataException("PNG decode failed: " + r.File);
+                            if (!ImageConversion.LoadImage(texture, bytes, false)) throw new InvalidDataException("PNG decode failed: " + r.File);
                             textures.Add(r.File, texture);
                         }
                         var rect = r.Rect == null ? new Rect(0, 0, texture.width, texture.height) : new Rect(r.Rect[0], r.Rect[1], r.Rect[2], r.Rect[3]);
@@ -174,6 +176,7 @@ internal sealed class RuntimeTheme : IDisposable
     }
     public void Dispose()
     {
+        presentation.Dispose();
         foreach (var sound in ownedSounds) sound.release();
         ownedSounds.Clear(); Sounds.Clear();
         var fonts = owned.OfType<TMP_FontAsset>().Where(f => f).ToArray();

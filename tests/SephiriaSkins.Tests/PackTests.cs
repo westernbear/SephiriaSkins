@@ -23,6 +23,16 @@ public sealed class PackTests : IDisposable
         Assert.Equal(a.Files.Keys.Order(), b.Files.Keys.Order());
         foreach (var key in a.Files.Keys) Assert.Equal(a.Files[key], b.Files[key]);
     }
+    [Fact]
+    public void HiddenVisualRoundTripsAndRejectsConflictingReplacement()
+    {
+        var m = Manifest(); catalog.Visuals["weapon/addon"] = new CatalogVisual { Role = "weapon" };
+        m.Visuals["weapon/addon"] = new VisualBinding { Hide = true };
+        var dir = Write(m); Assert.True(PackReader.Read(dir, catalog).Manifest.Visuals["weapon/addon"].Hide);
+        m.Resources["sprite"] = new ResourceRef { File = "sprite.png" };
+        m.Visuals["weapon/addon"].Sprite = "sprite"; Write(m);
+        Assert.Throws<InvalidDataException>(() => PackReader.Read(dir, catalog));
+    }
     [Theory]
     [InlineData("../evil.png")]
     [InlineData("/evil.png")]

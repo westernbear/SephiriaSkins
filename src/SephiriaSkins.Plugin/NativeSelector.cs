@@ -19,9 +19,12 @@ internal sealed class NativeSelector : IDisposable
     private readonly List<Button> rows = new();
     private readonly List<UI_MessageBox_YesNo> detailWindows = new();
     private Button? restoreButton, refreshButton;
+    private Button? pixelButton, uiButton;
+    private Func<bool> pixelEnabled = null!, uiEnabled = null!;
     private readonly List<Object> owned = new();
     private readonly Dictionary<string, Sprite> previewCache = new();
     private RuntimeTheme? previewTheme;
+    private SpritePresentation previewPresentation = new();
     private IReadOnlyList<PackEntry> entries = Array.Empty<PackEntry>();
     private Action<PackEntry> select = null!;
     private Action reload = null!, export = null!;
@@ -29,12 +32,14 @@ internal sealed class NativeSelector : IDisposable
     public bool IsOpen => window && window!.IsOpened;
 
     public bool Open(IReadOnlyList<PackEntry> packs, Func<RuntimeTheme?> theme, Action<PackEntry> onApply,
-        Action onRestore, Action onReload, Action onExport, Action onClose)
+        Action onRestore, Action onReload, Action onExport, Action onClose,
+        Func<bool> pixel, Action onPixel, Func<bool> gameUi, Action onGameUi)
     {
         if (!UIManager.Instance) return false;
         var holder = UIManager.Instance.GetElement<UI_MessageBoxHolder>();
         if (!holder || !holder.yesNoPrefab) return false;
         entries = packs; current = theme; select = onApply; reload = onReload; export = onExport;
+        pixelEnabled = pixel; uiEnabled = gameUi;
         if (theme() is RuntimeTheme active) chosen = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == active.Pack.Manifest.Id);
         window = (UI_MessageBox_YesNo)holder.OpenYesNo("스킨", () => { if (chosen?.Error == null && chosen?.Pack != null) select(chosen); }, () => { });
         window.gameObject.AddComponent<SkinSelectorMarker>();
@@ -62,7 +67,7 @@ internal sealed class NativeSelector : IDisposable
         window.text.transform.SetParent(root, false); Place(window.text.rectTransform, 16, -12, width - 32, 28);
         window.text.text = "스킨";
         var body = Node("Skins", root);
-        body.anchorMin = Vector2.zero; body.anchorMax = Vector2.one; body.offsetMin = new Vector2(16, 88); body.offsetMax = new Vector2(-16, -48);
+        body.anchorMin = Vector2.zero; body.anchorMax = Vector2.one; body.offsetMin = new Vector2(16, 132); body.offsetMax = new Vector2(-16, -48);
         var viewport = Node("Viewport", body); viewport.anchorMin = Vector2.zero; viewport.anchorMax = new Vector2(.72f, 1); viewport.offsetMin = Vector2.zero; viewport.offsetMax = new Vector2(-8, 0);
         viewport.gameObject.AddComponent<RectMask2D>();
         content = Node("Content", viewport); content.anchorMin = new Vector2(0, 1); content.anchorMax = Vector2.one; content.pivot = new Vector2(.5f, 1); content.sizeDelta = Vector2.zero;
@@ -72,7 +77,13 @@ internal sealed class NativeSelector : IDisposable
         body.gameObject.AddComponent<SelectorScrollFocus>().Scroll = scroll;
         var previewRect = Node("Preview", body); previewRect.anchorMin = new Vector2(.75f, .3f); previewRect.anchorMax = new Vector2(1, .85f); previewRect.offsetMin = previewRect.offsetMax = Vector2.zero;
         preview = previewRect.gameObject.AddComponent<Image>(); preview.preserveAspect = true; preview.raycastTarget = false;
-        error = CloneText(window.text, root, "Error"); Place(error.rectTransform, 16, -height + 84, width - 32, 28); error.fontSize = window.text.fontSize; error.gameObject.SetActive(false);
+        error = CloneText(window.text, root, "Error"); Place(error.rectTransform, 16, -height + 128, width - 32, 28); error.fontSize = window.text.fontSize; error.gameObject.SetActive(false);
+        var settings = Node("Appearance", root); Place(settings, 16, -height + 92, width - 32, 32);
+        var settingsLayout = settings.gameObject.AddComponent<HorizontalLayoutGroup>(); settingsLayout.spacing = 8; settingsLayout.childControlWidth = settingsLayout.childControlHeight = settingsLayout.childForceExpandWidth = true;
+        pixelButton = CloneButton(rowTemplate, settings, "", () => { onPixel(); UpdateSettings(); });
+        uiButton = CloneButton(rowTemplate, settings, "", () => { onGameUi(); UpdateSettings(); });
+        foreach (var button in new[] { pixelButton, uiButton }) button.gameObject.AddComponent<LayoutElement>().preferredWidth = 240;
+        UpdateSettings();
         var buttons = Node("Actions", root); Place(buttons, 16, -height + 48, width - 32, 32);
         var actions = buttons.gameObject.AddComponent<HorizontalLayoutGroup>(); actions.spacing = 8; actions.childControlWidth = true; actions.childControlHeight = true; actions.childForceExpandWidth = true;
         var restore = restoreButton = CloneButton(rowTemplate, buttons, "원본", onRestore);
@@ -92,6 +103,7 @@ internal sealed class NativeSelector : IDisposable
         if (previewTheme != current()) { previewTheme = current(); if (chosen != null) Choose(chosen); }
         apply!.interactable = !loading && !unsupported && chosen?.Pack != null && chosen.Error == null;
         restoreButton!.interactable = refreshButton!.interactable = !loading;
+        pixelButton!.interactable = uiButton!.interactable = !loading; UpdateSettings();
         var message = unsupported ? "지원하지 않는 게임 버전" : chosen?.Error != null ? "사용할 수 없는 팩" : status.Contains("실패") ? "불러오기 실패" : loading ? "불러오는 중…" : "";
         error!.gameObject.SetActive(message.Length > 0); error.text = message;
     }
@@ -112,6 +124,12 @@ internal sealed class NativeSelector : IDisposable
         if (chosen != null) Choose(chosen);
         if (rows.Count > 0) rows[0].Select();
     }
+    private void UpdateSettings()
+    {
+        SetLabel(pixelButton!, "도트 감성: " + (pixelEnabled() ? "ON" : "OFF"));
+        SetLabel(uiButton!, "게임 UI: " + (uiEnabled() ? "ON" : "OFF"));
+        if (chosen != null && preview) Choose(chosen);
+    }
     private void Choose(PackEntry pack)
     {
         chosen = pack;
@@ -122,14 +140,14 @@ internal sealed class NativeSelector : IDisposable
     {
         if (pack.Pack?.Manifest.Preview == null) return null;
         var id = pack.Pack.Manifest.Preview;
-        if (current()?.Pack.Manifest.Id == pack.Pack.Manifest.Id && current()!.Assets.TryGetValue(id, out var native)) return native as Sprite;
+        if (current()?.Pack.Manifest.Id == pack.Pack.Manifest.Id) return current()!.VisualSprite(id);
         var r = pack.Pack.Manifest.Resources[id]; if (r.Bundle != null) return null;
         var key = pack.Source + ":" + Keys.Hash(pack.Pack.Files[r.File]);
-        if (previewCache.TryGetValue(key, out var cached)) return cached;
+        if (previewCache.TryGetValue(key, out var cached)) return previewPresentation.Get(key, cached, pixelEnabled(), null);
         var texture = new Texture2D(2, 2) { filterMode = FilterMode.Point }; owned.Add(texture);
         if (!ImageConversion.LoadImage(texture, pack.Pack.Files[r.File], true)) return null;
         var rect = r.Rect == null ? new Rect(0, 0, texture.width, texture.height) : new Rect(r.Rect[0], r.Rect[1], r.Rect[2], r.Rect[3]);
-        var sprite = Sprite.Create(texture, rect, new Vector2(.5f, .5f), r.PixelsPerUnit); owned.Add(sprite); previewCache[key] = sprite; return sprite;
+        var sprite = Sprite.Create(texture, rect, new Vector2(.5f, .5f), r.PixelsPerUnit); owned.Add(sprite); previewCache[key] = sprite; return previewPresentation.Get(key, sprite, pixelEnabled(), null);
     }
     private void ShowDetails()
     {
@@ -184,6 +202,7 @@ internal sealed class NativeSelector : IDisposable
         foreach (var details in detailWindows.ToArray()) if (details && details.IsOpened) details.Close();
         detailWindows.Clear();
         if (active && active!.IsOpened) active.Close();
+        previewPresentation.Dispose(); previewPresentation = new();
         foreach (var asset in owned) if (asset) Object.Destroy(asset); owned.Clear(); previewCache.Clear(); rows.Clear();
     }
     public void Dispose()

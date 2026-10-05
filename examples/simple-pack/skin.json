@@ -10,19 +10,19 @@
   "description": "모든 코스튬의 앞 방향 대기만 교체합니다. 움직임·공격·뒤 방향은 원본입니다.",
   "resources": {
     "idle": {
-      "file": "atlas.png",
+      "file": "body-unarmed.png",
       "kind": "sprite",
       "rect": [
-        0,
-        665,
-        222,
-        222
+        49,
+        644,
+        135,
+        158
       ],
       "pivot": [
         0.5,
-        0.2
+        0.012658227848101266
       ],
-      "pixelsPerUnit": 222
+      "pixelsPerUnit": 160
     }
   },
   "preview": "idle",

@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 namespace SephiriaSkins.Plugin;
 
-[BepInPlugin(Id, "Sephiria Skins", "0.1.1")]
+[BepInPlugin(Id, "Sephiria Skins", "0.1.2")]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "dev.sephiria.skins";
@@ -21,6 +21,20 @@ public sealed class Plugin : BaseUnityPlugin
     private Harmony? harmony;
     private ConfigEntry<string> selected = null!;
     private ConfigEntry<Key> shortcut = null!;
+    private ConfigEntry<bool> pixelArt = null!, gameUi = null!;
+    internal bool PixelArt => pixelArt.Value;
+    internal bool GameUi => gameUi.Value;
+    internal void SetPixelArt(bool value)
+    {
+        if (loading || pixelArt.Value == value) return;
+        pixelArt.Value = value; Config.Save(); Visuals.RestoreAll(); Visuals.Refresh(); Visuals.ApplyStatic(Theme);
+    }
+    internal void SetGameUi(bool value)
+    {
+        if (loading || gameUi.Value == value) return;
+        gameUi.Value = value; Config.Save(); Ui.Restore(); ApplyUi();
+    }
+    internal void ApplyUi(bool includeInactive = true) { if (GameUi) Ui.Apply(Theme, includeInactive); }
     private List<PackEntry> packs = new();
     private string root = "", status = "", unsupported = "";
     private bool loading, open, quitting;
@@ -36,6 +50,8 @@ public sealed class Plugin : BaseUnityPlugin
         root = Path.GetDirectoryName(Info.Location);
         selected = Config.Bind("Skin", "Selected", "", "Pack ID. Empty uses the original game appearance.");
         shortcut = Config.Bind("Keys", "Selector", Key.F6, "Open/close skin selector.");
+        pixelArt = Config.Bind("Appearance", "PixelArt", true, "Pixel rendering for skin body, weapons and effects.");
+        gameUi = Config.Bind("Appearance", "GameUi", true, "Apply the skin to game UI. Off restores native UI.");
         var catalogResource = GetType().Assembly.GetManifestResourceNames().FirstOrDefault(n => n.EndsWith("catalog-1.0.33.json"));
         if (catalogResource != null)
         {
@@ -65,9 +81,10 @@ public sealed class Plugin : BaseUnityPlugin
         if (Environment.GetCommandLineArgs().Contains("--skins-playtest"))
         {
             var priorSelection = selected.Value;
+            var priorPixel = PixelArt; var priorUi = GameUi;
             Application.runInBackground = true;
             StartCoroutine(PlayProbe.Run(this, Apply, RestoreOriginal, SetOpen, () => errors.ToArray(), root,
-                () => { selected.Value = priorSelection; Config.Save(); }));
+                () => { selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save(); }));
         }
     }
     private void ReloadList()
@@ -94,12 +111,12 @@ public sealed class Plugin : BaseUnityPlugin
                     try
                     {
                         Visuals.RestoreAll(); Ui.Restore(); Audio.Restore(); Theme = candidate;
-                        Visuals.Refresh(); Ui.Apply(Theme); Audio.ThemeChanged();
+                        Visuals.Refresh(); ApplyUi(); Audio.ThemeChanged();
                     }
                     catch
                     {
                         Visuals.RestoreAll(); Ui.Restore(); Audio.Restore(); Theme = previous;
-                        Visuals.Refresh(); Ui.Apply(previous); Audio.ThemeChanged(); throw;
+                        Visuals.Refresh(); ApplyUi(); Audio.ThemeChanged(); throw;
                     }
                 }, out error);
                 if (committed) { selected.Value = next.Pack.Manifest.Id; Config.Save(); status = "적용됨: " + next.Pack.Manifest.Name; Logger.LogInfo(status); }
@@ -123,7 +140,8 @@ public sealed class Plugin : BaseUnityPlugin
         if (open)
         {
             if (!selector.Open(packs, () => Theme, entry => StartCoroutine(Apply(entry)), RestoreOriginal, ReloadSelected,
-                () => { RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export")); Logger.LogInfo("Template saved: " + Path.Combine(root, "Export")); }, () => SetOpen(false)))
+                () => { RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export")); Logger.LogInfo("Template saved: " + Path.Combine(root, "Export")); }, () => SetOpen(false),
+                () => PixelArt, () => SetPixelArt(!PixelArt), () => GameUi, () => SetGameUi(!GameUi)))
             { open = false; return; }
             priorLock = Cursor.lockState; priorCursor = Cursor.visible;
             Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
@@ -146,7 +164,7 @@ public sealed class Plugin : BaseUnityPlugin
             (UIInputModule.currentModule && UIInputModule.currentModule.cancel && UIInputModule.currentModule.cancel.action.WasPressedThisFrame()))) SetOpen(false);
         if (Time.unscaledTime < nextTick) return;
         nextTick = Time.unscaledTime + 0.2f;
-        try { selector.Update(packs, loading, status, unsupported.Length > 0); Ui.Apply(Theme, false); Audio.Tick(); Visuals.Prune(); }
+        try { selector.Update(packs, loading, status, unsupported.Length > 0); ApplyUi(false); Audio.Tick(); Visuals.Prune(); }
         catch (Exception e) { ReportHookError(e); }
     }
     private void LateUpdate()
@@ -161,6 +179,8 @@ public sealed class Plugin : BaseUnityPlugin
     private IEnumerator Probe()
     {
         var priorSelection = selected.Value;
+        var priorPixel = PixelArt; var priorUi = GameUi;
+        SetPixelArt(true); SetGameUi(true);
         var priorBackground = InputSystem.settings.backgroundBehavior;
         InputSystem.settings.backgroundBehavior = InputSettings.BackgroundBehavior.IgnoreFocus;
         var pad = InputSystem.AddDevice<Gamepad>("Skins output-probe gamepad");
@@ -182,7 +202,7 @@ public sealed class Plugin : BaseUnityPlugin
         yield return new WaitForSecondsRealtime(3);
         var profileAbsent = session == null || (!SaveData.Exists(session.Profile) && !SaveData.Exists(session.Profile + "TMP"));
         session?.Dispose(); InputSystem.RemoveDevice(pad); InputSystem.settings.backgroundBehavior = priorBackground;
-        selected.Value = priorSelection; Config.Save();
+        selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save();
         File.WriteAllText(Path.Combine(root, "Export", "probe-cleanup.json"), Json.Write(new { exceptions, profileAbsent, themeNull = Theme == null, audioReplacements = Audio.ActiveReplacements, errors = errors.ToArray(),
             fontLifetime = new { FontLifetime.RemovedFonts, FontLifetime.RemovedAtlases, FontLifetime.FaceResets } }));
         Application.logMessageReceived -= OnLog;

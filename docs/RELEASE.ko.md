@@ -22,7 +22,7 @@ Unity 예제를 재생성하려면 `powershell -File tools/BuildUnity.ps1` 후 `
 python tools/generate_catalog.py "C:\Program Files (x86)\Steam\steamapps\common\Sephiria" --runtime "C:\Program Files (x86)\Steam\steamapps\common\Sephiria\BepInEx\plugins\SephiriaSkins\Export\catalog.json"
 ```
 
-GitHub 저장소는 [westernbear/SephiriaSkins](https://github.com/westernbear/SephiriaSkins)입니다. 추적 소스를 main에 올리고 Releases에 설치 ZIP·소스 ZIP·SHA256SUMS를 첨부합니다. 0.1.1은 프리릴리스로 표시합니다. 게임 설치본을 새로 조사한 뒤 카탈로그를 갱신한 경우 런타임 검증을 다시 수행하세요.
+GitHub 저장소는 [westernbear/SephiriaSkins](https://github.com/westernbear/SephiriaSkins)입니다. 추적 소스를 main에 올리고 Releases에 설치 ZIP·소스 ZIP·SHA256SUMS를 첨부합니다. 0.1.2는 프리릴리스로 표시합니다. 게임 설치본을 새로 조사한 뒤 카탈로그를 갱신한 경우 런타임 검증을 다시 수행하세요.
 
 진단 실행은 일반 설치에 필요하지 않습니다. 게임이 종료된 상태에서 Steam 시작 옵션에 아래 중 하나를 넣고 실행합니다. 실행 후 시작 옵션을 비웁니다. 각 진단은 메모리 전용 프로필을 만들며 기존 슬롯과 Steam Cloud에 저장하지 않습니다. 선택 설정·언어·해상도·입력 설정은 종료 시 복원합니다. 기존 Build Overlay 설정은 그대로 함께 로드합니다.
 
@@ -30,6 +30,7 @@ GitHub 저장소는 [westernbear/SephiriaSkins](https://github.com/westernbear/S
 |---|---|
 | `--skins-playtest --skins-probe-exit` | 기본 무기 6종의 원본/테마 비교, 코스튬·층 이동·사망/부활·언어·해상도·25회 교체·호스트 재시작 |
 | `--skins-playtest --skins-playtest-controls --skins-probe-exit` | 가상 Input System 기기의 이동/공격, F6/Esc, 긴 이름 말줄임 |
+| `--skins-playtest --skins-playtest-visual --skins-probe-exit` | 실제 무기·이펙트의 도트 ON/OFF 공격 108캡처, 앞/뒤·부활, 도트/UI 버튼·설정 저장, UI OFF 상태의 재로드 |
 | `--skins-playtest --skins-playtest-encounter --skins-probe-exit` | 카타나 특수 공격과 실제 던전 적 AI 전투·음악 전환 |
 | `--skins-probe --skins-probe-host --skins-probe-lobby --skins-probe-packs --skins-probe-zip --skins-probe-exit` | 세 팩의 폴더/ZIP, 본체 출력 fixture·Unity 리소스·UI·오디오·풀 복원 |
 
@@ -38,7 +39,8 @@ JSON과 게임 렌더 캡처는 `BepInEx/plugins/SephiriaSkins/Export`에 기록
 공개한 플레이 원자료의 판정 재현:
 
 ```powershell
-python tools/verify_play_results.py docs/evidence/play-20261005.json --controls docs/evidence/controls-20261005.json --encounter docs/evidence/encounter-20261005.json --output-probe docs/evidence/runtime-probe-0.1.1-20261005.json --cleanup docs/evidence/runtime-cleanup-20261005.json
+python tools/verify_play_results.py docs/evidence/play-0.1.2-20261005.json --controls docs/evidence/controls-0.1.2-20261005.json --encounter docs/evidence/encounter-0.1.2-20261006.json --output-probe docs/evidence/runtime-probe-0.1.2-20261005.json --cleanup docs/evidence/runtime-cleanup-0.1.2-20261005.json
+python tools/verify_visual_results.py docs/evidence/visual-0.1.2-20261005.json docs/evidence/visual-cleanup-0.1.2-20261005.json
 ```
 
 `--skins-probe-baseline`은 출력 진단의 스킨 Harmony 패치와 팩 적용을 생략하는 비교용 옵션입니다. 진단 중 새 플레이를 직접 시작하거나 두 진단을 동시에 실행하지 않습니다.

@@ -81,6 +81,7 @@ public static class PackValidator
         {
             Require(catalog.Visuals.ContainsKey(pair.Key), "Unknown visual target: " + pair.Key);
             Require(pair.Value != null, "Null visual binding.");
+            Require(!pair.Value!.Hide || (pair.Value.Sprite == null && pair.Value.Material == null && !pair.Value.FitOriginal), "Hidden visual cannot also replace assets or fit geometry.");
             if (pair.Value!.Sprite != null) Ref(pair.Value.Sprite, "sprite");
             if (pair.Value.Material != null) Ref(pair.Value.Material, "material");
         }

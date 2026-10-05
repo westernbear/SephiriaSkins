@@ -4,6 +4,8 @@ obj/
 .tools/
 dist/
 *.user
+__pycache__/
+*.pyc
 GamePath.props
 unity/Library/
 unity/Temp/

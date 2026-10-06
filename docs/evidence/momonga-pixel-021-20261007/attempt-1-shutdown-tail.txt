@@ -1,0 +1,35 @@
+
+세이브 파일 로드 시도 C:\Users\singlerr\Documents\Saved Games\Sephiria\SLOT1.sav
+일반 세이브 파일 로드 작업 성공
+세이브 파일 로드 완료
+==================================================
+     게임 시작 (Sephiria)
+     버전: 1.0.33
+     실행 시간 (KST): 2026-10-06 23:05
+==================================================
+[클라우드 동기화] 클라우드에서 세이브 읽어옴 : SLOT1.sav, 2026-10-05 17:46:01
+[클라우드 동기화] 로컬에서 세이브 읽어옴 : SLOT1.sav, 2026-10-05 17:46:01
+[클라우드 동기화] 클라우드에서 세이브 읽어옴 : Options.xml, 2026-10-04 20:52:39
+[클라우드 동기화] 로컬에서 세이브 읽어옴 : Options.xml, 2026-10-04 20:52:39
+[클라우드 동기화] 클라우드에서 세이브 읽어옴 : SLOT2.sav, 2026-09-30 12:02:42
+[클라우드 동기화] 로컬에서 세이브 읽어옴 : SLOT2.sav, 2026-09-30 12:02:42
+[클라우드 동기화] 클라우드에서 세이브 읽어옴 : SLOT2TMP.sav, 2026-09-30 12:01:09
+[클라우드 동기화] 로컬에서 세이브 읽어옴 : SLOT2TMP.sav, 2026-09-30 12:01:09
+[클라우드 동기화] 클라우드에서 세이브 읽어옴 : SLOT1TMP.sav, 2026-10-05 16:02:38
+[클라우드 동기화] 로컬에서 세이브 읽어옴 : SLOT1TMP.sav, 2026-10-05 16:02:38
+ko-KR
+세이브 파일 로드 시도 C:\Users\singlerr\Documents\Saved Games\Sephiria\SLOT1.sav
+일반 세이브 파일 로드 작업 성공
+세이브 파일 로드 완료
+OnApplicationQuit
+Destroyed AppUI
+Destroyed AppWorldUI
+Destroyed Managers
+Destroyed SteamManager
+SteamInvitation OnDestroy
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.

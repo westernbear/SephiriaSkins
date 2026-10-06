@@ -1,0 +1,18 @@
+{
+  "packId": "fan.momonga",
+  "runId": "20261006T140754257Z-5e0aa72033d54cbba29bd1c72aba32e4",
+  "pluginSha256": "1ae01fc2f0b970ac99860190686cedbd8ffeded52392da07057596e2520fb772",
+  "results": [],
+  "exceptions": [
+    "isolated host: System.InvalidOperationException: Start and sign in to Steam, then restart the playtest.\r\n  at SephiriaSkins.Plugin.PlayProbe+<Steps>d__35.MoveNext () [0x00124] in <c32f54b351da4f6595338c0ce3db7f0c>:0 \r\n  at SephiriaSkins.Plugin.PlayProbe+<Run>d__34.MoveNext () [0x0013f] in <c32f54b351da4f6595338c0ce3db7f0c>:0 "
+  ],
+  "hooks": [],
+  "restored": {
+    "themeNull": true,
+    "audioChannels": 0,
+    "virtualDeviceRemoved": true,
+    "configBytesRestored": true,
+    "profile": "",
+    "profileFileAbsent": true
+  }
+}

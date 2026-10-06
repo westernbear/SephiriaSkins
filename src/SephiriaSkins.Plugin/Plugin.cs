@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 namespace SephiriaSkins.Plugin;
 
-[BepInPlugin(Id, "Sephiria Skins", "0.2.0")]
+[BepInPlugin(Id, "Sephiria Skins", "0.2.1")]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "dev.sephiria.skins";

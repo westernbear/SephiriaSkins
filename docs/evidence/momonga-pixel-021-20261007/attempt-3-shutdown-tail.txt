@@ -1,0 +1,35 @@
+[BootInfo] RAM: 31960 MB | OS: Windows 11  (10.0.26300)
+[ModEnvironment] 모드 감지(BepInEx.Preloader) — Cloud Diagnostics 예외 업로드 비활성화 (네이티브 크래시 수집은 유지).
+<RI> Initializing input.
+
+Using Windows.Gaming.Input
+UnloadTime: 1.022600 ms
+ThreadLog initialized.
+세이브 파일 로드 시도 C:\Users\singlerr\Documents\Saved Games\Sephiria\Options.xml
+일반 세이브 파일 로드 작업 성공
+세이브 파일 로드 완료
+세이브 파일 로드 시도 C:\Users\singlerr\Documents\Saved Games\Sephiria\DeviceOptions.xml
+일반 세이브 파일 로드 작업 성공
+세이브 파일 로드 완료
+[Resolution] Load Resolution is disabled
+Current Display Type is : HD
+[BootInfo] VSync: 0 | LimitFPS: 144 | Screen: 1280x720 Windowed @ 143.98Hz
+Analytics is disabled in modded environment
+Local User: seowoongkk:0
+MOD 로드 시작
+MOD 로드 완료 (쿼리 NULL)
+SteamInvitation Awake
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+Failed to load the Steam App List: State = ProtocolError, Error Message = HTTP/1.1 404 Not Found
+Curl error 6: Could not resolve host: config.uca.cloud.unity3d.com
+Destroyed AppWorldUI
+Destroyed SteamManager
+SteamInvitation OnDestroy
+Destroyed AppUI
+Destroyed Managers
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.

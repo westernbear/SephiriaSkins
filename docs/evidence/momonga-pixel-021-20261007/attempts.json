@@ -1,0 +1,50 @@
+[
+  {
+    "runId": "20261006T140547653Z-068610688f884909837b7e76a16d6794",
+    "startedUtc": "2026-10-06T14:05:47.7139011Z",
+    "completed": false,
+    "visualReportGenerated": false,
+    "playReportGenerated": false,
+    "nativeGameplayResultsRecorded": false,
+    "run": "attempt-1-run.json",
+    "wrapper": "attempt-1-wrapper.json",
+    "shutdownExcerpt": "attempt-1-shutdown-tail.txt",
+    "reason": "Game exited before native visual results; Steam initialization failure or Steam client shutdown was observed."
+  },
+  {
+    "runId": "20261006T140754257Z-5e0aa72033d54cbba29bd1c72aba32e4",
+    "startedUtc": "2026-10-06T14:07:54.3204399Z",
+    "completed": false,
+    "visualReportGenerated": false,
+    "playReportGenerated": true,
+    "nativeGameplayResultsRecorded": false,
+    "run": "attempt-2-run.json",
+    "wrapper": "attempt-2-wrapper.json",
+    "shutdownExcerpt": "attempt-2-shutdown-tail.txt",
+    "reason": "Game exited before native visual results; Steam initialization failure or Steam client shutdown was observed."
+  },
+  {
+    "runId": "20261006T141332053Z-d693aab6fdd74330a7b1acd389d10ff2",
+    "startedUtc": "2026-10-06T14:13:32.1003753Z",
+    "completed": false,
+    "visualReportGenerated": false,
+    "playReportGenerated": false,
+    "nativeGameplayResultsRecorded": false,
+    "run": "attempt-3-run.json",
+    "wrapper": "attempt-3-wrapper.json",
+    "shutdownExcerpt": "attempt-3-shutdown-tail.txt",
+    "reason": "Game exited before native visual results; Steam initialization failure or Steam client shutdown was observed."
+  },
+  {
+    "runId": "20261006T230753366Z-2bd8ebcc027740bb853da14e154a530a",
+    "startedUtc": "2026-10-06T23:07:53.4289559Z",
+    "completed": false,
+    "visualReportGenerated": false,
+    "playReportGenerated": false,
+    "nativeGameplayResultsRecorded": false,
+    "run": "attempt-4-run.json",
+    "wrapper": "attempt-4-wrapper.json",
+    "shutdownExcerpt": "attempt-4-shutdown-tail.txt",
+    "reason": "Game exited before native visual results; Steam initialization failure or Steam client shutdown was observed."
+  }
+]

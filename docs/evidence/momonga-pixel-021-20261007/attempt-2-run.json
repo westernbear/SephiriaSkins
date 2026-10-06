@@ -1,0 +1,26 @@
+{
+  "packId": "fan.momonga",
+  "runId": "20261006T140754257Z-5e0aa72033d54cbba29bd1c72aba32e4",
+  "pluginSha256": "1ae01fc2f0b970ac99860190686cedbd8ffeded52392da07057596e2520fb772",
+  "weaponScope": "20",
+  "soakMinutes": 0,
+  "cyclePackIds": [],
+  "skippedTrials": {},
+  "arguments": [
+    "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\momonga-021-game-20261006-230326\\Sephiria.exe",
+    "--skins-playtest",
+    "--skins-playtest-visual",
+    "--skins-test-pack=fan.momonga",
+    "--skins-test-weapons=20",
+    "--skins-probe-exit",
+    "-screen-fullscreen",
+    "0",
+    "-screen-width",
+    "1280",
+    "-screen-height",
+    "720",
+    "-logFile",
+    "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\momonga-021-smoke-20261006-230751\\game.log"
+  ],
+  "startedUtc": "2026-10-06T14:07:54.3204399Z"
+}

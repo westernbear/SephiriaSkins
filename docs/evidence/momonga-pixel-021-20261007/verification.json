@@ -1,0 +1,138 @@
+{
+  "releaseVersion": "0.2.1",
+  "recordedUtc": "2026-10-06T23:11:13.643999+00:00",
+  "pluginSha256": "1ae01fc2f0b970ac99860190686cedbd8ffeded52392da07057596e2520fb772",
+  "generatedAssets": [
+    {
+      "atlas": "body",
+      "file": "body-final.png",
+      "sha256": "8671c10b3fbc98e0b796dc6b057434932cffbe3f86cd608a30ec3b144334ef54",
+      "inspection": "body-inspection.json",
+      "cleanup": "body-final.cleanup.json"
+    },
+    {
+      "atlas": "effects",
+      "file": "effects-final.png",
+      "sha256": "dbeb66db5ed05b36050bab541e84bca4d3377a1ae9f0d3b30db28ab69623253c",
+      "inspection": "effects-inspection.json",
+      "cleanup": "effects-final.cleanup.json"
+    },
+    {
+      "atlas": "ui",
+      "file": "ui-final.png",
+      "sha256": "b76a02da8c7b61f6ff573e7ee92011aa4ab7fd0de7d85b7d955947fffe22f264",
+      "inspection": "ui-inspection.json",
+      "cleanup": "ui-final.cleanup.json"
+    }
+  ],
+  "staticAssetChecks": {
+    "bodyPoses": 32,
+    "effectPhases": 24,
+    "uiElements": 8,
+    "visuallyReviewed": true,
+    "transparentGuttersConnectedBodiesAnchorsPassed": true
+  },
+  "loader": {
+    "actualFolderValidationPassed": true,
+    "actualZipValidationPassed": true,
+    "checkedZipSha256": "9d36e17eff7731d5d3763ffe308143e718e835b1cbf33d08f8b7b1709e9de728",
+    "checkedZipScope": "New resources and manifest; subsequent provenance-only clarification is validated again by BuildRelease."
+  },
+  "nativeBindingsPreserved": {
+    "body": true,
+    "weapons": true,
+    "effects": true,
+    "visuals": true,
+    "ui": true,
+    "audio": true
+  },
+  "bodyStates": 1100,
+  "orderedBodyFrames": 6405,
+  "sameCharacterAudioFilesPreserved": {
+    "attack.wav": true,
+    "audio-provenance.json": true,
+    "battle_music.wav": true,
+    "charge_loop.wav": true,
+    "dash.wav": true,
+    "death.wav": true,
+    "explore_music.wav": true,
+    "hurt.wav": true,
+    "impact.wav": true,
+    "menu.wav": true,
+    "menu_music.wav": true,
+    "revive.wav": true,
+    "slash.wav": true
+  },
+  "builtinPacks": [
+    {
+      "id": "fan.chiikawa",
+      "version": "1.0.0",
+      "folder": "chiikawa",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.furuhonya",
+      "version": "1.0.0",
+      "folder": "furuhonya",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.hachiware",
+      "version": "0.1.2",
+      "folder": "hachiware",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.kurimanju",
+      "version": "1.0.0",
+      "folder": "kurimanju",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.momonga",
+      "version": "1.0.1",
+      "folder": "momonga",
+      "unchangedFrom020Installer": null
+    },
+    {
+      "id": "fan.rakko",
+      "version": "1.0.0",
+      "folder": "rakko",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.shisa",
+      "version": "1.0.0",
+      "folder": "shisa",
+      "unchangedFrom020Installer": true
+    },
+    {
+      "id": "fan.usagi",
+      "version": "1.0.0",
+      "folder": "usagi",
+      "unchangedFrom020Installer": true
+    }
+  ],
+  "builtinPackCount": 8,
+  "newNativeGameVisualCheck": {
+    "status": "incomplete",
+    "passed": false,
+    "attempts": "attempts.json"
+  },
+  "saveConfigProtection": {
+    "saveFiles": 27,
+    "saveHashesUnchanged": true,
+    "mainConfigUnchanged": true,
+    "originalConfigSha256": "b978f74f39d094e196872f639af481bf760cc9589cbcd41bb279d8a585e001d6",
+    "fixtureConfigFinallyRestored": true,
+    "fixtureRestoreMethod": "Copied unchanged original config bytes after all game processes exited; BepInEx startup had changed only the version comment."
+  },
+  "releaseArchiveVerification": "Separate release-verification JSON attached to the GitHub prerelease after BuildRelease completes.",
+  "omittedByUserRequest": [
+    "listening",
+    "repeated full eight-pack combat",
+    "long soak",
+    "repeated persisted startup"
+  ],
+  "priorGameEvidence": "../series-020-20261006/README.md; not counted as a pass for new assets"
+}

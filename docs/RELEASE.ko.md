@@ -22,7 +22,7 @@ Unity 예제를 재생성하려면 `powershell -File tools/BuildUnity.ps1` 후 `
 python tools/generate_catalog.py "C:\Program Files (x86)\Steam\steamapps\common\Sephiria" --runtime "C:\Program Files (x86)\Steam\steamapps\common\Sephiria\BepInEx\plugins\SephiriaSkins\Export\catalog.json"
 ```
 
-GitHub 저장소는 [westernbear/SephiriaSkins](https://github.com/westernbear/SephiriaSkins)입니다. 추적 소스를 main에 올리고 Releases에 설치 ZIP·소스 ZIP·개별 스킨 ZIP·SHA256SUMS를 첨부합니다. 다음 배포 0.2.0은 프리릴리스로 표시합니다. 게임 설치본을 새로 조사한 뒤 카탈로그를 갱신한 경우 런타임 검증을 다시 수행하세요.
+GitHub 저장소는 [westernbear/SephiriaSkins](https://github.com/westernbear/SephiriaSkins)입니다. 추적 소스를 main에 올리고 Releases에 설치 ZIP·소스 ZIP·개별 스킨 ZIP·SHA256SUMS를 첨부합니다. 0.2.1도 프리릴리스로 표시하며 설치 ZIP에 주요 8개 테마를 기본 스킨으로 모두 포함합니다. 게임 설치본을 새로 조사한 뒤 카탈로그를 갱신한 경우 런타임 검증을 다시 수행하세요.
 
 진단 실행은 일반 설치에 필요하지 않습니다. 게임이 종료된 상태에서 Steam 시작 옵션에 아래 중 하나를 넣고 실행합니다. 실행 후 시작 옵션을 비웁니다. 각 진단은 메모리 전용 프로필을 만들며 기존 슬롯과 Steam Cloud에 저장하지 않습니다. 선택 설정·언어·해상도·입력 설정은 종료 시 복원합니다. 기존 Build Overlay 설정은 그대로 함께 로드합니다.
 
@@ -64,4 +64,4 @@ python tools/verify_visual_results.py docs/evidence/visual-0.1.2-20261005.json d
 
 짧은 적용·교체 회귀 검사에는 `powershell -File tools/TestGamePacks.ps1 -SkipPlay -SkipOutput -SkipPersisted`를 사용합니다. 전체 팩을 한 호스트에서 교체하고 UI OFF 재로드·원본 무기/마스크·자원 복원을 확인합니다. 폴더/ZIP과 오디오·본체 출력만 확인하려면 `-SkipPlay -SkipCycle -SkipPersisted`를 사용합니다. 이 짧은 실행은 팩별 전체 공격·실제 적 전투·장시간 플레이·설정 재실행 검사로 계산하지 않습니다.
 
-출시 판정과 확인 범위는 [검증 상태](VERIFICATION.md)에 있습니다. 0.2.0은 사용자가 줄인 검증 범위를 기록한 프리릴리스이며, 규격 버전 1 지원을 전체 콘텐츠 검증으로 확대하지 않습니다.
+출시 판정과 확인 범위는 [검증 상태](VERIFICATION.md)에 있습니다. 0.2.0과 0.2.1은 사용자가 줄인 검증 범위를 기록한 프리릴리스이며, 규격 버전 1 지원을 전체 콘텐츠 검증으로 확대하지 않습니다. 0.2.1의 새 모몽가 화면 진단은 Steam 종료로 미완료였으며 이전 실게임 기록으로 대체하지 않습니다.

@@ -1,0 +1,10 @@
+{
+  "run": "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\momonga-021-game-20261006-230326\\BepInEx\\plugins\\SephiriaSkins\\Export\\diagnostics\\fan.momonga\\20261006T230753366Z-2bd8ebcc027740bb853da14e154a530a",
+  "fixture": "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\momonga-021-game-20261006-230326",
+  "pluginSha256": "1ae01fc2f0b970ac99860190686cedbd8ffeded52392da07057596e2520fb772",
+  "saveFiles": 27,
+  "savesRestored": true,
+  "fixtureConfigRestored": true,
+  "mainConfigRestored": true,
+  "scope": "Momonga only; native dagger basic/dash/special pixel ON/OFF visual composition, front/back, revive, UI OFF reload and cleanup. No repeated all-pack combat, listening or long soak."
+}

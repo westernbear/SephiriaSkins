@@ -1,0 +1,35 @@
+     게임 시작 (Sephiria)
+     버전: 1.0.33
+     실행 시간 (KST): 2026-10-06 23:08
+==================================================
+ko-KR
+세이브 파일 로드 시도 C:\Users\singlerr\Documents\Saved Games\Sephiria\SLOT1.sav
+일반 세이브 파일 로드 작업 성공
+세이브 파일 로드 완료
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Failed to initialize relay network access: Steamworks is not initialized.
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+[Steamworks.NET] SteamAPI_Init() failed. Refer to Valve's documentation or the comment above this line for more information.
+OnApplicationQuit
+Destroyed AppWorldUI
+Destroyed AppUI
+Destroyed Managers
+Destroyed SteamManager
+SteamInvitation OnDestroy
+SteamInitializationError : Steam Initialization failed, check the log for more information.
+Failed to upload Crash Report to Cloud Diagnostics.
+Exception: Steam Initialization failed, check the log for more information.
+UnityEngine.DebugLogHandler:Internal_LogException_Injected(Exception, IntPtr)
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+SteamInvitation:HandleSteamInitializationError(String)
+SteamInvitation:OnDestroy()
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+GarbageCollector disposing of ComputeBuffer. Please use ComputeBuffer.Release() or .Dispose() to manually release the buffer.

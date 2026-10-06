@@ -1,0 +1,267 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T050120719Z-80be76a86b824ae0957af14771e67df4",
+  "packs": [
+    {
+      "skin": "fan.hachiware",
+      "applied": true,
+      "assets": 69,
+      "audioReplacements": 1,
+      "decodedAudioFormats": [
+        ".wav"
+      ],
+      "local": true,
+      "sprite": "fan.hachiware:body.0.0",
+      "collisionRadiusUnchanged": true,
+      "frames": {
+        "checkedFrames": 6405,
+        "multipleRendererFrames": 6405,
+        "materialsChecked": 0,
+        "particlesChecked": 0,
+        "failures": 0,
+        "states": 1100,
+        "timelineUnchanged": true,
+        "expectedStates": 1100,
+        "missingStates": []
+      },
+      "pooledEffect": {
+        "available": true,
+        "localReplacement": true,
+        "ownerCleared": true,
+        "recycledOriginal": true
+      },
+      "audioSettings": {
+        "available": true,
+        "masterMute": true,
+        "pause": true,
+        "pitchTracking": true,
+        "originalSuppressed": true
+      },
+      "musicStop": {
+        "available": true,
+        "started": true,
+        "originalMutedDuringStop": true,
+        "replacementStopped": true
+      },
+      "failedReloadPreserved": true,
+      "negativeReloads": [
+        {
+          "kind": "traversal",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "duplicate path",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "PNG decoding",
+          "acceptedSnapshot": true,
+          "decodeFixture": true,
+          "preserved": true
+        }
+      ],
+      "repeatedReload": true,
+      "immediateReapply": true,
+      "fallbacksExcludeSkinFonts": true,
+      "uiRoundTrip": {
+        "available": true,
+        "checkedGraphics": 1772,
+        "changed": 1772,
+        "textPreserved": true,
+        "restored": true,
+        "failures": []
+      },
+      "selector": {
+        "avatarInputBlocked": true,
+        "closed": true,
+        "native": true,
+        "detailsOpened": true,
+        "detailsClosed": true
+      },
+      "fonts": [
+        {
+          "name": "AdventureFont(Clone)",
+          "fallbacks": 12,
+          "koreanFallback": true
+        }
+      ]
+    },
+    {
+      "skin": "example.simple",
+      "applied": true,
+      "assets": 1,
+      "audioReplacements": 0,
+      "decodedAudioFormats": [],
+      "local": true,
+      "sprite": "example.simple:idle",
+      "collisionRadiusUnchanged": true,
+      "frames": {
+        "checkedFrames": 474,
+        "multipleRendererFrames": 474,
+        "materialsChecked": 0,
+        "particlesChecked": 0,
+        "failures": 0,
+        "states": 79,
+        "timelineUnchanged": true,
+        "expectedStates": 79,
+        "missingStates": []
+      },
+      "pooledEffect": {
+        "available": false
+      },
+      "audioSettings": {
+        "available": false
+      },
+      "musicStop": {
+        "available": false
+      },
+      "failedReloadPreserved": true,
+      "negativeReloads": [
+        {
+          "kind": "traversal",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "duplicate path",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "PNG decoding",
+          "acceptedSnapshot": true,
+          "decodeFixture": true,
+          "preserved": true
+        }
+      ],
+      "repeatedReload": true,
+      "immediateReapply": true,
+      "fallbacksExcludeSkinFonts": true,
+      "uiRoundTrip": {
+        "available": false
+      },
+      "selector": {
+        "avatarInputBlocked": true,
+        "closed": true,
+        "native": true,
+        "detailsOpened": true,
+        "detailsClosed": true
+      },
+      "fonts": []
+    },
+    {
+      "skin": "example.unity",
+      "applied": true,
+      "assets": 6,
+      "audioReplacements": 0,
+      "decodedAudioFormats": [
+        ".ogg"
+      ],
+      "local": true,
+      "sprite": "diamond",
+      "collisionRadiusUnchanged": true,
+      "frames": {
+        "checkedFrames": 6405,
+        "multipleRendererFrames": 6405,
+        "materialsChecked": 6405,
+        "particlesChecked": 6405,
+        "failures": 0,
+        "states": 1100,
+        "timelineUnchanged": true,
+        "expectedStates": 1100,
+        "missingStates": []
+      },
+      "pooledEffect": {
+        "available": false
+      },
+      "audioSettings": {
+        "available": false
+      },
+      "musicStop": {
+        "available": false
+      },
+      "failedReloadPreserved": true,
+      "negativeReloads": [
+        {
+          "kind": "traversal",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "duplicate path",
+          "acceptedSnapshot": false,
+          "decodeFixture": false,
+          "preserved": true
+        },
+        {
+          "kind": "PNG decoding",
+          "acceptedSnapshot": true,
+          "decodeFixture": true,
+          "preserved": true
+        }
+      ],
+      "repeatedReload": true,
+      "immediateReapply": true,
+      "fallbacksExcludeSkinFonts": true,
+      "uiRoundTrip": {
+        "available": true,
+        "checkedGraphics": 80,
+        "changed": 80,
+        "textPreserved": true,
+        "restored": true,
+        "failures": []
+      },
+      "selector": {
+        "avatarInputBlocked": true,
+        "closed": true,
+        "native": true,
+        "detailsOpened": true,
+        "detailsClosed": true
+      },
+      "fonts": [
+        {
+          "name": "AdventureFont(Clone)",
+          "fallbacks": 12,
+          "koreanFallback": true
+        }
+      ]
+    }
+  ],
+  "zip": [
+    {
+      "skin": "fan.hachiware",
+      "applied": true,
+      "assets": 69,
+      "duplicateIdsExcludeBoth": true
+    },
+    {
+      "skin": "example.simple",
+      "applied": true,
+      "assets": 1,
+      "duplicateIdsExcludeBoth": true
+    },
+    {
+      "skin": "example.unity",
+      "applied": true,
+      "assets": 6,
+      "duplicateIdsExcludeBoth": true
+    }
+  ],
+  "lobby": {
+    "created": true,
+    "members": 1,
+    "privacy": "k_ELobbyTypePrivate",
+    "error": null
+  },
+  "errors": [],
+  "server": true,
+  "client": true,
+  "local": true
+}

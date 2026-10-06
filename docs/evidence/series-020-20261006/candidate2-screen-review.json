@@ -1,0 +1,46 @@
+{
+  "scope": "Direct visual review of selected actual-game PNGs. Full captures contain game artwork and remain local. Only relative filenames and hashes are recorded here; not every screen/frame/content item was manually inspected. Shore masks can clip reflections in the same way as native sprites; death/blinking can intentionally hide the body.",
+  "packs": {
+    "fan.hachiware": {
+      "runId": "20261006T113658663Z-0afe1a07df584b139129262958aa6d66",
+      "pluginSha256": "6af1f8e9ae5c659d4bd93a5311d907d249249f145fa82d8dfc53ea7a456f599c",
+      "captures": [
+        {
+          "file": "visual/weapon-0-front.png",
+          "sha256": "919b1ff327ef404c16748f3aeece6efc684e3387abcb9814043637882c36f774",
+          "finding": "Existing blue head markings, white face and paws remain complete. Blue sasumata and native secondary slot remain separate."
+        },
+        {
+          "file": "visual/weapon-0-back.png",
+          "sha256": "8970479c942b604c59acf24441309b5f1a23c32a6f6a57915db5a3366906f90f",
+          "finding": "Existing faceless blue/white back and attached tail; no adjacent atlas fragments."
+        },
+        {
+          "file": "visual/attack-400-special-1-smooth.png",
+          "sha256": "5af2233bd81dc6b35214f43dad7c4251d899f44d6ebfc455649e315383d45c5b",
+          "finding": "Existing blue slash follows original extent and ends independently from the separate blue weapon; native yellow impact marks remain transient."
+        },
+        {
+          "file": "play-inventory.png",
+          "sha256": "5985e12383ee99f706e8542a2cf6438c34c0a1b1e6d9d042cdefe4553169c3ca",
+          "finding": "Native 24-slot grid/selection outline retained; original Hachiware UI theme and text are legible."
+        },
+        {
+          "file": "play-death.png",
+          "sha256": "62c7d7b205875cc15ce4e1d8eb0a2b57c6900b17f12c22423714eb3c5b23e085",
+          "finding": "Native death frame has HP zero and the expected native body-hiding/blinking behavior."
+        },
+        {
+          "file": "visual/revive-1.png",
+          "sha256": "c6d70eb4c36ef740bac9150176fff8be1c6fd69f00e9a1a7a6f6c85d2c6dc409",
+          "finding": "Correct existing blue/white Hachiware silhouette during native revival; weapon remains separate."
+        },
+        {
+          "file": "visual/water-theme-False-1.png",
+          "sha256": "636374a8abb03fc7830c898ca679ac71726b4ef214d8d2aac51580d47b298e3d",
+          "finding": "Smooth back view at a solid shore; native shoreline stencil clips the reflection without neighboring-cell fragments."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T075725854Z-2d8861a9866e4184834b019f981e50a9",
+  "pluginSha256": "abbf9e9a04f278bee9352bfc662524194ab0aaf8ccdaca083a52598741d27f2b",
+  "singleTrial": {
+    "id": 400,
+    "mode": "special",
+    "fireTimingDifferenceMs": 0.0
+  },
+  "liveOutgoingHits": 12,
+  "liveIncomingHits": 4,
+  "mine": {
+    "available": true,
+    "weapon": 118,
+    "target": "MoleHandBomber_Fanatic(Clone)",
+    "fires": 1,
+    "landed": true,
+    "targetMoved": true,
+    "detonated": true,
+    "hits": 1,
+    "rawDamage": [
+      34.24
+    ],
+    "verifiedGroundCorridor": "(513.50, 495.50, 0.00)",
+    "reason": "Native proximity detonation and actual enemy hit observed.",
+    "localThemed": true,
+    "scope": "one native mine deployment and proximity detonation against an actual AI enemy; not an A/B damage comparison or homing-mine coverage"
+  },
+  "cleanup": {
+    "themeNull": true,
+    "audioChannels": 0,
+    "virtualDeviceRemoved": true,
+    "configBytesRestored": true,
+    "profile": "",
+    "profileFileAbsent": true
+  },
+  "scope": "One native 400 special comparison and real enemy/mine encounter; NOT a full 18-trial, visual, endurance or all-pack release pass."
+}

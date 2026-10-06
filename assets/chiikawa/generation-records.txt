@@ -1,0 +1,54 @@
+Exact actual production history; original PNGs retained unchanged.
+
+Generation 1: body-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production 2D body sprite atlas.
+Create brand-new Chiikawa-series fan art of Chiikawa: a very small pure-white round bear-like creature, two tiny round ears, no hair cap, tiny white round tail, dark brown oval eyes with white highlights, slightly worried gentle eyebrows, three short blush lines on each pink cheek, little W mouth and tiny white paws. No clothing.
+Composition: wide 2048x1024 PNG atlas, exactly 8 columns and 4 rows, 32 equal 256x256 cells. One complete connected UNARMED character per cell, horizontally centered feet, identical character proportions across poses, standing height about 165 pixels (include ears and cape). Leave at least 32 pixels genuinely empty transparent padding around the whole silhouette. Feet baseline about y=210 in each cell except the lying pose. Every ear, tail, paw and cape belongs to the connected body silhouette. No grid lines.
+Row 1 FRONT left to right: standing idle eyes open; same idle blinking; walk left foot forward; walk right foot forward; low leaning dash paws tucked; braced charging paws near chest; flinching hurt eyes shut; lying defeated on side eyes closed, intact ears and tail/cape.
+Row 2 BACK facing away: these same eight poses from behind, ear twitch instead of blinking; absolutely no eyes, nose, mouth or face on any back pose. Preserve the actual back markings and attached tail/cape described above.
+Row 3 FRONT unarmed attack phases: neutral ready; paws draw back to wind up; paws reach forward; broad paw swing; peak follow-through leaning forward; recover paws; return stance; neutral ready. Eight slightly distinct complete character poses, no held object.
+Row 4 BACK unarmed attack phases: those same eight phases from behind with no face. Keep all ears, tail/cape and rear markings intact.
+Style: clean flat kawaii 2D sprite illustration, thick consistent dark cocoa outline legible at tiny game size, solid original character colors, minimal antialiasing, no gradients, grain or glow. REAL transparent alpha. No weapon, magic, effect, sparks, dust, shadow, ground, floating fragment, text, label, logo, watermark or extra character. Body only; the game supplies separate weapons and effects.
+All white body interiors must be SOLID opaque white (alpha 255); only exterior background is transparent. Keep every dark silhouette outline closed. Maintain exactly eight poses in each of four rows, evenly separated with broad empty gutters.
+
+Generation 2: effects-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production game effect-phase atlas.
+Create brand-new chiikawa fan-art game effects using soft pink, white and pale peach, with delicate rounded ribbon crescents and small airy petal-shaped traces. Exactly 4 columns and 6 rows on a 1024x1536 PNG atlas: 24 equal cells, truly transparent alpha background, at least 36px empty gutters around each cell's ink. Each row uses the same cell center and maximum extent across four phases, changing the amount of ink rather than the center. No character, body part, weapon, text or grid. Keep every ending cell faint but visibly nonempty.
+Each row left to right: BEGINNING, PEAK, RELEASE, FAINT ENDING.
+Row 1 slim open curved attack slash, larger open crescent peak, shortening release, faint short crescent trace.
+Row 2 short horizontal dash streak, broader two-streak peak, shortening release, faint horizontal trace.
+Row 3 small rounded projectile pointing RIGHT, slightly larger with short leftward trail, small fading projectile, faint tiny oval trace.
+Row 4 small impact puff, medium airy impact puff, breaking fading puff, tiny faint puff.
+Row 5 small open circular guard ring, larger HOLLOW ring, thin fading ring, faint short ring arc.
+Row 6 small horizontal revive ellipse with tiny glint above, two restrained light ellipses and tiny glint, fading ellipses, faint short ellipse trace.
+Clean flat airy game effects, low-opacity fading phases, restrained thin edges, transparent interiors. Preserve attack direction and enemy visibility. No giant stars, opaque flash disks, bloom, speckles, random pixels, backgrounds or shadows.
+
+Generation 3: ui-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production game UI sprite atlas, not a screenshot.
+Create a new chiikawa fan-art UI atlas: EXACTLY 4 columns and 2 rows on a wide 2048x1024 PNG, eight separate centered elements, at least 40px truly empty transparent gutters. Thin repeatable borders and simple corners for nine-slicing. Palette soft pink, white and pale peach, with QUIET dark plum interiors on every panel/button to keep existing white multilingual text readable. Decorative tiny attached round-bear-ear corners stay attached to the outer border. Draw no text or numbers.
+Top row: dark dialogue panel; dark inventory panel; dark normal button; dark selected button with a restrained double border.
+Bottom row: a dedicated large FRONT FACE PORTRAIT in a simple round medallion, faithfully recognizable from these traits: Chiikawa: a very small pure-white round bear-like creature, two tiny round ears, no hair cap, tiny white round tail, dark brown oval eyes with white highlights, slightly worried gentle eyebrows, three short blush lines on each pink cheek, little W mouth and tiny white paws. No clothing.; dark horizontal HUD bar with an uncluttered center and tiny attached outer-left motif; dark tooltip panel; dark header panel with thin accent top edge.
+Clean flat 2D illustration with consistent dark outlines and transparent alpha outside each sprite. No gradients, grain, glow, central large ornaments, background, grid, watermark, extra portrait outside its cell, full interface, text, number or logo. Portrait is the only character illustration; leave panel centers free for native text.
+
+Generation 4: weapon-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production isolated 2D game weapon sprite.
+A single complete PINK SASUMATA: one long straight slim pink shaft with a symmetric open U-shaped two-prong fork at its top, rounded pale-white bead-like caps on the two prong tips. No extra prongs. Upright, shaft bottom down, fork up, whole object centered. Clean dark-cocoa outline, flat pink fill and pale-white tip caps.
+1024x1024 PNG, real transparent alpha, one centered complete weapon inside a single cell with 100px empty padding. Flat kawaii game art with dark outline. No hand, character, shadow, ground, light flare, magic, text, logo or watermark. Do not add the weapon to a body atlas.
+
+Generation 5: ui-v2-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: edit ui-generated.png
+Use case: precise-object-edit. Edit this Chiikawa production UI atlas only. Remove the nine drawn inventory slot outlines from the TOP ROW SECOND panel and give it a plain quiet dark-plum center. The native game draws its own slots, labels and controls. Keep the original pink/white palette, dark panel centers, attached round ear corners, eight element roles and recognizable Chiikawa portrait. Keep the background truly transparent. Maintain exactly four equal columns and two equal rows, with every complete sprite fully inside its own equal cell and at least 28 pixels of empty padding on all four sides. Slightly smaller complete panels are preferable to cropped borders; do not let the dialogue border or HUD flower extend across a cell boundary. No invented slots, text, numbers, grids, logos or floating decorations anywhere. This is individual nine-slice sprites, not a full screenshot.

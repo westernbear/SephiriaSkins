@@ -1,0 +1,141 @@
+{
+  "character": "furuhonya",
+  "format": "mono 16-bit PCM at 22050 Hz",
+  "files": [
+    {
+      "file": "attack.wav",
+      "sha256": "cbc960de83bea17f866492f541e160905974aa8dd44759f8c45d3dc2ed3b38f1",
+      "samples": 5645,
+      "seconds": 0.2560090702947846,
+      "peak": 0.32157353434858243,
+      "rms": 0.11346959080865845,
+      "dcMean": 1.713794066234032e-06,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "battle_music.wav",
+      "sha256": "61dc9c940f759131e0843ad28307484e9437d2842b4f7d951e7eed50083d9020",
+      "samples": 340212,
+      "seconds": 15.429115646258504,
+      "peak": 0.315256202887051,
+      "rms": 0.061987290558466204,
+      "dcMean": 5.168497761626663e-06,
+      "loop": true,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "charge_loop.wav",
+      "sha256": "7b0b81606b0528ca441b2b1c993d1449c9e28c212d7141da5bf8d084c726f927",
+      "samples": 17640,
+      "seconds": 0.8,
+      "peak": 0.08780175176244392,
+      "rms": 0.06114942434981744,
+      "dcMean": 0.0,
+      "loop": true,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "dash.wav",
+      "sha256": "bb087f264ae5627f16f66008f9c711228f76c218b48ab79286e89b4e1ad0312b",
+      "samples": 4851,
+      "seconds": 0.22,
+      "peak": 0.2722861415448469,
+      "rms": 0.05612152395451511,
+      "dcMean": -8.461635795756798e-06,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "death.wav",
+      "sha256": "f3cbecc252c822f5549446ffd6f7601eb6b51589a347a1fe09d9ae94710192b5",
+      "samples": 12657,
+      "seconds": 0.5740136054421768,
+      "peak": 0.32575457014679404,
+      "rms": 0.10662973941129736,
+      "dcMean": -1.5190535648161674e-07,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "explore_music.wav",
+      "sha256": "757f1c5ad4930450ad59598b30c8bcbe757d5d50e4c870e10411935ba7e8c644",
+      "samples": 415059,
+      "seconds": 18.823537414965987,
+      "peak": 0.2666096987823115,
+      "rms": 0.05635011181007826,
+      "dcMean": 2.0495964468748337e-06,
+      "loop": true,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "hurt.wav",
+      "sha256": "79e4d1025fb4aa7f99bb229f9493a6f9f959565baaa838bee3193b1c5dd2d97c",
+      "samples": 6748,
+      "seconds": 0.30603174603174604,
+      "peak": 0.32374034852137823,
+      "rms": 0.11585610801886582,
+      "dcMean": 1.6507492529251593e-06,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "impact.wav",
+      "sha256": "93a346d54352dbab4cedb55648a66f638225173d79bd350c65d3ee89a646cb63",
+      "samples": 3528,
+      "seconds": 0.16,
+      "peak": 0.26987517929624316,
+      "rms": 0.06587026774757698,
+      "dcMean": 0.00020259169272331468,
+      "loop": false,
+      "loopBoundaryDelta": 3.051850947599719e-05
+    },
+    {
+      "file": "menu.wav",
+      "sha256": "baddbec4ffc6db323acbc69529073094405819743bdf0f927b98d289a8c49bb0",
+      "samples": 2646,
+      "seconds": 0.12,
+      "peak": 0.2109744560075686,
+      "rms": 0.07347261299221758,
+      "dcMean": -0.0004340640913150712,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "menu_music.wav",
+      "sha256": "840b2b60e08742e7c46a47ac4910383bc16351894e64424022490bd805d1c87a",
+      "samples": 461176,
+      "seconds": 20.91501133786848,
+      "peak": 0.27008880886257514,
+      "rms": 0.054229477828486916,
+      "dcMean": 1.8003681215067125e-06,
+      "loop": true,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "revive.wav",
+      "sha256": "94734b4e64b1be94b88a8b93de9c53d7fff9d75fdf3c7ac6626896d634116720",
+      "samples": 11114,
+      "seconds": 0.5040362811791383,
+      "peak": 0.32374034852137823,
+      "rms": 0.12958690930368583,
+      "dcMean": -2.622384069603862e-06,
+      "loop": false,
+      "loopBoundaryDelta": 0.0
+    },
+    {
+      "file": "slash.wav",
+      "sha256": "6e5b65f388b4281dade4efc8aedfe713e584f11ffae60f85986dec853370bf84",
+      "samples": 3969,
+      "seconds": 0.18,
+      "peak": 0.25513473921933655,
+      "rms": 0.06209797478444971,
+      "dcMean": -0.00030916811010604566,
+      "loop": false,
+      "loopBoundaryDelta": 3.051850947599719e-05
+    }
+  ],
+  "technicalChecksPassed": true,
+  "listeningConfirmed": false,
+  "scope": "File integrity, decoded PCM, nonempty signal, peak headroom and loop endpoints; does not establish perceived sound quality or native event playback"
+}

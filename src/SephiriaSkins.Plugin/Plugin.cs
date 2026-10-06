@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 namespace SephiriaSkins.Plugin;
 
-[BepInPlugin(Id, "Sephiria Skins", "0.1.2")]
+[BepInPlugin(Id, "Sephiria Skins", "0.2.0")]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "dev.sephiria.skins";
@@ -18,12 +18,14 @@ public sealed class Plugin : BaseUnityPlugin
     internal RuntimeTheme? Theme;
     private readonly ThemeTransaction<RuntimeTheme> transaction = new();
     internal AssetCatalog Catalog = new();
+    internal DiagnosticRun Diagnostics = null!;
     private Harmony? harmony;
     private ConfigEntry<string> selected = null!;
     private ConfigEntry<Key> shortcut = null!;
     private ConfigEntry<bool> pixelArt = null!, gameUi = null!;
     internal bool PixelArt => pixelArt.Value;
     internal bool GameUi => gameUi.Value;
+    internal string SelectedId => selected.Value;
     internal void SetPixelArt(bool value)
     {
         if (loading || pixelArt.Value == value) return;
@@ -38,6 +40,7 @@ public sealed class Plugin : BaseUnityPlugin
     private List<PackEntry> packs = new();
     private string root = "", status = "", unsupported = "";
     private bool loading, open, quitting;
+    private byte[]? diagnosticConfigSnapshot;
     private float nextTick;
     private readonly NativeSelector selector = new();
     private readonly HashSet<string> errors = new();
@@ -48,6 +51,8 @@ public sealed class Plugin : BaseUnityPlugin
     {
         Instance = this;
         root = Path.GetDirectoryName(Info.Location);
+        if (Environment.GetCommandLineArgs().Any(a => a == "--skins-probe" || a == "--skins-playtest") && File.Exists(Config.ConfigFilePath))
+            diagnosticConfigSnapshot = File.ReadAllBytes(Config.ConfigFilePath);
         selected = Config.Bind("Skin", "Selected", "", "Pack ID. Empty uses the original game appearance.");
         shortcut = Config.Bind("Keys", "Selector", Key.F6, "Open/close skin selector.");
         pixelArt = Config.Bind("Appearance", "PixelArt", true, "Pixel rendering for skin body, weapons and effects.");
@@ -71,7 +76,14 @@ public sealed class Plugin : BaseUnityPlugin
         ReloadList();
         Logger.LogInfo("SephiriaSkins ready; catalog=" + Catalog.Id + "; animations=" + Catalog.Animations.Count + "; ui=" + Catalog.Ui.Count + "; audio=" + Catalog.Audio.Count + "; " + unsupported);
         var diagnosticRun = Environment.GetCommandLineArgs().Any(a => a == "--skins-probe" || a == "--skins-playtest");
-        if (selected.Value.Length > 0 && unsupported.Length == 0 && !baselineProbe && !diagnosticRun)
+        if (diagnosticRun)
+        {
+            try { Diagnostics = new DiagnosticRun(root, Environment.GetCommandLineArgs()); }
+            catch (Exception e) { Logger.LogError("Diagnostic arguments rejected: " + e.Message); return; }
+            Logger.LogInfo("SKINS_DIAGNOSTIC_OUTPUT " + Diagnostics.DirectoryPath);
+        }
+        if (selected.Value.Length > 0 && unsupported.Length == 0 && !baselineProbe &&
+            (!diagnosticRun || Environment.GetCommandLineArgs().Contains("--skins-playtest-persisted")))
         {
             var entry = packs.FirstOrDefault(p => p.Pack?.Manifest.Id == selected.Value && p.Error == null);
             if (entry != null) StartCoroutine(Apply(entry));
@@ -84,7 +96,7 @@ public sealed class Plugin : BaseUnityPlugin
             var priorPixel = PixelArt; var priorUi = GameUi;
             Application.runInBackground = true;
             StartCoroutine(PlayProbe.Run(this, Apply, RestoreOriginal, SetOpen, () => errors.ToArray(), root,
-                () => { selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save(); }));
+                () => { selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save(); RestoreDiagnosticConfig(); }));
         }
     }
     private void ReloadList()
@@ -176,6 +188,12 @@ public sealed class Plugin : BaseUnityPlugin
     {
         if (errors.Add(e.GetType().Name + e.Message)) Logger.LogError(e);
     }
+    private void RestoreDiagnosticConfig()
+    {
+        if (diagnosticConfigSnapshot != null) File.WriteAllBytes(Config.ConfigFilePath, diagnosticConfigSnapshot);
+    }
+    internal bool DiagnosticConfigRestored => diagnosticConfigSnapshot == null || File.Exists(Config.ConfigFilePath) &&
+        diagnosticConfigSnapshot.SequenceEqual(File.ReadAllBytes(Config.ConfigFilePath));
     private IEnumerator Probe()
     {
         var priorSelection = selected.Value;
@@ -191,22 +209,39 @@ public sealed class Plugin : BaseUnityPlugin
         var pending = new Stack<IEnumerator>(); pending.Push(ProbeSteps(value => session = value));
         while (pending.Count > 0)
         {
+            if (File.Exists(Diagnostics.File("cancel.request"))) { exceptions.Add("diagnostic cancelled by request"); break; }
             object? value = null; bool next;
             try { next = pending.Peek().MoveNext(); if (next) value = pending.Peek().Current; }
             catch (Exception e) { exceptions.Add(e.ToString()); break; }
             if (!next) { (pending.Pop() as IDisposable)?.Dispose(); continue; }
             if (value is IEnumerator nested) pending.Push(nested); else yield return value;
         }
+        while (pending.Count > 0) (pending.Pop() as IDisposable)?.Dispose();
         SetOpen(false); RestoreOriginal(); RuntimeProbe.LeaveLobby();
         if (Mirror.NetworkServer.active) Mirror.NetworkManager.singleton.StopHost();
         yield return new WaitForSecondsRealtime(3);
         var profileAbsent = session == null || (!SaveData.Exists(session.Profile) && !SaveData.Exists(session.Profile + "TMP"));
         session?.Dispose(); InputSystem.RemoveDevice(pad); InputSystem.settings.backgroundBehavior = priorBackground;
-        selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save();
-        File.WriteAllText(Path.Combine(root, "Export", "probe-cleanup.json"), Json.Write(new { exceptions, profileAbsent, themeNull = Theme == null, audioReplacements = Audio.ActiveReplacements, errors = errors.ToArray(),
-            fontLifetime = new { FontLifetime.RemovedFonts, FontLifetime.RemovedAtlases, FontLifetime.FaceResets } }));
+        selected.Value = priorSelection; pixelArt.Value = priorPixel; gameUi.Value = priorUi; Config.Save(); RestoreDiagnosticConfig();
+        File.WriteAllText(Diagnostics.File("probe-cleanup.json"), Json.Write(new { packId = Diagnostics.PackId, runId = Diagnostics.RunId, exceptions, profileAbsent, themeNull = Theme == null, audioReplacements = Audio.ActiveReplacements, errors = errors.ToArray(),
+            configBytesRestored = DiagnosticConfigRestored, fontLifetime = new { FontLifetime.RemovedFonts, FontLifetime.RemovedAtlases, FontLifetime.FaceResets } }));
         Application.logMessageReceived -= OnLog;
         if (Environment.GetCommandLineArgs().Contains("--skins-probe-exit")) Application.Quit();
+    }
+    // Combat A/B trials reuse a fully prepared theme. Reload/disposal have their
+    // own fixtures; decoding every resource for each swing needlessly dominates
+    // a full weapon inventory run. Only opt-in diagnostics can call these.
+    internal RuntimeTheme SuspendDiagnosticTheme()
+    {
+        if (Diagnostics == null || Theme == null) throw new InvalidOperationException("No diagnostic theme to suspend.");
+        var current = Theme;
+        Visuals.RestoreAll(); Ui.Restore(); Audio.Restore(); Theme = null;
+        return current;
+    }
+    internal void ResumeDiagnosticTheme(RuntimeTheme current)
+    {
+        if (Diagnostics == null || Theme != null) throw new InvalidOperationException("Invalid diagnostic theme resume.");
+        Theme = current; Visuals.Refresh(); Visuals.ApplyStatic(Theme); ApplyUi(); Audio.ThemeChanged();
     }
     private IEnumerator ProbeSteps(Action<DiagnosticSession> isolated)
     {
@@ -233,8 +268,10 @@ public sealed class Plugin : BaseUnityPlugin
         if (args.Contains("--skins-probe-packs") && !args.Contains("--skins-probe-baseline"))
         {
             ReloadList();
-            foreach (var entry in packs.Where(p => p.Error == null && p.Pack != null))
+            var diagnosticPacks = Diagnostics.ExplicitPack ? new[] { Diagnostics.Select(packs) } : packs.Where(p => p.Error == null && p.Pack != null).ToArray();
+            foreach (var entry in diagnosticPacks)
             {
+                Diagnostics.RecordManifest(entry);
                 var local = Ownership.Local;
                 var radius = local ? local!.TopdownRigidbody.MovementCollider.radius : 0;
                 yield return Apply(entry);
@@ -243,8 +280,18 @@ public sealed class Plugin : BaseUnityPlugin
                 var frameCheck = RuntimeProbe.CheckBodyFrames(this);
                 var pooledEffect = RuntimeProbe.CheckFxReuse(this);
                 var beforeFailure = Theme;
-                yield return Apply(new PackEntry { Source = Path.Combine(root, "Export", "missing-probe-pack.zip"), Pack = entry.Pack });
+                yield return Apply(new PackEntry { Source = Diagnostics.File("missing-probe-pack.zip"), Pack = entry.Pack });
                 var failedReloadPreserved = Theme == beforeFailure && Theme?.AssetCount > 0;
+                var negativeReloads = new List<object>();
+                foreach (var negative in RuntimeProbe.NegativePacks(this, entry))
+                {
+                    var acceptedSnapshot = false;
+                    try { PackReader.Read(negative.Source, Catalog); acceptedSnapshot = true; } catch (InvalidDataException) { }
+                    var validTheme = Theme;
+                    yield return Apply(new PackEntry { Source = negative.Source, Pack = entry.Pack });
+                    negativeReloads.Add(new { kind = negative.Label, acceptedSnapshot, decodeFixture = negative.DecodeFixture,
+                        preserved = ReferenceEquals(validTheme, Theme) && Theme?.AssetCount > 0 });
+                }
                 yield return Apply(entry);
                 var repeatedReload = Theme?.Pack.Manifest.Id == entry.Pack!.Manifest.Id;
                 RestoreOriginal(); yield return Apply(entry);
@@ -255,8 +302,10 @@ public sealed class Plugin : BaseUnityPlugin
                 var audioSettings = Audio.ProbeSettings();
                 object? musicStop = null;
                 yield return RuntimeProbe.CheckMusicStop(this, result => musicStop = result);
+                object? audioEvents = null;
+                yield return RuntimeProbe.CheckAudioEvents(this, value => audioEvents = value);
                 SetOpen(true); yield return null; yield return null;
-                RuntimeProbe.Capture(Path.Combine(root, "Export", "selector-" + entry.Pack!.Manifest.Id + ".png"), Logger.LogInfo);
+                RuntimeProbe.Capture(Diagnostics.File("selector-" + entry.Pack!.Manifest.Id + ".png"), Logger.LogInfo);
                 var selector = RuntimeProbe.CheckSelector(this, SetOpen);
                 bodySprite = local?.TopdownActor?.bodyRenderer?.sprite;
                 var result = new
@@ -273,7 +322,9 @@ public sealed class Plugin : BaseUnityPlugin
                     pooledEffect,
                     audioSettings,
                     musicStop,
+                    audioEvents,
                     failedReloadPreserved,
+                    negativeReloads,
                     repeatedReload,
                     immediateReapply,
                     fallbacksExcludeSkinFonts,
@@ -283,7 +334,7 @@ public sealed class Plugin : BaseUnityPlugin
                 };
                 results.Add(result); Logger.LogInfo("SKINS_PACK_PROBE " + Json.Write(result));
                 if (SystemInfo.graphicsDeviceType != UnityEngine.Rendering.GraphicsDeviceType.Null)
-                    RuntimeProbe.Capture(Path.Combine(root, "Export", "probe-" + entry.Pack.Manifest.Id + ".png"), Logger.LogInfo);
+                    RuntimeProbe.Capture(Diagnostics.File("probe-" + entry.Pack.Manifest.Id + ".png"), Logger.LogInfo);
                 RestoreOriginal();
                 var restoredSprite = local?.TopdownActor?.bodyRenderer?.sprite;
                 Logger.LogInfo("SKINS_RESTORE_PROBE " + Json.Write(new
@@ -296,18 +347,23 @@ public sealed class Plugin : BaseUnityPlugin
                 yield return new WaitForSecondsRealtime(0.2f);
                 if (args.Contains("--skins-probe-zip"))
                 {
-                    var archive = Path.Combine(root, "Export", "probe-" + Guid.NewGuid().ToString("N") + ".zip");
-                    System.IO.Compression.ZipFile.CreateFromDirectory(entry.Source, archive);
+                    var archive = Diagnostics.File("probe-" + entry.Pack.Manifest.Id + ".zip");
+                    if (Directory.Exists(entry.Source)) System.IO.Compression.ZipFile.CreateFromDirectory(entry.Source, archive);
+                    else File.Copy(entry.Source, archive);
                     yield return Apply(new PackEntry { Source = archive, Pack = entry.Pack });
-                    zipResults.Add(new { skin = entry.Pack!.Manifest.Id, applied = Theme?.Pack.Manifest.Id == entry.Pack.Manifest.Id, assets = Theme?.AssetCount ?? 0 });
+                    var duplicates = Diagnostics.File("duplicate-ids-" + entry.Pack.Manifest.Id); Directory.CreateDirectory(duplicates);
+                    File.Copy(archive, Path.Combine(duplicates, "one.zip")); File.Copy(archive, Path.Combine(duplicates, "two.zip"));
+                    var excluded = PackDiscovery.Scan(duplicates, Catalog);
+                    zipResults.Add(new { skin = entry.Pack!.Manifest.Id, applied = Theme?.Pack.Manifest.Id == entry.Pack.Manifest.Id, assets = Theme?.AssetCount ?? 0,
+                        duplicateIdsExcludeBoth = excluded.Count == 2 && excluded.All(p => p.Error?.StartsWith("Duplicate skin ID:", StringComparison.Ordinal) == true) });
                     RestoreOriginal();
                 }
             }
         }
         foreach (var a in Resources.FindObjectsOfTypeAll<Animator2D_Basic>())
             if (a && a.currentSet && Ownership.Role(a) is string role) RuntimeCatalog.Observe(Catalog, a, role);
-        RuntimeCatalog.Export(Catalog, Path.Combine(root, "Export"));
-        File.WriteAllText(Path.Combine(root, "Export", "probe-results.json"), Json.Write(new { packs = results, zip = zipResults, lobby, errors = errors.ToArray(), server = Mirror.NetworkServer.active, client = Mirror.NetworkClient.active, local = (bool)Ownership.Local }));
+        RuntimeCatalog.Export(Catalog, Diagnostics.DirectoryPath);
+        File.WriteAllText(Diagnostics.File("probe-results.json"), Json.Write(new { packId = Diagnostics.PackId, runId = Diagnostics.RunId, packs = results, zip = zipResults, lobby, errors = errors.ToArray(), server = Mirror.NetworkServer.active, client = Mirror.NetworkClient.active, local = (bool)Ownership.Local }));
         Logger.LogInfo("SKINS_PROBE animations=" + Catalog.Animations.Count + " ui=" + Catalog.Ui.Count + " audio=" + Catalog.Audio.Count + " unsupported=" + unsupported);
     }
     private void OnApplicationQuit() { quitting = true; Cleanup(); }

@@ -1,0 +1,92 @@
+{
+  "scope": "Direct visual review of selected actual-game PNGs. Full captures contain game artwork and remain local. Only relative filenames and hashes are recorded here; not every screen/frame/content item was manually inspected. Shore masks can clip reflections in the same way as native sprites; death/blinking can intentionally hide the body.",
+  "packs": {
+    "fan.chiikawa": {
+      "runId": "20261006T115406033Z-8dc11d59deb24705bbb7c2ec83173914",
+      "pluginSha256": "eac0d9912266b10dc61708416b3bfca0b39eea9f34fe1042e6e78a3e8074564d",
+      "captures": [
+        {
+          "file": "visual/weapon-0-front.png",
+          "sha256": "c64244c8d442993a4b6d9c6c2ef2fc4c3374306f477eb1e317c434712bfd95b6",
+          "finding": "White Chiikawa face, ears and paws are complete. Pink weapon and the native secondary shield slot follow their separate native renderers; mask records checked separately."
+        },
+        {
+          "file": "visual/weapon-0-back.png",
+          "sha256": "d1cd01043f9a7fa1b8eacf9ac7188efb92533d9d810ee220770df31c6dc5e486",
+          "finding": "Faceless white back, two ears and small attached round tail; no detached face or neighboring atlas fragments."
+        },
+        {
+          "file": "visual/attack-400-special-1-smooth.png",
+          "sha256": "cf88519d0315a8f185bd4a78c38209833c79458c7be1f5dacb4da8dbc153ef90",
+          "finding": "Airy pink slash uses original effect extent and separate pink sasumata. A transient yellow line dissipates into impact fragments in sample 2; no original weapon sprite remains in the recorded local weapon renderers."
+        },
+        {
+          "file": "visual/attack-400-special-2-smooth.png",
+          "sha256": "8cca939d165a0dcecc3387c37441ea2a0baed3e94e65efa227e62ace0b548260",
+          "finding": "Pink slash has shrunk to a fading arch; the native yellow impact line becomes small specks. Body and pink weapon remain separate."
+        },
+        {
+          "file": "visual/water-theme-False-1.png",
+          "sha256": "170ca66f7d3fb06c7b25b43fc58cbf880af2b40af761315d6098922fbde2329e",
+          "finding": "Smooth back view at a verified solid water shore. Native shoreline mask clips the reflection; this does not establish a complete visible reflected silhouette."
+        },
+        {
+          "file": "visual/revive-1.png",
+          "sha256": "d85536658491dd43746f8bc84d69f216ae7df680e7f1447d8931260c9c703ab0",
+          "finding": "Correct white facial silhouette reappears during native revival; weapon remains separate."
+        },
+        {
+          "file": "play-death.png",
+          "sha256": "f0f26dacea73443aaf9951450a2a46d6158002da3656dbea963c43b971adcb81",
+          "finding": "Native HP is zero and the sampled body is a darkened death silhouette. The pink weapon remains separate and enemies retain native artwork; revival restores the white body."
+        },
+        {
+          "file": "play-inventory.png",
+          "sha256": "32ff7210cf18b61c3d6c76d7b12ae980ded68018fd6fd5033442a6ecbd568a58",
+          "finding": "Native 24-slot grid and functional selection outline remain; plum/pink framing and Korean labels are legible."
+        }
+      ]
+    },
+    "fan.hachiware": {
+      "runId": "20261006T120016161Z-29a5b5176ea847c69d654a17165c20af",
+      "pluginSha256": "eac0d9912266b10dc61708416b3bfca0b39eea9f34fe1042e6e78a3e8074564d",
+      "captures": [
+        {
+          "file": "visual/weapon-0-front.png",
+          "sha256": "0205cc5ebbf563a9efb28e40ad6b835285a127890ee44f5a71add5d5bb2da167",
+          "finding": "Existing blue head markings, white face and paws remain complete. Blue sasumata and native secondary slot remain separate."
+        },
+        {
+          "file": "visual/weapon-0-back.png",
+          "sha256": "db7413c28d52573e5f9f3058a3793ebcf731063b6c9fd402507c57e2996dff1f",
+          "finding": "Existing faceless blue/white back and attached tail; no adjacent atlas fragments."
+        },
+        {
+          "file": "visual/attack-400-special-1-smooth.png",
+          "sha256": "f29007136e464beee924a01501fc5ffe82d8f2313219aa0d73116b78aa5b9b42",
+          "finding": "Existing blue slash uses the original effect extent and is separate from the blue sasumata; a native transient yellow impact line crosses the effect in this sample."
+        },
+        {
+          "file": "play-inventory.png",
+          "sha256": "2b0707b9e05798922096a5fd40128191110da80096e9b6d8e4905332cb5b3263",
+          "finding": "Native 24-slot grid/selection outline retained; original Hachiware UI theme and text are legible."
+        },
+        {
+          "file": "play-death.png",
+          "sha256": "b950dd36d69854c657dcb966ed9b12d0f2d0c3221106373771b5f1bc9aa12996",
+          "finding": "Native HP is zero; a darkened death silhouette and separate blue weapon remain above the unmodified enemy. Revival restores the existing blue/white body."
+        },
+        {
+          "file": "visual/revive-1.png",
+          "sha256": "1e64cb91a47202989979b4ae888d24bdde17c7c3baf8597e1704c7bd5095775f",
+          "finding": "Correct existing blue/white Hachiware silhouette during native revival; weapon remains separate."
+        },
+        {
+          "file": "visual/water-theme-False-1.png",
+          "sha256": "c86c9032ee70a782d3407148dbb168452af8412b2a198fc96f8ea7836c443f52",
+          "finding": "Smooth back view at a solid shore; native shoreline stencil clips the reflection without neighboring-cell fragments."
+        }
+      ]
+    }
+  }
+}

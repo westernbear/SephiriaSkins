@@ -1,0 +1,14 @@
+{
+  "startedUtc": "2026-10-06T04:00:34.604601Z",
+  "requestedMinutes": 60,
+  "elapsedSeconds": 3604.7395,
+  "cycles": 336,
+  "actions": 1008,
+  "skippedActions": 0,
+  "theme": "fan.hachiware",
+  "audioChannels": 1,
+  "failures": [],
+  "exceptions": 0,
+  "completed": true,
+  "scope": "automated native combat/movement, rendering, four switch combinations and reload in solo host; no remote participant"
+}

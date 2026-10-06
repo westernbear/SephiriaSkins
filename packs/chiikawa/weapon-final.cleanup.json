@@ -1,0 +1,49 @@
+{
+  "source": "weapon-generated.png",
+  "sourceSha256": "59080d789f915d29904fe7eb12eaf985157b4ca76007f3939e4f2b13e4d00b14",
+  "output": "weapon-final.png",
+  "outputSha256": "3f8f7d6bd349efaed9087ac4716b801cb74c023800dbac4db289ab7a4a49dbe7",
+  "mode": "ui",
+  "grid": [
+    1,
+    1
+  ],
+  "cellSize": 1280,
+  "sourceRowCuts": [
+    0,
+    1254
+  ],
+  "sourceColumnCuts": [
+    0,
+    1254
+  ],
+  "effectSeedLuma": null,
+  "effectOutlineRadius": null,
+  "transparentRgbCleared": true,
+  "method": "Background alpha isolation, zero RGB only for removed transparent pixels, and unscaled cell placement; retained artwork RGBA copied verbatim",
+  "cells": [
+    {
+      "sourceVisiblePixels": 68776,
+      "retainedVisiblePixels": 65494,
+      "rgbUnchanged": true,
+      "row": 0,
+      "column": 0,
+      "sourceCell": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "sourceInk": [
+        450,
+        48,
+        804,
+        1203
+      ],
+      "destination": [
+        463,
+        62
+      ]
+    }
+  ]
+}

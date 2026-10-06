@@ -1,14 +1,16 @@
 # Sephiria Skins
 
-세피리아용 스킨 모드 · 세피리아 1.0.33 · Windows x64 · 0.1.2 프리릴리스
+세피리아용 스킨 모드 · 세피리아 1.0.33 · Windows x64 · 0.2.0 프리릴리스
 
-기본 내장 스킨은 **하치와레 · 푸른 모험**입니다. 모든 무기를 파란 사스마타로 표시합니다.
+먼작귀 주요 8명의 본체·초상화·효과·UI·오디오 테마를 제공합니다.
 
 ## 설치
 
-1. 게임 폴더에 [BepInEx 5.4.23.5 x64](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.5)를 설치합니다.
-2. 게임을 한 번 실행한 뒤 종료합니다.
-3. [모드 설치 ZIP](https://github.com/westernbear/SephiriaSkins/releases/tag/v0.1.2)의 `BepInEx` 폴더를 게임 폴더에 합칩니다.
+1. 게임을 종료합니다.
+2. 설치 ZIP 전체를 `Sephiria.exe`가 있는 게임 폴더에 풀어 넣습니다. `winhttp.dll`, `doorstop_config.ini`, `BepInEx` 폴더가 게임 실행 파일 옆에 있어야 합니다.
+3. 게임을 실행하고 **F6**을 누릅니다.
+
+0.2.0 설치 ZIP에는 BepInEx 5.4.23.5 x64가 포함되어 있어 따로 설치할 필요가 없습니다.
 
 외부 스킨은 `BepInEx/plugins/SephiriaSkins/Skins`에 넣습니다. 폴더 또는 ZIP의 최상단에 `skin.json`이 있어야 합니다.
 
@@ -27,5 +29,20 @@
 | 상세 | 제작 정보 / 오류 확인 |
 
 스킨과 ON/OFF 설정은 다음 실행에도 유지됩니다. 단축키는 `BepInEx/config/dev.sephiria.skins.cfg`의 `Selector`에서 변경합니다.
+
+## 내장 스킨
+
+| 캐릭터 | 무기 표현 |
+|---|---|
+| 하치와레 | 파란 사스마타 |
+| 모몽가 | 게임 원본 |
+| 치이카와 | 분홍 사스마타 |
+| 우사기 | 노란 토벌봉 |
+| 쿠리만쥬 | 게임 원본 |
+| 랏코 | 랏코의 검 |
+| 시사 | 게임 원본 |
+| 카니(고서점) | 게임 원본 |
+
+비공식 팬아트 테마입니다. 무기 표현은 외형만 바꾸며 공격과 판정은 게임의 동작을 유지합니다.
 
 스킨 제작: [AI 제작 가이드](docs/AI-SKIN-GUIDE.ko.md)

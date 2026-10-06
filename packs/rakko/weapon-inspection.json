@@ -1,0 +1,32 @@
+{
+  "source": "weapon-final.png",
+  "size": [
+    1280,
+    1280
+  ],
+  "grid": [
+    1,
+    1
+  ],
+  "layout": "grid",
+  "rectMode": "ink",
+  "padding": 6,
+  "interiorDetailsForReview": [],
+  "resources": {
+    "weapon.0.0": {
+      "file": "weapon-final.png",
+      "kind": "sprite",
+      "rect": [
+        492,
+        99,
+        296,
+        1082
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 1070.0
+    }
+  }
+}

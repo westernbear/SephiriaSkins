@@ -1,0 +1,4799 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T035447649Z-e87b4db84fc344abac417b1d36b3623d",
+  "pluginSha256": "591acc53c73ea27ec60de5d6069bf1072051f1aaaf43d4a3839d06125b286711",
+  "results": [
+    {
+      "name": "solo lobby",
+      "value": {
+        "created": true,
+        "members": 1,
+        "privacy": "k_ELobbyTypePrivate",
+        "error": null
+      }
+    },
+    {
+      "name": "environment",
+      "value": {
+        "memoryOnlySave": true,
+        "profile": "SKINS_PLAYTEST_0dde88507c824fe78078b86f850e5676",
+        "server": true,
+        "client": true,
+        "stages": [
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter1",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grasstown_Chapter5",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 11
+          },
+          {
+            "id": "Stage_TheRabbittown",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheRabbittown_Chapter_2",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMolelandDark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Grassland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_QTemple",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_QTemple",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_TheMoleland",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_DeepCave_Dark",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Library",
+            "requireQuestProgress": 0
+          },
+          {
+            "id": "Stage_Desert_Chapter2",
+            "requireQuestProgress": 0
+          }
+        ],
+        "floors": [
+          {
+            "guid": "836f6ba2-8346-4b72-b650-23409bf78d56",
+            "name": "TheRabbittown",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "e3618430-db18-45f6-aeee-2e7b1f7fc12d",
+            "name": "Towntree",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "c4d86683-37d0-42d6-8699-29e964824a7c",
+            "name": "TrainingSchool_Greatsword",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "001b6040-6bd3-42e6-8821-c1e61fe68b98",
+            "name": "TrainingSchool_Dagger",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "68184123-ac11-4519-8632-6f013543bb83",
+            "name": "TheRabbittownUnderground",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "6dd7a46c-0ddf-4f7b-b085-585e5235d592",
+            "name": "PlayerHouse",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "d6c62315-c087-4506-832a-4ae5e8b9746a",
+            "name": "PocketDimensionShop",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "04054756-cc44-4c71-9cfe-c3a38756e93c",
+            "name": "ArkShrine",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "24bd10c7-92a4-4d3f-a822-55d1e82a2b3a",
+            "name": "MultiZone",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "94aa323f-9667-4c39-b506-ae53fc74312c",
+            "name": "Per_Tree",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "f417846e-6d1a-46a9-8305-a86943a11315",
+            "name": "TrainingSchool_Crossbow",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "ffbdc3d0-1803-46c4-a654-e4098408482b",
+            "name": "SalonUnderGround",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "65249ed9-bf15-4547-b1d1-74fd8de26f45",
+            "name": "TrainingSchool_Katana",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "7f30a69c-b971-4b8d-b9e3-a53ea8cd27ad",
+            "name": "TrainingSchool_Staff",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "eb08daf0-4748-4807-9cd7-fa788706f2be",
+            "name": "TrainingSchool",
+            "stageName": "Rabbittown"
+          },
+          {
+            "guid": "c5ad86ce-2767-4e77-afe8-37e11539ffd8",
+            "name": "PlayerHouse2F",
+            "stageName": "Rabbittown"
+          }
+        ],
+        "creatures": [
+          {
+            "name": "PlayerAvatar [connId=0]",
+            "faction": "Player",
+            "hp": 50.0
+          },
+          {
+            "name": "DamageDummy(Clone)",
+            "faction": "Dummy",
+            "hp": 99999.0
+          },
+          {
+            "name": "Rabbit_NPC_Ken(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Farmer(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "RabbittownSoldier2(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 600.0
+          },
+          {
+            "name": "Rabbit_Rogue_Susane(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Mouse_Valter(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_NPC_Cape_Per(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Coward(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Fat(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Archer_Gray(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 200.0
+          },
+          {
+            "name": "Rabbit_Archer_Birgitta(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 200.0
+          },
+          {
+            "name": "Rabbit_NPC_Conor(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Rogue_Hugues(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_Rogue(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 150.0
+          },
+          {
+            "name": "Rabbit_NPC_Cape_Nana(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_Soldier(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          },
+          {
+            "name": "Rabbit_NPC_Salon(Clone)",
+            "faction": "TheRabbittown",
+            "hp": 250.0
+          }
+        ],
+        "bindings": [
+          {
+            "name": "QuickCast1",
+            "paths": [
+              "<Keyboard>/1",
+              "<Mouse>/{Forward}",
+              "<Gamepad>/rightTrigger"
+            ]
+          },
+          {
+            "name": "QuickCast2",
+            "paths": [
+              "<Keyboard>/2",
+              "<Mouse>/backButton",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast3",
+            "paths": [
+              "<Keyboard>/3",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast4",
+            "paths": [
+              "<Keyboard>/4",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast5",
+            "paths": [
+              "<Keyboard>/5",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast6",
+            "paths": [
+              "<Keyboard>/6",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast7",
+            "paths": [
+              "<Keyboard>/7",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast8",
+            "paths": [
+              "<Keyboard>/8",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast1_J",
+            "paths": [
+              "<Gamepad>/buttonSouth",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast2_J",
+            "paths": [
+              "<Gamepad>/buttonEast",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast3_J",
+            "paths": [
+              "<Gamepad>/buttonWest",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast4_J",
+            "paths": [
+              "<Gamepad>/buttonNorth",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast5_J",
+            "paths": [
+              "<Gamepad>/dpad/down",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast6_J",
+            "paths": [
+              "<Gamepad>/dpad/right",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast7_J",
+            "paths": [
+              "<Gamepad>/dpad/left",
+              ""
+            ]
+          },
+          {
+            "name": "QuickCast8_J",
+            "paths": [
+              "<Gamepad>/dpad/up",
+              ""
+            ]
+          },
+          {
+            "name": "Dash",
+            "paths": [
+              "<Keyboard>/space",
+              "",
+              "<Gamepad>/buttonSouth",
+              ""
+            ]
+          },
+          {
+            "name": "Fire",
+            "paths": [
+              "<Mouse>/leftButton",
+              "",
+              "<Gamepad>/buttonWest",
+              ""
+            ]
+          },
+          {
+            "name": "SubFire",
+            "paths": [
+              "<Mouse>/rightButton",
+              "",
+              "<Gamepad>/leftShoulder",
+              ""
+            ]
+          },
+          {
+            "name": "UseItem",
+            "paths": [
+              "<Keyboard>/r",
+              "",
+              "<Gamepad>/buttonNorth",
+              ""
+            ]
+          },
+          {
+            "name": "SelectNextQuickSlotItem",
+            "paths": [
+              "<Keyboard>/backquote",
+              "<Mouse>/scroll/y",
+              "<Gamepad>/dpad/up",
+              ""
+            ]
+          },
+          {
+            "name": "Interactive",
+            "paths": [
+              "<Keyboard>/f",
+              "",
+              "<Gamepad>/rightShoulder",
+              ""
+            ]
+          },
+          {
+            "name": "OpenMapPanel",
+            "paths": [
+              "<Keyboard>/tab",
+              "",
+              "<Gamepad>/select",
+              ""
+            ]
+          },
+          {
+            "name": "OpenCharacterStatusPanel",
+            "paths": [
+              "<Keyboard>/v",
+              "",
+              "<Gamepad>/rightStickPress",
+              ""
+            ]
+          },
+          {
+            "name": "OpenStatsPanel",
+            "paths": [
+              "<Keyboard>/c",
+              "",
+              "<Gamepad>/leftStickPress",
+              ""
+            ]
+          },
+          {
+            "name": "OpenPassivePanel",
+            "paths": [
+              "<Keyboard>/p",
+              "",
+              "<Gamepad>/dpad/down",
+              ""
+            ]
+          },
+          {
+            "name": "OpenPresetPanel",
+            "paths": [
+              "<Keyboard>/b",
+              "",
+              "<Gamepad>/dpad/right",
+              ""
+            ]
+          },
+          {
+            "name": "OpenDevCommandPanel",
+            "paths": [
+              "<Keyboard>/slash"
+            ]
+          },
+          {
+            "name": "Chat",
+            "paths": [
+              "<Keyboard>/enter",
+              "<Keyboard>/numpadEnter"
+            ]
+          },
+          {
+            "name": "Reload",
+            "paths": [
+              "<Keyboard>/g",
+              "",
+              "<Gamepad>/dpad/left",
+              ""
+            ]
+          },
+          {
+            "name": "Ping",
+            "paths": [
+              "<Mouse>/middleButton",
+              ""
+            ]
+          },
+          {
+            "name": "PrevTab",
+            "paths": [
+              "<Keyboard>/q"
+            ]
+          },
+          {
+            "name": "NextTab",
+            "paths": [
+              "<Keyboard>/e"
+            ]
+          },
+          {
+            "name": "Move",
+            "paths": [
+              "<Gamepad>/leftStick",
+              "Dpad",
+              "<Keyboard>/w",
+              "<Keyboard>/s",
+              "<Keyboard>/a",
+              "<Keyboard>/d",
+              "<XRController>/{Primary2DAxis}",
+              "<Joystick>/stick",
+              "2DVector",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "Aim",
+            "paths": [
+              "<Mouse>/position",
+              "<Gamepad>/rightStick"
+            ]
+          },
+          {
+            "name": "ActivateCastMode",
+            "paths": [
+              "<Keyboard>/leftShift",
+              "",
+              "<Gamepad>/leftTrigger",
+              ""
+            ]
+          },
+          {
+            "name": "CancelAction",
+            "paths": [
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "Navigate",
+            "paths": [
+              "2DVector",
+              "<Gamepad>/leftStick/up",
+              "<Gamepad>/dpad/up",
+              "<Gamepad>/leftStick/down",
+              "<Gamepad>/dpad/down",
+              "<Gamepad>/leftStick/left",
+              "<Gamepad>/dpad/left",
+              "<Gamepad>/leftStick/right",
+              "<Gamepad>/dpad/right",
+              "2DVector",
+              "<Joystick>/stick/up",
+              "<Joystick>/stick/down",
+              "<Joystick>/stick/left",
+              "<Joystick>/stick/right",
+              "2DVector",
+              "<Keyboard>/w",
+              "<Keyboard>/upArrow",
+              "<Keyboard>/s",
+              "<Keyboard>/downArrow",
+              "<Keyboard>/a",
+              "<Keyboard>/leftArrow",
+              "<Keyboard>/d",
+              "<Keyboard>/rightArrow"
+            ]
+          },
+          {
+            "name": "Submit",
+            "paths": [
+              "<Gamepad>/{Submit}",
+              "<Keyboard>/space",
+              "<Joystick>/{Submit}"
+            ]
+          },
+          {
+            "name": "Cancel",
+            "paths": [
+              "*/{Cancel}"
+            ]
+          },
+          {
+            "name": "Point",
+            "paths": [
+              "<Mouse>/position",
+              "<Pen>/position",
+              "<Touchscreen>/touch*/position"
+            ]
+          },
+          {
+            "name": "Click",
+            "paths": [
+              "<Mouse>/leftButton",
+              "<Pen>/tip",
+              "<Touchscreen>/touch*/press",
+              "<XRController>/trigger"
+            ]
+          },
+          {
+            "name": "ScrollWheel",
+            "paths": [
+              "<Mouse>/scroll"
+            ]
+          },
+          {
+            "name": "MiddleClick",
+            "paths": [
+              "<Mouse>/middleButton"
+            ]
+          },
+          {
+            "name": "RightClick",
+            "paths": [
+              "<Mouse>/rightButton"
+            ]
+          },
+          {
+            "name": "TrackedDevicePosition",
+            "paths": [
+              "<XRController>/devicePosition"
+            ]
+          },
+          {
+            "name": "TrackedDeviceOrientation",
+            "paths": [
+              "<XRController>/deviceRotation"
+            ]
+          },
+          {
+            "name": "Skip",
+            "paths": [
+              "<Keyboard>/space"
+            ]
+          },
+          {
+            "name": "CloseControl",
+            "paths": [
+              "<Keyboard>/escape",
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "ThrowItem",
+            "paths": [
+              "<Gamepad>/buttonWest",
+              "<Keyboard>/f"
+            ]
+          },
+          {
+            "name": "RotateItem",
+            "paths": [
+              "<Gamepad>/buttonNorth",
+              "<Keyboard>/r",
+              "<Mouse>/middleButton"
+            ]
+          },
+          {
+            "name": "PrevTab",
+            "paths": [
+              "<Keyboard>/q",
+              "<Gamepad>/leftShoulder"
+            ]
+          },
+          {
+            "name": "NextTab",
+            "paths": [
+              "<Keyboard>/e",
+              "<Gamepad>/rightShoulder"
+            ]
+          },
+          {
+            "name": "PrevTab2",
+            "paths": [
+              "<Keyboard>/z",
+              "<Gamepad>/leftTrigger"
+            ]
+          },
+          {
+            "name": "NextTab2",
+            "paths": [
+              "<Keyboard>/x",
+              "<Gamepad>/rightTrigger"
+            ]
+          },
+          {
+            "name": "EngraveTablet",
+            "paths": [
+              "<Gamepad>/rightShoulder",
+              "<Mouse>/rightButton"
+            ]
+          },
+          {
+            "name": "RightStickScroll",
+            "paths": [
+              "<Gamepad>/rightStick"
+            ]
+          },
+          {
+            "name": "RebindReject",
+            "paths": [
+              "<Keyboard>/escape",
+              "<Gamepad>/start"
+            ]
+          },
+          {
+            "name": "ShowDetail",
+            "paths": [
+              "<Keyboard>/leftCtrl",
+              "<Gamepad>/rightTrigger"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "gamepad movement",
+      "value": {
+        "distance": 2.277308,
+        "scheme": "Gamepad",
+        "nativeInput": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "gamepad attack",
+      "value": {
+        "nativeAttacks": 1
+      }
+    },
+    {
+      "name": "path equivalence",
+      "value": {
+        "checkedPaths": 9603,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "weapon coverage",
+      "value": {
+        "modes": [
+          "basic",
+          "dash",
+          "special"
+        ],
+        "scope": "defaults",
+        "weapons": [
+          {
+            "id": 0,
+            "name": "0000_SwordAndShield",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1,
+            "name": "0001_SwordAndShield_Tier2_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 2,
+            "name": "0002_SwordAndShield_Tier2_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 3,
+            "name": "0003_SwordAndShield_Tier2_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 4,
+            "name": "0004_SwordAndShield_Tier3_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 5,
+            "name": "0005_SwordAndShield_Tier3_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 6,
+            "name": "0006_SwordAndShield_Tier3_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 7,
+            "name": "0007_SwordAndShield_Tier3_D",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 8,
+            "name": "0008_SwordAndShield_Tier3_E",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 9,
+            "name": "0009_SwordAndShield_Tier3_F",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 10,
+            "name": "0010_GreatSword",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 11,
+            "name": "0011_GreatSword_Tier2_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 12,
+            "name": "0012_GreatSword_Tier2_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 13,
+            "name": "0013_GreatSword_Tier2_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 14,
+            "name": "0014_GreatSword_Tier3_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 15,
+            "name": "0015_GreatSword_Tier3_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 16,
+            "name": "0016_GreatSword_Tier3_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 17,
+            "name": "0017_GreatSword_Purple",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 18,
+            "name": "0018_GreatSword_Tier3_E",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 19,
+            "name": "0019_GreatSword_Tier3_F",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 20,
+            "name": "0020_Dagger",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 21,
+            "name": "0021_Dagger_Tier2_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 22,
+            "name": "0022_Dagger_Tier2_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 23,
+            "name": "0023_Dagger_Tier2_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 24,
+            "name": "0024_Dagger_Tier3_A",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 25,
+            "name": "0025_Dagger_Tier3_B",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 26,
+            "name": "0026_Dagger_Tier3_C",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 27,
+            "name": "0027_Dagger_Tier3_D",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 28,
+            "name": "0028_Dagger_Tier3_E",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 29,
+            "name": "0029_Dagger_Tier3_F_New",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 100,
+            "name": "0100_Crossbow",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 101,
+            "name": "0101_Crossbow_Rifle",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 102,
+            "name": "0102_Crossbow_Rifle_MG",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 103,
+            "name": "0103_Crossbow_Rifle_Dual",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 104,
+            "name": "0104_Crossbow_Shotgun",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 105,
+            "name": "0105_Crossbow_Shotgun_Advanced",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 106,
+            "name": "0106_Crossbow_Special",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 107,
+            "name": "0107_Crossbow_Special_Burst",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 108,
+            "name": "0108_Crossbow_Fire",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 109,
+            "name": "0109_Crossbow_Fire_Drone",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 110,
+            "name": "0110_Crossbow_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 111,
+            "name": "0111_Crossbow_Lightning_Advanced",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 112,
+            "name": "0112_Crossbow_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 113,
+            "name": "0113_Crossbow_Ice_Infinite",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 114,
+            "name": "0114_Crossbow_Ice_Damage",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 115,
+            "name": "0115_Crossbow_Lightning_Cloud",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 116,
+            "name": "0116_Crossbow_Shotgun_DB",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 117,
+            "name": "0117_Crossbow_Special_Continue",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 118,
+            "name": "0118_Crossbow_Fire_Grenade",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 119,
+            "name": "0119_Crossbow_Poison",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 100,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 120,
+            "name": "0120_Crossbow_Poison_Jellifysh",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 119,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 121,
+            "name": "0121_Crossbow_Poison_Stack",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 119,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 122,
+            "name": "0122_Crossbow_Garand",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 100,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 123,
+            "name": "0123_Crossbow_Garand_Cooldown",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 122,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 124,
+            "name": "0124_Crossbow_Fire_FlameSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 108,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 125,
+            "name": "0125_Crossbow_Rifle_Dash",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 101,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 126,
+            "name": "0126_Crossbow_Lightning_Gatling",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 110,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 127,
+            "name": "0127_Crossbow_Shotgun_C4",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 104,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 128,
+            "name": "0128_Crossbow_Garand_Enhanced",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 122,
+            "type": "Crossbow",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 200,
+            "name": "0200_StaffOld",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "StaffMagic",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 300,
+            "name": "0300_Bow",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 400,
+            "name": "0400_Katana",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 401,
+            "name": "0401_Katana_Sheath_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 402,
+            "name": "0402_Katana_Sheath_T3_Fast",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 403,
+            "name": "0403_Katana_Sheath_T3_Range",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 404,
+            "name": "0404_Katana_Lightning_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 400,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 405,
+            "name": "0405_Katana_Lightning_T3_Issen",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 404,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 406,
+            "name": "0406_Katana_Fire_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 407,
+            "name": "0407_Katana_Fire_T3_Burn",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 408,
+            "name": "0408_Katana_Fire_T3_Dash",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 409,
+            "name": "0409_Katana_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 410,
+            "name": "0410_Katana_T3_Iaido",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 411,
+            "name": "0411_Katana_T3_Speed",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 412,
+            "name": "0412_Katana_Magic_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 413,
+            "name": "0413_Katana_Magic_T3_MagicCritical",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 414,
+            "name": "0414_Katana_Magic_T3_MagicBlade",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 416,
+            "name": "0416_Katana_Dash_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 417,
+            "name": "0417_Katana_Dash_T3_Parry",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 419,
+            "name": "0419_Katana_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 420,
+            "name": "0420_Katana_Ice_T3",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 421,
+            "name": "0421_Katana_Ice_T3_Spear",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 422,
+            "name": "0422_Katana_Fire_T3_FlameSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 406,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 423,
+            "name": "0423_Katana_Defense_T2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 400,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 424,
+            "name": "0424_Katana_Defense_T3_Stone",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 423,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 425,
+            "name": "0425_Katana_Lightning_T3_TrueDarkCloud",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 404,
+            "type": "Katana",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 500,
+            "name": "0500_Staff",
+            "isDefaultWeapon": true,
+            "enhanceFromId": -1,
+            "type": "Staff",
+            "selected": true,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 501,
+            "name": "0501_Staff_Rolling",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 502,
+            "name": "0502_Staff_Rolling_T3_Protection",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 501,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 503,
+            "name": "0503_Staff_Rolling_T3_Bolt",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 501,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 505,
+            "name": "0505_Staff_Extend",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 506,
+            "name": "0506_Staff_Extend_T3_Guard",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 505,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 507,
+            "name": "0507_Staff_Extend_T3_Crit",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 505,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 509,
+            "name": "0509_Staff_Special",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 510,
+            "name": "0510_Staff_Special_T3_Crystal",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 509,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 513,
+            "name": "0513_Staff_Spear",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 514,
+            "name": "0514_Staff_Spear_T3_Damage",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 513,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 515,
+            "name": "0515_Staff_Spear_T3_Dash",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 513,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 517,
+            "name": "0517_Staff_Fire",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 518,
+            "name": "0518_Staff_Fire_T3_Burn",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 517,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 519,
+            "name": "0519_Staff_Fire_T3_FlameSpear",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 517,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 521,
+            "name": "0521_Staff_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 522,
+            "name": "0522_Staff_Ice_T3_IceSpear",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 521,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 523,
+            "name": "0523_Staff_Ice_T3_Freeze",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 521,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 525,
+            "name": "0525_Staff_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 526,
+            "name": "0526_Staff_Lightning_T3_Chakram",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 525,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 528,
+            "name": "0528_Staff_Lightning_T3_CloudBottle",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 525,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 529,
+            "name": "0529_Staff_ThrowingSpear",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 500,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 530,
+            "name": "0530_Staff_ThrowingSpear_T3Big",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 529,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 531,
+            "name": "0531_Staff_ThrowingSpear_T3Multi",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 529,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 532,
+            "name": "0532_Staff_ThrowingSpear_T3Magic",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 529,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1000,
+            "name": "1000_SwordAndShield_Tier2_CarrotSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1001,
+            "name": "1001_SwordAndShield_Tier3_CarrotCalibur",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1002,
+            "name": "1002_SwordAndShield_Tier2_Hammer",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1003,
+            "name": "1003_SwordAndShield_Tier3_DragonHammer",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1004,
+            "name": "1004_SwordAndShield_Tier2_Magical",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1005,
+            "name": "1005_SwordAndShield_Wand",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 1006,
+            "name": "1006_SwordAndShield_Tier2_Rapier",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1007,
+            "name": "1007_SwordAndShield_Tier3_RapierWide",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1008,
+            "name": "1008_SwordAndShield_Tier3_Magical_Fire",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1009,
+            "name": "1009_SwordAndShield_Tier3_Magical_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1010,
+            "name": "1010_SwordAndShield_Tier3_Magical_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1011,
+            "name": "1011_SwordAndShield_Tier2_Corrosion",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 1012,
+            "name": "1012_SwordAndShield_Tier3_Corrosion",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 1013,
+            "name": "1013_SwordAndShield_Tier2_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1014,
+            "name": "1014_SwordAndShield_Tier3_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1015,
+            "name": "1015_SwordAndShield_Tier3_Hammer_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1016,
+            "name": "1016_SwordANdShield_Tier2_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1017,
+            "name": "1017_SwordANdShield_Tier3_LightningMB",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1018,
+            "name": "1018_SwordANdShield_Tier3_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1019,
+            "name": "1019_SwordAndShield_Tier3_GreenOnionSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1020,
+            "name": "1020_SwordAndShieldDefense",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1023,
+            "name": "1023_SwordAndShield_Tier3_E",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 3,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1024,
+            "name": "1024_SwordAndShield_Tier2_Fire_Incendium",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 0,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1025,
+            "name": "1025_SwordAndShield_Tier3_FlameSword_SolisMissio",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1024,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1026,
+            "name": "1026_SwordAndShield_Tier3_FlameSword_Haetae",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1024,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1028,
+            "name": "1028_SwordAndShield_Tier3_Electric",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1016,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1029,
+            "name": "1029_SwordAndShield_Tier3_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1013,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1030,
+            "name": "1030_SwordAndShield_Tier3_Magical_AllElemental",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1004,
+            "type": "SwordAndShield",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1100,
+            "name": "1100_GreatSword_Tier2_Club",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1101,
+            "name": "1101_GreatSword_Tier3_Club_Spike",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1102,
+            "name": "1102_GreatSword_Tier2_Bone",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1103,
+            "name": "1103_GreatSword_Tier3_Bone",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1104,
+            "name": "1104_GreatSword_Tier2_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1105,
+            "name": "1105_GreatSword_Tier3_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1106,
+            "name": "1106_GreatSword_Ice2_Freeze",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1107,
+            "name": "1107_GreatSword_Tier2_Red",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1108,
+            "name": "1108_GreatSword_Tier3_Red",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1109,
+            "name": "1109_GreatSword_Tier3_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1110,
+            "name": "1110_GreatSword_Tier2_Halberd",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 1111,
+            "name": "1111_GreatSword_Tier3_Halberd_Black",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 11,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1112,
+            "name": "1112_GreatSword_Tier2_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1113,
+            "name": "1113_GreatSword_Tier3_LightningShock",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1114,
+            "name": "1114_GreatSword_Tier3_IceExo",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1115,
+            "name": "1115_GreatSword_Tier3_RedSimple",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1116,
+            "name": "1116_GreatSword_Tier3_RedClub",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1117,
+            "name": "1117_GreatSword_Tier3_PurpleCooldown",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1118,
+            "name": "1118_GreatSword_Tier3_PurpleAttack",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1119,
+            "name": "1119_GreatSword_Tier3_ClubAdvanced",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1120,
+            "name": "1120_GreatSword_Tier3_PurpleCompanion",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1121,
+            "name": "1121_GreatSword_Tier3_BoneBlood",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1102,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1122,
+            "name": "1122_GreatSword_FireT2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1123,
+            "name": "1123_GreatSword_FireT3Snake",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1124,
+            "name": "1124_GreatSword_FireT3FlameSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1200,
+            "name": "1200_Dagger_Tier2_Flame",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1201,
+            "name": "1201_Dagger_Tier3_Flame",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1202,
+            "name": "1202_Dagger_Tier3_FlameBurn",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": null,
+            "selected": false,
+            "skipReason": "no main weapon prefab",
+            "skippedModes": {}
+          },
+          {
+            "id": 1203,
+            "name": "1203_Dagger_Lightning",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1204,
+            "name": "1204_Dagger_Lightning2",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1205,
+            "name": "1205_Dagger_Lightning3",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1206,
+            "name": "1206_Dagger_Tier2_Throw",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1207,
+            "name": "1207_Dagger_Tier3_Throw",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1208,
+            "name": "1208_Dagger_Evasion",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1209,
+            "name": "1209_Dagger_Evasion_3T",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1210,
+            "name": "1210_Dagger_Tier3_ThrowComp",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1206,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1211,
+            "name": "1211_Dagger_FreeParry_Magic",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1212,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1212,
+            "name": "1212_Dagger_FreeParry",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 20,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1213,
+            "name": "1213_Dagger_FreeParry_MP",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1212,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1214,
+            "name": "1214_Dagger_Tier3_FlameSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1200,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1215,
+            "name": "1215_Dagger_Tier2_Ice",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 20,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1216,
+            "name": "1216_Dagger_Ice_Freeze",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1215,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 1217,
+            "name": "1217_Dagger_FrostScythe",
+            "isDefaultWeapon": false,
+            "enhanceFromId": 1215,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 5000,
+            "name": "5000_GreatHammer",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 5001,
+            "name": "5001_Homi",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Dagger",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 5002,
+            "name": "5002_Hoe",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Staff",
+            "selected": false,
+            "skipReason": "not active in installed game: Deprecated",
+            "skippedModes": {}
+          },
+          {
+            "id": 9000,
+            "name": "9000_Golem",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Golem",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 9999,
+            "name": "9999_WeaponRandomStart",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "Random",
+            "selected": false,
+            "skipReason": "not active in installed game: SystemOnly",
+            "skippedModes": {}
+          },
+          {
+            "id": 10000,
+            "name": "10000_WeaselKnight'sGreatSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          },
+          {
+            "id": 10001,
+            "name": "10001_Doppelganger'sGreatSword",
+            "isDefaultWeapon": false,
+            "enhanceFromId": -1,
+            "type": "GreatSword",
+            "selected": false,
+            "skipReason": null,
+            "skippedModes": {}
+          }
+        ],
+        "untested": [
+          "additional combo stages",
+          "variable charge durations",
+          "mine detonation after target movement",
+          "long-lived effects beyond the trial window"
+        ]
+      }
+    },
+    {
+      "name": "combat 0 basic",
+      "value": {
+        "id": 0,
+        "type": "SwordAndShield",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"ShortSwordSwing1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 24,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.118057251
+          ],
+          "frameMilliseconds": 6.978144,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 24,
+            "effect": 6
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"ShortSwordSwing1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 25,
+          "fireSeconds": [
+            0.118606567
+          ],
+          "frameMilliseconds": 7.06263161,
+          "uiApplyMilliseconds": 6.4837,
+          "guarded": false,
+          "roles": {
+            "body": 25,
+            "effect": 6
+          },
+          "themedRoles": {
+            "body": 25,
+            "effect": 6
+          },
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 0 dash",
+      "value": {
+        "id": 0,
+        "type": "SwordAndShield",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"ShortSwordSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 16.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 24,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.0347290039
+          ],
+          "frameMilliseconds": 6.95089865,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 24
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"ShortSwordSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 16.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 25,
+          "fireSeconds": [
+            0.03555298
+          ],
+          "frameMilliseconds": 7.046275,
+          "uiApplyMilliseconds": 6.2987,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 25
+          },
+          "themedRoles": {
+            "effect": 7,
+            "body": 25
+          },
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 0 special",
+      "value": {
+        "id": 0,
+        "type": "SwordAndShield",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"SwordAndShield_Sweep\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 50.0,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 50.0,\r\n  \"damageResult\": 50,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 50.0,\r\n  \"damageResult\": 50,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 45,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.06944275
+          ],
+          "frameMilliseconds": 6.94453573,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": true,
+          "roles": {
+            "body": 45,
+            "effect": 7
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 985,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            15
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"SwordAndShield_Sweep\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 50.0,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 50.0,\r\n  \"damageResult\": 50,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 50.0,\r\n  \"damageResult\": 50,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 45,
+          "themedFrames": 45,
+          "fireSeconds": [
+            0.07092285
+          ],
+          "frameMilliseconds": 7.06134462,
+          "uiApplyMilliseconds": 6.4136,
+          "guarded": true,
+          "roles": {
+            "body": 45,
+            "effect": 6
+          },
+          "themedRoles": {
+            "body": 45,
+            "effect": 6
+          },
+          "canMove": true,
+          "weapon": 0,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 985,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "combat 10 basic",
+      "value": {
+        "id": 10,
+        "type": "GreatSword",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSwing 1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 35.0,\r\n  \"meleeSize\": [\r\n    4.0,\r\n    4.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.3680725
+          ],
+          "frameMilliseconds": 6.944614,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 25,
+            "effect": 6
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSwing 1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 35.0,\r\n  \"meleeSize\": [\r\n    4.0,\r\n    4.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 25,
+          "fireSeconds": [
+            0.367355347
+          ],
+          "frameMilliseconds": 7.11039066,
+          "uiApplyMilliseconds": 6.6485,
+          "guarded": false,
+          "roles": {
+            "body": 25,
+            "effect": 6
+          },
+          "themedRoles": {
+            "body": 25,
+            "effect": 6
+          },
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 10 dash",
+      "value": {
+        "id": 10,
+        "type": "GreatSword",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSwing Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 25.0,\r\n  \"meleeSize\": [\r\n    1.25,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 25.0,\r\n  \"damageResult\": 25,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 25.0,\r\n  \"damageResult\": 25,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 26,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.222229
+          ],
+          "frameMilliseconds": 6.944524,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 26
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSwing Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 25.0,\r\n  \"meleeSize\": [\r\n    1.25,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 25.0,\r\n  \"damageResult\": 25,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 25.0,\r\n  \"damageResult\": 25,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 27,
+          "themedFrames": 27,
+          "fireSeconds": [
+            0.222900391
+          ],
+          "frameMilliseconds": 7.061055,
+          "uiApplyMilliseconds": 8.1611,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 27
+          },
+          "themedRoles": {
+            "effect": 7,
+            "body": 27
+          },
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 10 special",
+      "value": {
+        "id": 10,
+        "type": "GreatSword",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSweep\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 80.0,\r\n  \"meleeSize\": [\r\n    5.0,\r\n    5.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 80.0,\r\n  \"damageResult\": 80,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 80.0,\r\n  \"damageResult\": 80,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 44,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.2708435
+          ],
+          "frameMilliseconds": 6.94461727,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 39,
+            "body": 44
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 985,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            15
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"GreatSwordSweep\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 80.0,\r\n  \"meleeSize\": [\r\n    5.0,\r\n    5.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 80.0,\r\n  \"damageResult\": 80,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 80.0,\r\n  \"damageResult\": 80,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 44,
+          "themedFrames": 44,
+          "fireSeconds": [
+            0.270874023
+          ],
+          "frameMilliseconds": 7.153136,
+          "uiApplyMilliseconds": 6.2962,
+          "guarded": false,
+          "roles": {
+            "effect": 39,
+            "body": 44
+          },
+          "themedRoles": {
+            "body": 44,
+            "effect": 7
+          },
+          "canMove": true,
+          "weapon": 10,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 985,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            15
+          ]
+        }
+      }
+    },
+    {
+      "name": "combat 20 basic",
+      "value": {
+        "id": 20,
+        "type": "Dagger",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 11.5999994,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 11.5999994,\r\n  \"damageResult\": 19,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 11.5999994,\r\n  \"damageResult\": 19,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 23,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.08332825
+          ],
+          "frameMilliseconds": 6.95282125,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 23,
+            "effect": 5
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 11.5999994,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    2.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 11.5999994,\r\n  \"damageResult\": 11,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 11.5999994,\r\n  \"damageResult\": 11,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 24,
+          "themedFrames": 24,
+          "fireSeconds": [
+            0.08332825
+          ],
+          "frameMilliseconds": 7.058041,
+          "uiApplyMilliseconds": 6.5364,
+          "guarded": false,
+          "roles": {
+            "body": 24,
+            "effect": 4
+          },
+          "themedRoles": {
+            "body": 24,
+            "effect": 4
+          },
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 20 dash",
+      "value": {
+        "id": 20,
+        "type": "Dagger",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 22.0,\r\n  \"meleeSize\": [\r\n    0.75,\r\n    2.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 22,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 22,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 26,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.1875
+          ],
+          "frameMilliseconds": 6.94453573,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 26
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 22.0,\r\n  \"meleeSize\": [\r\n    0.75,\r\n    2.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 22,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 22,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 27,
+          "themedFrames": 27,
+          "fireSeconds": [
+            0.18812561
+          ],
+          "frameMilliseconds": 7.04871035,
+          "uiApplyMilliseconds": 6.5379,
+          "guarded": false,
+          "roles": {
+            "effect": 12,
+            "body": 27
+          },
+          "themedRoles": {
+            "effect": 12,
+            "body": 27
+          },
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 20 special",
+      "value": {
+        "id": 20,
+        "type": "Dagger",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:10"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing_Parry\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 26.0,\r\n  \"meleeSize\": [\r\n    3.0,\r\n    3.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 26.0,\r\n  \"damageResult\": 26,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 26.0,\r\n  \"damageResult\": 26,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 45,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.166671753
+          ],
+          "frameMilliseconds": 6.944533,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 45,
+            "effect": 8
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 994,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            6
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:10"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"DaggerSwing_Parry\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 26.0,\r\n  \"meleeSize\": [\r\n    3.0,\r\n    3.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 26.0,\r\n  \"damageResult\": 26,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 26.0,\r\n  \"damageResult\": 26,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 46,
+          "themedFrames": 46,
+          "fireSeconds": [
+            0.166671753
+          ],
+          "frameMilliseconds": 7.06751442,
+          "uiApplyMilliseconds": 6.5365,
+          "guarded": false,
+          "roles": {
+            "body": 46,
+            "effect": 8
+          },
+          "themedRoles": {
+            "body": 46,
+            "effect": 8
+          },
+          "canMove": true,
+          "weapon": 20,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 994,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            6
+          ]
+        }
+      }
+    },
+    {
+      "name": "combat 100 basic",
+      "value": {
+        "id": 100,
+        "type": "Crossbow",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowArrow\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.5,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 6.944596,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 5,
+            "weapon": 6,
+            "body": 22
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowArrow\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.5,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 22,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 7.044595,
+          "uiApplyMilliseconds": 6.2992,
+          "guarded": false,
+          "roles": {
+            "body": 22,
+            "effect": 5,
+            "weapon": 6
+          },
+          "themedRoles": {
+            "body": 22,
+            "weapon": 6
+          },
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 100 dash",
+      "value": {
+        "id": 100,
+        "type": "Crossbow",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowMine\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.22,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [],
+          "unitHits": [],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 28,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.166671753
+          ],
+          "frameMilliseconds": 6.944544,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 39,
+            "body": 28,
+            "weapon": 2
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowMine\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.22,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [],
+          "unitHits": [],
+          "states": [
+            "GREATSWORDSWING_SWEEP",
+            "IDLE"
+          ],
+          "frames": 28,
+          "themedFrames": 28,
+          "fireSeconds": [
+            0.167572021
+          ],
+          "frameMilliseconds": 7.055966,
+          "uiApplyMilliseconds": 6.3387,
+          "guarded": false,
+          "roles": {
+            "effect": 39,
+            "body": 28,
+            "weapon": 2
+          },
+          "themedRoles": {
+            "effect": 7,
+            "body": 28,
+            "weapon": 2
+          },
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 100 special",
+      "value": {
+        "id": 100,
+        "type": "Crossbow",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowArrow_Special\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 40.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.75,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 40.0,\r\n  \"damageResult\": 40,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 40.0,\r\n  \"damageResult\": 40,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 40,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.187515259
+          ],
+          "frameMilliseconds": 6.9445343,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 40,
+            "effect": 11,
+            "weapon": 4
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 990,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            10
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"CrossbowArrow_Special\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"Bullet\",\r\n  \"damage\": 40.0,\r\n  \"meleeSize\": null,\r\n  \"rangeBonus\": null,\r\n  \"shape\": null,\r\n  \"colliders\": [\r\n    {\r\n      \"type\": \"CircleCollider2D\",\r\n      \"isTrigger\": true,\r\n      \"offset\": [\r\n        0.0,\r\n        0.0\r\n      ],\r\n      \"radius\": 0.75,\r\n      \"size\": null\r\n    }\r\n  ]\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 40.0,\r\n  \"damageResult\": 40,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 40.0,\r\n  \"damageResult\": 40,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 40,
+          "themedFrames": 40,
+          "fireSeconds": [
+            0.188797
+          ],
+          "frameMilliseconds": 7.04288054,
+          "uiApplyMilliseconds": 6.3274,
+          "guarded": false,
+          "roles": {
+            "body": 40,
+            "effect": 11,
+            "weapon": 4
+          },
+          "themedRoles": {
+            "body": 40,
+            "weapon": 4
+          },
+          "canMove": true,
+          "weapon": 100,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 990,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            10
+          ]
+        }
+      }
+    },
+    {
+      "name": "combat 400 basic",
+      "value": {
+        "id": 400,
+        "type": "Katana",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 22.0,\r\n  \"meleeSize\": [\r\n    4.0,\r\n    4.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 37,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 37,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.06944275
+          ],
+          "frameMilliseconds": 6.944524,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 25,
+            "effect": 6,
+            "weapon": 4
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 22.0,\r\n  \"meleeSize\": [\r\n    4.0,\r\n    4.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 37,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 22.0,\r\n  \"damageResult\": 37,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 25,
+          "themedFrames": 25,
+          "fireSeconds": [
+            0.06944275
+          ],
+          "frameMilliseconds": 7.111015,
+          "uiApplyMilliseconds": 7.7361,
+          "guarded": false,
+          "roles": {
+            "body": 25,
+            "effect": 6,
+            "weapon": 4
+          },
+          "themedRoles": {
+            "body": 25,
+            "effect": 6,
+            "weapon": 4
+          },
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 400 dash",
+      "value": {
+        "id": 400,
+        "type": "Katana",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 16.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    5.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 27,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 27,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.104171753
+          ],
+          "frameMilliseconds": 6.9446373,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 15,
+            "body": 22,
+            "weapon": 4
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Dash\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 16.0,\r\n  \"meleeSize\": [\r\n    2.0,\r\n    5.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 16.0,\r\n  \"damageResult\": 16,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 21,
+          "themedFrames": 21,
+          "fireSeconds": [
+            0.104156494
+          ],
+          "frameMilliseconds": 7.06907654,
+          "uiApplyMilliseconds": 6.0967,
+          "guarded": false,
+          "roles": {
+            "effect": 15,
+            "body": 21,
+            "weapon": 4
+          },
+          "themedRoles": {
+            "effect": 15,
+            "body": 21,
+            "weapon": 4
+          },
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 400 special",
+      "value": {
+        "id": 400,
+        "type": "Katana",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:0",
+            "special-swing:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Sheath\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 47.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    7.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 43,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 6.951631,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 43,
+            "weapon": 117,
+            "effect": 10
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 995,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            5
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:0",
+            "special-swing:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"KatanaSwing_Sheath\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Rectangle\",\r\n  \"damage\": 47.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    7.0\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 47.0,\r\n  \"damageResult\": 47,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "IDLE"
+          ],
+          "frames": 42,
+          "themedFrames": 42,
+          "fireSeconds": [
+            0.0
+          ],
+          "frameMilliseconds": 7.12180853,
+          "uiApplyMilliseconds": 6.2716,
+          "guarded": false,
+          "roles": {
+            "body": 42,
+            "weapon": 117,
+            "effect": 10
+          },
+          "themedRoles": {
+            "body": 42,
+            "weapon": 117,
+            "effect": 10
+          },
+          "canMove": true,
+          "weapon": 400,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 995,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "name": "combat 500 basic",
+      "value": {
+        "id": 500,
+        "type": "Staff",
+        "mode": "basic",
+        "original": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 13.5,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}",
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 13.5,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.222229,
+            0.388900757
+          ],
+          "frameMilliseconds": 6.944526,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 22,
+            "effect": 9
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "basic:0"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 13.5,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}",
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 13.5,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 13.5,\r\n  \"damageResult\": 13,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 22,
+          "fireSeconds": [
+            0.222930908,
+            0.385543823
+          ],
+          "frameMilliseconds": 7.073201,
+          "uiApplyMilliseconds": 6.1122,
+          "guarded": false,
+          "roles": {
+            "body": 22,
+            "effect": 9
+          },
+          "themedRoles": {
+            "body": 22,
+            "effect": 9
+          },
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 500 dash",
+      "value": {
+        "id": 500,
+        "type": "Staff",
+        "mode": "dash",
+        "original": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.118057251
+          ],
+          "frameMilliseconds": 6.9445343,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "effect": 14,
+            "body": 22
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        },
+        "themed": {
+          "events": [
+            "dash"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_Attack123\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 20.0,\r\n  \"meleeSize\": [\r\n    3.5,\r\n    3.5\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 20.0,\r\n  \"damageResult\": 20,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "IDLE"
+          ],
+          "frames": 22,
+          "themedFrames": 22,
+          "fireSeconds": [
+            0.118881226
+          ],
+          "frameMilliseconds": 7.14430237,
+          "uiApplyMilliseconds": 6.5497,
+          "guarded": false,
+          "roles": {
+            "effect": 14,
+            "body": 22
+          },
+          "themedRoles": {
+            "effect": 14,
+            "body": 22
+          },
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 1000,
+          "preparedMaxMp": 1000,
+          "mpCosts": []
+        }
+      }
+    },
+    {
+      "name": "combat 500 special",
+      "value": {
+        "id": 500,
+        "type": "Staff",
+        "mode": "special",
+        "original": {
+          "events": [
+            "special:10"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_SpecialAttack1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 35.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    3.75\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}",
+            "{\r\n  \"prefab\": \"Staff_SpecialAttack2\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 45.0,\r\n  \"meleeSize\": [\r\n    5.25,\r\n    5.25\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 59,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 45.0,\r\n  \"damageResult\": 45,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 59,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 45.0,\r\n  \"damageResult\": 45,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "GREATSWORDSWING_LOWER",
+            "IDLE"
+          ],
+          "frames": 48,
+          "themedFrames": 0,
+          "fireSeconds": [
+            0.104171753,
+            0.5833435
+          ],
+          "frameMilliseconds": 6.9447,
+          "uiApplyMilliseconds": 0.0,
+          "guarded": false,
+          "roles": {
+            "body": 48,
+            "effect": 15
+          },
+          "themedRoles": {},
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 995,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            5
+          ]
+        },
+        "themed": {
+          "events": [
+            "special:10"
+          ],
+          "projectiles": [
+            "{\r\n  \"prefab\": \"Staff_SpecialAttack1\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 35.0,\r\n  \"meleeSize\": [\r\n    3.75,\r\n    3.75\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}",
+            "{\r\n  \"prefab\": \"Staff_SpecialAttack2\",\r\n  \"defaultDamageRatio\": 1.0,\r\n  \"kind\": \"MeleeCollision_Circle\",\r\n  \"damage\": 45.0,\r\n  \"meleeSize\": [\r\n    5.25,\r\n    5.25\r\n  ],\r\n  \"rangeBonus\": 0.0,\r\n  \"shape\": \"Directional\",\r\n  \"colliders\": []\r\n}"
+          ],
+          "hits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 45.0,\r\n  \"damageResult\": 45,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "unitHits": [
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 35.0,\r\n  \"damageResult\": 35,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}",
+            "{\r\n  \"victim\": \"DamageDummy(Clone)\",\r\n  \"damage\": 45.0,\r\n  \"damageResult\": 45,\r\n  \"from\": \"DirectAttack\",\r\n  \"failed\": 0\r\n}"
+          ],
+          "states": [
+            "ATTACK",
+            "GREATSWORDSWING_LOWER",
+            "IDLE"
+          ],
+          "frames": 48,
+          "themedFrames": 48,
+          "fireSeconds": [
+            0.104171753,
+            0.5873871
+          ],
+          "frameMilliseconds": 7.172589,
+          "uiApplyMilliseconds": 6.1242,
+          "guarded": false,
+          "roles": {
+            "body": 48,
+            "effect": 15
+          },
+          "themedRoles": {
+            "body": 48,
+            "effect": 15
+          },
+          "canMove": true,
+          "weapon": 500,
+          "radius": 0.25,
+          "radiusAfter": 0.25,
+          "mp": 995,
+          "preparedMaxMp": 1000,
+          "mpCosts": [
+            5
+          ]
+        }
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "PinkRabbit",
+        "actual": "PinkRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "ArmoredRabbit",
+        "actual": "ArmoredRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "BrownRabbit",
+        "actual": "BrownRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "costume",
+      "value": {
+        "requested": "DarkBrownRabbit",
+        "actual": "DarkBrownRabbit",
+        "themed": true
+      }
+    },
+    {
+      "name": "dungeon entry",
+      "value": {
+        "stage": "Moleland",
+        "currentFloorGuid": "21dd57cb-87c2-4fa9-87d2-8dc4cf853b9d",
+        "isInDungeon": 1,
+        "themed": true,
+        "music": {
+          "path": "event:/BGM/placeDungeonMole",
+          "key": "guid:{294aa0c8-7c11-49a2-84ea-a7abda1a9358}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    },
+    {
+      "name": "floor transition",
+      "value": {
+        "name": "Moleland_Battle_0",
+        "current": "1cc6effb-b904-4e44-8b60-1197c7742ac8",
+        "themed": true
+      }
+    },
+    {
+      "name": "encounter discovery",
+      "value": {
+        "floor": "Moleland_Battle_0(Clone)",
+        "spawners": [
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              487.0,
+              473.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          },
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              513.0,
+              473.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          },
+          {
+            "name": "RandomEnemyPhaseSpawner(Clone)",
+            "enableSpawn": true,
+            "phases": 1,
+            "center": [
+              513.0,
+              491.0
+            ],
+            "isSpawned": false,
+            "isCleared": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "live encounter",
+      "value": {
+        "isSpawned": true,
+        "inBattle": true,
+        "outgoing": 17,
+        "incoming": 4,
+        "hpBefore": 50.0,
+        "hpAfter": 22.0,
+        "localThemed": true,
+        "enemyName": "MoleSoldier_Fanatic(Clone)",
+        "enemyFaction": "MoleUnion",
+        "enemyOriginal": true,
+        "enemySurvived": true,
+        "music": {
+          "path": "event:/BGM/placeDungeonMole",
+          "key": "guid:{294aa0c8-7c11-49a2-84ea-a7abda1a9358}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    },
+    {
+      "name": "death revive",
+      "value": {
+        "died": true,
+        "revived": true,
+        "hp": 50.0,
+        "themed": true
+      }
+    },
+    {
+      "name": "town return",
+      "value": {
+        "floor": "836f6ba2-8346-4b72-b650-23409bf78d56",
+        "themed": true,
+        "music": {
+          "path": "event:/BGM/placeTownVillage",
+          "key": "guid:{c3ad9a89-bcfb-471a-a923-95e2fc8eb1ef}",
+          "bound": true,
+          "originalVolume": 0.0,
+          "state": "PLAYING",
+          "channels": 1
+        }
+      }
+    },
+    {
+      "name": "inventory HUD",
+      "value": {
+        "opened": true,
+        "roundTrip": {
+          "available": true,
+          "checkedGraphics": 1772,
+          "changed": 1772,
+          "textPreserved": true,
+          "restored": true,
+          "failures": []
+        }
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "de-DE",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "en-US",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "es-ES",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "fr-FR",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "it-IT",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "ja-JP",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "ko-KR",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "pl-PL",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "pt-BR",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "ru-RU",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "sv-SE",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "th-TH",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "tr-TR",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "zh-CN",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "language",
+      "value": {
+        "language": "zh-TW",
+        "activeTexts": 46,
+        "nativeMissing": "",
+        "skinMissing": "",
+        "textPreserved": true,
+        "newMissing": ""
+      }
+    },
+    {
+      "name": "resolution selector",
+      "value": {
+        "width": 1280,
+        "height": 720,
+        "movedFocus": true,
+        "closedByGamepad": true
+      }
+    },
+    {
+      "name": "resolution selector",
+      "value": {
+        "width": 1920,
+        "height": 1080,
+        "movedFocus": true,
+        "closedByGamepad": true
+      }
+    },
+    {
+      "name": "reload endurance",
+      "value": {
+        "cycles": 25,
+        "before": {
+          "textures": 32434,
+          "sprites": 37376,
+          "fonts": 12,
+          "materials": 349,
+          "managedBytes": 305586176,
+          "bundles": 0
+        },
+        "after": {
+          "textures": 32434,
+          "sprites": 37376,
+          "fonts": 12,
+          "materials": 349,
+          "managedBytes": 306434048,
+          "bundles": 0
+        },
+        "channels": 0
+      }
+    },
+    {
+      "name": "session restart",
+      "value": {
+        "newAvatar": true,
+        "themed": true,
+        "local": true
+      }
+    },
+    {
+      "name": "long skin name",
+      "value": {
+        "textPreserved": true,
+        "ellipsis": true,
+        "clipped": true
+      }
+    },
+    {
+      "name": "keyboard selector",
+      "value": {
+        "key": "F6",
+        "opened": true,
+        "blocked": true,
+        "closedByEscape": true
+      }
+    },
+    {
+      "name": "automated endurance",
+      "value": {
+        "startedUtc": "2026-10-06T04:00:34.604601Z",
+        "requestedMinutes": 60,
+        "elapsedSeconds": 3604.84644,
+        "cycles": 336,
+        "actions": 1008,
+        "skippedActions": 0,
+        "failures": [],
+        "completed": true
+      }
+    }
+  ],
+  "exceptions": [],
+  "hooks": [],
+  "restored": {
+    "themeNull": true,
+    "audioChannels": 0,
+    "virtualDeviceRemoved": true,
+    "profile": "",
+    "profileFileAbsent": true
+  }
+}

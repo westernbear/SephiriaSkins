@@ -1,0 +1,137 @@
+{
+  "source": "ui-final.png",
+  "size": [
+    2048,
+    1024
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "layout": "grid",
+  "rectMode": "ink",
+  "padding": 6,
+  "interiorDetailsForReview": [],
+  "resources": {
+    "ui.0.0": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        97,
+        662,
+        318,
+        212
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.0.1": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        622,
+        650,
+        291,
+        237
+      ],
+      "pivot": [
+        0.5017182130584192,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.0.2": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        1124,
+        713,
+        312,
+        111
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.0.3": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        1633,
+        712,
+        318,
+        112
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.1.0": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        117,
+        121,
+        278,
+        270
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.1.1": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        590,
+        202,
+        355,
+        108
+      ],
+      "pivot": [
+        0.5014084507042254,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.1.2": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        1125,
+        167,
+        310,
+        178
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    },
+    "ui.1.3": {
+      "file": "ui-final.png",
+      "kind": "sprite",
+      "rect": [
+        1615,
+        180,
+        354,
+        153
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 200.0
+    }
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "source": "effects-selected.png",
+  "size": [
+    1024,
+    1536
+  ],
+  "grid": [
+    4,
+    6
+  ],
+  "layout": "grid",
+  "rectMode": "cell",
+  "padding": 6,
+  "interiorDetailsForReview": [],
+  "resources": {
+    "fx.0.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.0.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.0.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.0.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.1.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.1.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.1.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.1.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.2.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.2.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.2.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.2.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.3.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.3.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.3.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.3.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.4.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.4.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.4.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.4.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.5.0": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.5.1": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.5.2": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    },
+    "fx.5.3": {
+      "file": "effects-selected.png",
+      "kind": "sprite",
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 256.0
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "scope": "Direct visual review of selected actual-game PNGs. Full PNGs include game artwork and stay local; this record stores only relative filenames and hashes. This does not assert every screen/frame/content item was manually inspected.",
+  "packs": {
+    "fan.chiikawa": {
+      "runId": "20261006T111619626Z-db3ac43439f54eb8b8a960b8530f4e39",
+      "pluginSha256": "a58f927e336b99ce3aba2232364d4241ad0018b91c76fb65e4ee6cde5ffa4a4d",
+      "captures": [
+        {
+          "file": "visual/weapon-0-front.png",
+          "sha256": "fabaabc48b6892c1114512c67838b6df06ee17abde0c949745e32d817a09c887",
+          "finding": "White Chiikawa face, ears and paws are complete. Pink weapon and the native secondary shield slot follow their separate native renderers; mask records checked separately."
+        },
+        {
+          "file": "visual/weapon-0-back.png",
+          "sha256": "22f0d8176c6b8799b9d18f4be61d7402cc9d8f5fce628a17cbfbc0aaf4bbe152",
+          "finding": "Faceless white back, two ears and small attached round tail; no detached face or neighboring atlas fragments."
+        },
+        {
+          "file": "visual/attack-400-special-1-smooth.png",
+          "sha256": "394264f1d18c78b4dc2b47c8f9ee355c613323890f7ca2b4bf68accf476acb29",
+          "finding": "Airy pink slash uses original effect extent and separate pink sasumata. A transient yellow line dissipates into impact fragments in sample 2; no original weapon sprite remains in the recorded local weapon renderers."
+        },
+        {
+          "file": "visual/attack-400-special-2-smooth.png",
+          "sha256": "9aa3498c8d1c1db175f617fd9f229109faffb1674de24e8471699f1b021fc536",
+          "finding": "Pink slash has ended; native impact specks dissipate, body and weapon remain separate."
+        },
+        {
+          "file": "visual/water-theme-False-1.png",
+          "sha256": "e78ab09e08549a41d362590fb2c646dcf2845f4f1f0a917f626cb28dc9916430",
+          "finding": "Smooth back view at a verified solid water shore. Native shoreline mask clips the reflection; this does not establish a complete visible reflected silhouette."
+        },
+        {
+          "file": "visual/revive-1.png",
+          "sha256": "ee0fc69f135f001870757d7a02290e9d1af8ce6a71df4293665a10ec61f51670",
+          "finding": "Correct white facial silhouette reappears during native revival; weapon remains separate."
+        },
+        {
+          "file": "play-death.png",
+          "sha256": "52cbc50c98967cb9359dde7f5711ca2a416fd5ef5e4d645ad543a638f65af96a",
+          "finding": "Native HP is zero; the native death/blink sample hides the body, while the weapon and unmodified enemy remain. Do not count this as an unobscured death-pose portrait."
+        },
+        {
+          "file": "play-inventory.png",
+          "sha256": "130e6b0099b101d2937c7239a55ab939b4ba2ee3a736b4765c9e63bc27db9732",
+          "finding": "Native 24-slot grid and functional selection outline remain; plum/pink framing and Korean labels are legible."
+        }
+      ]
+    },
+    "fan.furuhonya": {
+      "runId": "20261006T112227499Z-24b7a992021a41dbbb7a3595764cc975",
+      "pluginSha256": "a58f927e336b99ce3aba2232364d4241ad0018b91c76fb65e4ee6cde5ffa4a4d",
+      "captures": [
+        {
+          "file": "visual/weapon-0-front.png",
+          "sha256": "ec17629de226009021b8b82906a1901ec87586652a4bfe114503fa9df723c0b8",
+          "finding": "Cream face with four small brow strokes, pink cap/claw ears and attached top hair tufts. Native sword and shield remain separate and unchanged."
+        },
+        {
+          "file": "visual/weapon-0-back.png",
+          "sha256": "3c39078d642b7a00d1ab8f0eae71f4e3779623a506aafaa524ac3ce690da8abc",
+          "finding": "Faceless back with smooth pink cap and attached pink ear shapes; no detached brows, tail or adjacent-cell fragments."
+        },
+        {
+          "file": "visual/attack-400-special-1-smooth.png",
+          "sha256": "e4b3b214ec57f10016b1ec5c4c18c4e5c889f39cd5896adc533fd71133882dd9",
+          "finding": "Pink/coral slash has translucent edges and its original extent; native katana is kept and body is unarmed."
+        },
+        {
+          "file": "play-inventory.png",
+          "sha256": "7a6fe519cff7d4608eb6de2745de595df9384f9abccc26d35f5fd79dcc11ec43",
+          "finding": "Native 24-slot grid/selection outline retained, plum/pink framing and Korean text legible."
+        },
+        {
+          "file": "play-death.png",
+          "sha256": "912ee70b813538c02670c871846fb99e3f975cfd8068c6d845fb0b71a086b9ae",
+          "finding": "Native death is sampled at HP zero; body may be hidden by the native death/blink timeline, while the enemy remains unchanged."
+        },
+        {
+          "file": "visual/revive-1.png",
+          "sha256": "99bfac44342c311f956f532f1a0d3f91bf8295374eed37dd5c45be0fefdff2d6",
+          "finding": "Correct cream body, pink cap and attached ears during native revival; original weapon kept separate."
+        },
+        {
+          "file": "visual/water-theme-False-1.png",
+          "sha256": "bcb05287acdbc3fa44ef74953cebc9dcb6b15961911f02e1d8d988198d17b24b",
+          "finding": "Correct smooth body at the solid shore; native shoreline stencil clips the reflection rather than displaying a full mirror silhouette."
+        }
+      ]
+    }
+  }
+}

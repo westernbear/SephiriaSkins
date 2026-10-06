@@ -1,0 +1,55 @@
+{
+  "runId": "20261006T122149128Z-76ac688690204b58a4d4602777792014",
+  "pluginSha256": "95f1c4c276efc1a88ba640acd1ae46dd83bffbb157678ad6a40e9d55313c761e",
+  "scope": "Eight selected actual installer-only host PNGs directly opened and viewed, all sampled rear views. This is not manual inspection of every body frame, attack, front face or UI screen. Game PNGs remain local.",
+  "captures": [
+    {
+      "packId": "fan.momonga",
+      "file": "probe-fan.momonga.png",
+      "sha256": "b68420e47b9b0a470dcb3faf11a0f811b22e47bd99249ae63afd435d44ee552b",
+      "finding": "Sampled faceless rear body has two round ears and attached blue tail. Native sword/shield equipment is retained; no prior themed weapon is present."
+    },
+    {
+      "packId": "fan.shisa",
+      "file": "probe-fan.shisa.png",
+      "sha256": "c7dd68ad5ed89aee7cc9f83e2c2fcc4b726adc47aec0676cc9b865d607951714",
+      "finding": "Sampled cream rear body is framed by orange-gold mane curls. Native equipment is retained; this sample does not show the front face."
+    },
+    {
+      "packId": "fan.kurimanju",
+      "file": "probe-fan.kurimanju.png",
+      "sha256": "a0ceec8f9318e5314df790f0a55a06dbec34eed2ddb0356fe8052be8ac75df51",
+      "finding": "Sampled cream rear body and brown chestnut head patch remain distinct from the other themes. Native equipment is retained."
+    },
+    {
+      "packId": "fan.rakko",
+      "file": "probe-fan.rakko.png",
+      "sha256": "db6c9ea2086f669a8f618f11d8a3ead725881671636266f45c83ca718bb79e2b",
+      "finding": "Sampled white rear body/cape and separate sword are visible; this sample does not show the front-face scar."
+    },
+    {
+      "packId": "fan.chiikawa",
+      "file": "probe-fan.chiikawa.png",
+      "sha256": "6f486b93691ac24a503e8e8229e82a6864a4377e55cb5fcfdf8bed7bb763331e",
+      "finding": "Sampled faceless white rear body and separate pink weapon slots are visible. Native sword-and-shield equipment keeps its two original renderer slots."
+    },
+    {
+      "packId": "fan.usagi",
+      "file": "probe-fan.usagi.png",
+      "sha256": "8b0f92bdaea62e9f1ff7489498846d4d8df8426650b2006b89c39c4fde4aa6ed",
+      "finding": "Yellow rear body/ears are partly obscured by the two native sword-and-shield slots rendered as yellow batons. This is not an unobscured full-body portrait; slot geometry and masks are checked separately."
+    },
+    {
+      "packId": "fan.furuhonya",
+      "file": "probe-fan.furuhonya.png",
+      "sha256": "292b9edbe0d38c8d8854884932fff275f3f947169d8eafd91b2a7e66ac925b79",
+      "finding": "Sampled faceless white rear body, pink round head cap and pink ears are visible. Native equipment is retained."
+    },
+    {
+      "packId": "fan.hachiware",
+      "file": "probe-fan.hachiware.png",
+      "sha256": "e9762c149a705c943e65a5ac7aecf256dab8f836ac9e101e13c982faa27adfeb",
+      "finding": "Existing faceless blue/white rear body and blue sasumata renderer slots remain; existing theme assets were preserved."
+    }
+  ]
+}

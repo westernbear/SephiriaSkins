@@ -1,0 +1,60 @@
+Exact actual production history; original PNGs retained unchanged.
+
+Generation 1: body-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production 2D body sprite atlas.
+Create brand-new Chiikawa-series fan art of Rakko: a round pale-ivory little sea otter with small BLACK rounded ears, BLACK paws and feet, a small tan X-shaped scar on the upper left forehead, serious angled eyebrows, dark brown oval eyes, pink cheeks, a little W mouth, and a plain WHITE CAPE with a white collar wrapped around the neck. The cape is attached and visible on front and back poses. No sword, weapon, scabbard or belt on the body; the game supplies the sword separately.
+Composition: wide 2048x1024 PNG atlas, exactly 8 columns and 4 rows, 32 equal 256x256 cells. One complete connected UNARMED character per cell, horizontally centered feet, identical character proportions across poses, standing height about 165 pixels (include ears and cape). Leave at least 32 pixels genuinely empty transparent padding around the whole silhouette. Feet baseline about y=210 in each cell except the lying pose. Every ear, tail, paw and cape belongs to the connected body silhouette. No grid lines.
+Row 1 FRONT left to right: standing idle eyes open; same idle blinking; walk left foot forward; walk right foot forward; low leaning dash paws tucked; braced charging paws near chest; flinching hurt eyes shut; lying defeated on side eyes closed, intact ears and tail/cape.
+Row 2 BACK facing away: these same eight poses from behind, ear twitch instead of blinking; absolutely no eyes, nose, mouth or face on any back pose. Preserve the actual back markings and attached tail/cape described above.
+Row 3 FRONT unarmed attack phases: neutral ready; paws draw back to wind up; paws reach forward; broad paw swing; peak follow-through leaning forward; recover paws; return stance; neutral ready. Eight slightly distinct complete character poses, no held object.
+Row 4 BACK unarmed attack phases: those same eight phases from behind with no face. Keep all ears, tail/cape and rear markings intact.
+Style: clean flat kawaii 2D sprite illustration, thick consistent dark cocoa outline legible at tiny game size, solid original character colors, minimal antialiasing, no gradients, grain or glow. REAL transparent alpha. No weapon, magic, effect, sparks, dust, shadow, ground, floating fragment, text, label, logo, watermark or extra character. Body only; the game supplies separate weapons and effects.
+
+Generation 2: effects-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production game effect-phase atlas.
+Create brand-new rakko fan-art game effects using ivory, cool silver and muted gold, with precise slim silver blade trails with restrained small gold-edged arcs. Exactly 4 columns and 6 rows on a 1024x1536 PNG atlas: 24 equal cells, truly transparent alpha background, at least 36px empty gutters around each cell's ink. Each row uses the same cell center and maximum extent across four phases, changing the amount of ink rather than the center. No character, body part, weapon, text or grid. Keep every ending cell faint but visibly nonempty.
+Each row left to right: BEGINNING, PEAK, RELEASE, FAINT ENDING.
+Row 1 slim open curved attack slash, larger open crescent peak, shortening release, faint short crescent trace.
+Row 2 short horizontal dash streak, broader two-streak peak, shortening release, faint horizontal trace.
+Row 3 small rounded projectile pointing RIGHT, slightly larger with short leftward trail, small fading projectile, faint tiny oval trace.
+Row 4 small impact puff, medium airy impact puff, breaking fading puff, tiny faint puff.
+Row 5 small open circular guard ring, larger HOLLOW ring, thin fading ring, faint short ring arc.
+Row 6 small horizontal revive ellipse with tiny glint above, two restrained light ellipses and tiny glint, fading ellipses, faint short ellipse trace.
+Clean flat airy game effects, low-opacity fading phases, restrained thin edges, transparent interiors. Preserve attack direction and enemy visibility. No giant stars, opaque flash disks, bloom, speckles, random pixels, backgrounds or shadows.
+
+Generation 3: ui-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production game UI sprite atlas, not a screenshot.
+Create a new rakko fan-art UI atlas: EXACTLY 4 columns and 2 rows on a wide 2048x1024 PNG, eight separate centered elements, at least 40px truly empty transparent gutters. Thin repeatable borders and simple corners for nine-slicing. Palette ivory, cool silver and muted gold, with QUIET dark charcoal interiors on every panel/button to keep existing white multilingual text readable. Decorative tiny attached white-cape folds at the outer border stay attached to the outer border. Draw no text or numbers.
+Top row: dark dialogue panel; dark inventory panel; dark normal button; dark selected button with a restrained double border.
+Bottom row: a dedicated large FRONT FACE PORTRAIT in a simple round medallion, faithfully recognizable from these traits: Rakko: a round pale-ivory little sea otter with small BLACK rounded ears, BLACK paws and feet, a small tan X-shaped scar on the upper left forehead, serious angled eyebrows, dark brown oval eyes, pink cheeks, a little W mouth, and a plain WHITE CAPE with a white collar wrapped around the neck. The cape is attached and visible on front and back poses. No sword, weapon, scabbard or belt on the body; the game supplies the sword separately.; dark horizontal HUD bar with an uncluttered center and tiny attached outer-left motif; dark tooltip panel; dark header panel with thin accent top edge.
+Clean flat 2D illustration with consistent dark outlines and transparent alpha outside each sprite. No gradients, grain, glow, central large ornaments, background, grid, watermark, extra portrait outside its cell, full interface, text, number or logo. Portrait is the only character illustration; leave panel centers free for native text.
+Plain empty inventory center: no grid, drawn slots, squares, item icons or buttons. The game draws those separately.
+
+Generation 4: weapon-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: new generation
+Use case: stylized-concept. Asset type: production isolated 2D game weapon sprite.
+A single complete Rakko-inspired STRAIGHT SWORD: slim straight silver blade with a pointed tip, a simple white cross guard, short white handle with three black grip bands and a small white pommel. Upright with blade tip up and handle down. The silver exposed blade is a fan-art interpretation of the sword whose official merchandise shows a white-and-black grip and brown sheath. Do not draw the sheath, body, cape or character. Clean dark-charcoal outline and restrained flat silver/white/black fills.
+1024x1024 PNG, real transparent alpha, one centered complete weapon inside a single cell with 100px empty padding. Flat kawaii game art with dark outline. No hand, character, shadow, ground, light flare, magic, text, logo or watermark. Do not add the weapon to a body atlas.
+
+Generation 5: body-v2-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: edit original atlas
+Use case: precise-object-edit. This is the edit target body atlas. Correct only the tan X-shaped forehead scar on every FRONT-facing pose: place the tan X on the VIEWER'S LEFT upper forehead, as in the official Rakko front merchandise. Remove the X from the viewer's right, preserving original ivory fill under it. Keep every complete pose, black ears/paws/feet, white cape/collar, dark outlines, proportions, unarmed body, 8x4 order and true transparent background unchanged. Back poses remain faceless and scar-free. No new marks, whiskers, weapons, accessories, glow or background.
+
+Generation 6: ui-v2-generated.png
+Tool: image_gen
+Actual date: 2026-10-06
+Mode: edit original atlas
+Use case: precise-object-edit. This is the edit target eight-element UI atlas. Correct only the portrait: move its tan X-shaped forehead scar to the VIEWER'S LEFT upper forehead, preserve ivory fill where the former X was; REMOVE the invented cheek whiskers completely, retaining the pink blush patches and mouth. Rakko has no whisker lines in this reference. Keep the portrait black ears/paws, cape/collar, all eight UI panels, quiet charcoal centers, borders, palette, spacing and truly transparent background unchanged. No text, new ornament or background.

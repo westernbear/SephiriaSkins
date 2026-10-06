@@ -1,0 +1,28 @@
+{
+  "packId": "fan.chiikawa",
+  "runId": "20261006T103517854Z-4797c3227f3446d0938589db58be8c23",
+  "pluginSha256": "92a28827d96fce9f01731cc5c3d64f25f9383d76b0c66ee871960952ff78b7b2",
+  "weaponScope": "defaults",
+  "soakMinutes": 0,
+  "cyclePackIds": [],
+  "skippedTrials": {},
+  "arguments": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sephiria\\Sephiria.exe",
+    "--skins-playtest",
+    "--skins-test-pack=fan.chiikawa",
+    "--skins-test-weapons=defaults",
+    "--skins-playtest-with-visual",
+    "--skins-playtest-with-controls",
+    "--skins-playtest-with-encounter",
+    "--skins-probe-exit",
+    "-screen-fullscreen",
+    "0",
+    "-screen-width",
+    "1280",
+    "-screen-height",
+    "720",
+    "-logFile",
+    "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\game-suite-20261006-193515\\fan.chiikawa.log"
+  ],
+  "startedUtc": "2026-10-06T10:35:17.9129314Z"
+}

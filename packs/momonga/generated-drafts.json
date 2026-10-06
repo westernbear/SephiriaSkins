@@ -1,0 +1,83 @@
+﻿[
+    {
+        "file":  "body-v1.png",
+        "sha256":  "3dcd0f43a41c21c096c6e8b7c09c5b13694d279dab38fd57bc875887e70f39f3",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "body-v2.png",
+        "sha256":  "dee8629a803f68bde250024c4bc26eb0a4c11cd92232377783ae9f5af4a6ecac",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "body-v3.png",
+        "sha256":  "77ab0de86fdfeb277f82342e09bf8175a326ae012d727dee669f9267aa1c90a6",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "effects-v1.png",
+        "sha256":  "6572b3957878d0204738d9f5b388be4d223355eec7c20a84537aa17cf6492d39",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "effects-v2.png",
+        "sha256":  "6893e1b270d24b6bbf50e0f55a3572a5e7f365023b7ed12919cfda6ce4b2f4d6",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "effects-v3.png",
+        "sha256":  "a867867446de46c8af2a6795fff9489af2f8512306b2b1a663403220ad6d85d4",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "effects-v4.png",
+        "sha256":  "fd7ac4a033fedef77101728cb1b6f06de3f486983436e83ba6a31eaa2d131cbf",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "ui-v1.png",
+        "sha256":  "8af6da4feb1c5bed5a4d50680f581fed8e608b89fb141f2f2249947ed0e22f22",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    },
+    {
+        "file":  "ui-v2.png",
+        "sha256":  "93e6972ca804c5023129d16cd32aefe5a9c3960403d1495768cc63f827ddf73f",
+        "generatedDate":  "2026-10-06",
+        "tool":  "OpenAI built-in image_gen",
+        "transparentBackgroundRequested":  true,
+        "status":  "draft-under-review",
+        "scriptEdited":  false
+    }
+]

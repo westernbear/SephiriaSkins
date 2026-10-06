@@ -1,0 +1,11 @@
+{
+  "combatTrials": 18,
+  "maxFireTimingDifferenceMs": 4.349,
+  "languages": 15,
+  "reloadCycles": 25,
+  "resolutions": 2,
+  "packId": "fan.hachiware",
+  "runId": "20261006T074436117Z-0ea8cad975584db6b67c7f6620f6c78d",
+  "pluginSha256": "90999aaa47412fc9e3d058ed611eabc76e25b45e20503cbfa4a6aebee1bdb3cb",
+  "scope": "Core combat/lifecycle/UI checks only; the combined release verifier FAILED the mine encounter, whose raw failed evidence is retained."
+}

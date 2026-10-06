@@ -1,0 +1,17 @@
+{
+  "runId": "20261006T121532938Z-48c4329546124ec4bce74a6fa2500092",
+  "pluginSha256": "664f97d51651b34213980c457c7826abad793b53894dc3d38396a5b7ef30c74a",
+  "rawFile": "cycle-material-investigation-play.json",
+  "rawSha256": "e00260bd5a6e509b68eca67c2732790755566c71e9f5f20311ecc8a4980ec852",
+  "reason": "68 inactive native TMP labels changed only from null shared material to the same native font default already used by 316 peer labels. Font, text, color, geometry and sizes were identical. This is lazy default-material initialization, not a retained skin material.",
+  "graphicCount": 1781,
+  "changedNativeLabels": 68,
+  "nativeFontId": 24006,
+  "nativeDefaultMaterialId": 24008,
+  "nativePeersAlreadyUsingDefault": 316,
+  "explicitCustomMaterialsUnchanged": 4,
+  "otherPropertiesUnchanged": true,
+  "fix": "Only diagnostic UiSnapshot normalizes an absent material to text.font.material; all explicit custom/replacement material identities are still compared. UiAdapter and gameplay code are unchanged.",
+  "originalStrictResult": "failed; raw records retained",
+  "followup": "final-cycle-play.json contains the eight-pack current-DLL strict pass after diagnostic normalization."
+}

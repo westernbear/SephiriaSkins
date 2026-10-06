@@ -1,0 +1,111 @@
+{
+  "character": "usagi",
+  "profile": {
+    "seed": 303,
+    "key": 62,
+    "scale": [
+      0,
+      2,
+      4,
+      7,
+      9
+    ],
+    "melody": [
+      7,
+      0,
+      9,
+      4,
+      7,
+      2,
+      9,
+      0
+    ],
+    "bpm": 152,
+    "instrument": "pluck",
+    "rhythm": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2.5,
+      3.5
+    ],
+    "voice": 760
+  },
+  "rate": 22050,
+  "method": "Original additive synthesis; no sampled music, speech or game recordings",
+  "files": [
+    {
+      "file": "attack.wav",
+      "seconds": 0.256,
+      "peak": 0.31702,
+      "sha256": "6359942a045210c0077377a86c7d3c63d07e418b6d6e847f4b5fa226cd069845"
+    },
+    {
+      "file": "hurt.wav",
+      "seconds": 0.306,
+      "peak": 0.32035,
+      "sha256": "a0ee3fb09c6e7ec6866cdcd16996cab6636a317241fb74e420cf14cbea57eb6c"
+    },
+    {
+      "file": "death.wav",
+      "seconds": 0.574,
+      "peak": 0.3242,
+      "sha256": "ecb2429760236566e1dafee4bda20176150238524369519472836d03850a9db8"
+    },
+    {
+      "file": "revive.wav",
+      "seconds": 0.504,
+      "peak": 0.32035,
+      "sha256": "852e98ef168d90be03a36810466299008c65283bf00fef8bd2a269de21fceba0"
+    },
+    {
+      "file": "slash.wav",
+      "seconds": 0.18,
+      "peak": 0.30219,
+      "sha256": "b62c2f1e46dfe3896c222e656da5e11c2607505a47af0cc7cde768d4d623cecc"
+    },
+    {
+      "file": "dash.wav",
+      "seconds": 0.22,
+      "peak": 0.31106,
+      "sha256": "693590c37708d6423d8430c0215562b04e8305accb6b43a64efda69313b8e03e"
+    },
+    {
+      "file": "impact.wav",
+      "seconds": 0.16,
+      "peak": 0.30612,
+      "sha256": "1245b88baad548947c3bca233fe4d86d00c3a8e1a4750b23bc75946807314621"
+    },
+    {
+      "file": "menu.wav",
+      "seconds": 0.12,
+      "peak": 0.2513,
+      "sha256": "5e8ce1195a96e9bec16304ed95a4b9cff251f6287c0261bb240e86ccda164887"
+    },
+    {
+      "file": "menu_music.wav",
+      "seconds": 14.035,
+      "peak": 0.31728,
+      "sha256": "17bdac0dd9a60087b7dac9c1b06cdafb8b8e0049b52618771fa3afa4a8200022"
+    },
+    {
+      "file": "explore_music.wav",
+      "seconds": 12.632,
+      "peak": 0.30042,
+      "sha256": "7b8104004c5dd24d2c1a48f46843696b21d9f139ce95abf54732a3a584287d95"
+    },
+    {
+      "file": "battle_music.wav",
+      "seconds": 10.354,
+      "peak": 0.33466,
+      "sha256": "7beca5a4216df49588324b8e264f2ec6f609ac57a0e46a6bb4dde42cc6c83f52"
+    },
+    {
+      "file": "charge_loop.wav",
+      "seconds": 0.8,
+      "peak": 0.10511,
+      "sha256": "d7ef1b6e6243953e6ae895a47562da1cdd9e38be44a15a74602cf57b97144680"
+    }
+  ]
+}

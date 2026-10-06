@@ -3,9 +3,19 @@ using SephiriaSkins.Core;
 
 try
 {
-    if (args.Length < 3) throw new ArgumentException("Usage: PackTool validate|zip|template <catalog.json> <pack-or-output> [output.zip]");
+    if (args.Length < 3) throw new ArgumentException("Usage: PackTool validate|validate-all|zip|template <catalog.json> <pack-or-output> [output.zip]");
     var catalog = Json.Read<AssetCatalog>(File.ReadAllText(args[1]));
-    if (args[0] == "template")
+    if (args[0] == "validate-all")
+    {
+        var entries = PackDiscovery.Scan(args[2], catalog);
+        if (entries.Count == 0) throw new InvalidDataException("No packs discovered: " + args[2]);
+        foreach (var entry in entries)
+        {
+            if (entry.Error != null || entry.Pack == null) throw new InvalidDataException(entry.Source + ": " + entry.Error);
+            Console.WriteLine("VALID " + entry.Pack.Manifest.Id + ": " + entry.Source);
+        }
+    }
+    else if (args[0] == "template")
     {
         if (Directory.Exists(args[2]) && Directory.EnumerateFileSystemEntries(args[2]).Any())
             throw new ArgumentException("Template output must be a new or empty directory.");

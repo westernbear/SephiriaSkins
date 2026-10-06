@@ -1,0 +1,15 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T122149128Z-76ac688690204b58a4d4602777792014",
+  "exceptions": [],
+  "profileAbsent": true,
+  "themeNull": true,
+  "audioReplacements": 0,
+  "errors": [],
+  "configBytesRestored": true,
+  "fontLifetime": {
+    "removedFonts": 2,
+    "removedAtlases": 0,
+    "faceResets": 3
+  }
+}

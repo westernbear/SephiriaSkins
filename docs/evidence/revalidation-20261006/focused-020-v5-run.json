@@ -1,0 +1,26 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T064917874Z-f11a450b7e204a10b46f53e7f94a8e5b",
+  "pluginSha256": "1e3f13193d3b712cfb7ddad2c91e61970825b25daee5caac85d92ae52ed860ae",
+  "weaponScope": "12,16,26,29,119,121,122,126,127,300,422,519,1004,1008,1102,1107,1115,1120,1201,1208",
+  "soakMinutes": 0,
+  "cyclePackIds": [],
+  "skippedTrials": {},
+  "arguments": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sephiria\\Sephiria.exe",
+    "--skins-playtest",
+    "--skins-playtest-combat-only",
+    "--skins-test-pack=fan.hachiware",
+    "--skins-test-weapons=12,16,26,29,119,121,122,126,127,300,422,519,1004,1008,1102,1107,1115,1120,1201,1208",
+    "--skins-probe-exit",
+    "-screen-fullscreen",
+    "0",
+    "-screen-width",
+    "1280",
+    "-screen-height",
+    "720",
+    "-logFile",
+    "E:/ProjectStorage/Game/SephiriaSkins/.local/revalidation-20261006/focused-020-v5.log"
+  ],
+  "startedUtc": "2026-10-06T06:49:17.9307576Z"
+}

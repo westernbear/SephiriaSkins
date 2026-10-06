@@ -105,7 +105,11 @@ internal sealed class AudioAdapter
             }
             if (!entry.Instance.isValid() && !entry.HasChannel) { events.Remove(pair.Key); continue; }
             if (entry.Started && entry.Instance.isValid() && entry.Instance.getPlaybackState(out var state) == RESULT.OK && state == PLAYBACK_STATE.STOPPED)
-            { StopReplacement(entry); events.Remove(pair.Key); }
+            {
+                StopReplacement(entry); entry.Started = false;
+                // A stopped, unreleased Studio instance can be started again.
+                // Keep its binding identity until the native handle expires.
+            }
         }
     }
     private static void StopReplacement(Playing entry, bool restore = true)
@@ -137,28 +141,50 @@ internal sealed class AudioAdapter
         if (events.TryGetValue(instance.handle, out var entry) && entry.HasChannel) entry.Channel.setPitch(pitch);
     }
     public void Restore() { foreach (var entry in events.Values) StopReplacement(entry); }
-    internal object ProbeSettings()
+    internal object ProbeSettings(EventInstance? specific = null)
     {
-        var entry = events.Values.FirstOrDefault(e => e.HasChannel);
-        if (entry == null || !SoundManager.Instance) return new { available = false };
+        var entry = specific.HasValue ? events.TryGetValue(specific.Value.handle, out var found) ? found : null : events.Values.FirstOrDefault(e => e.HasChannel);
+        if (entry == null || !entry.HasChannel || entry.Binding == null || !SoundManager.Instance) return new { available = false };
         var master = SoundManager.Instance.GetMasterVolume();
+        var channelName = entry.Binding.Channel;
+        float ChannelVolume() => channelName == "music" ? SoundManager.Instance.GetBGMVolume() : channelName == "ambience" ? SoundManager.Instance.GetAmbienceVolume() : SoundManager.Instance.GetFXVolume();
+        void SetChannelVolume(float value)
+        {
+            if (channelName == "music") SoundManager.Instance.SetBGMVolume(value);
+            else if (channelName == "ambience") SoundManager.Instance.SetAmbienceVolume(value);
+            else SoundManager.Instance.SetFXVolume(value);
+        }
+        var priorChannelVolume = ChannelVolume();
+        var priorOriginalVolume = entry.OriginalVolume;
         var priorPause = Paused;
         entry.Instance.getPitch(out var priorPitch);
         var priorInstancePause = entry.IsPaused;
         var mute = false; var pause = false; var pitch = false; var suppressed = false;
+        var channelMute = false; var volumeTracking = false; var instancePause = false; var volumeRestored = false;
         try
         {
             SoundManager.Instance.SetMasterVolume(0); UpdateVolume(entry);
             entry.Channel.getVolume(out var volume); mute = Mathf.Abs(volume) < .0001f;
+            SoundManager.Instance.SetMasterVolume(.41f); SetChannelVolume(.37f); entry.Instance.setVolume(.53f); UpdateVolume(entry);
+            entry.Channel.getVolume(out volume);
+            volumeTracking = Mathf.Abs(volume - .41f * .37f * .53f * entry.Binding.Volume) < .0001f;
+            SetChannelVolume(0); UpdateVolume(entry); entry.Channel.getVolume(out volume); channelMute = Mathf.Abs(volume) < .0001f;
             Pause(true); entry.Channel.getPaused(out var paused); pause = paused;
+            Pause(false); entry.Instance.setPaused(true); entry.Channel.getPaused(out paused); instancePause = paused;
             entry.Instance.setPitch(1.25f); entry.Channel.getPitch(out var rate); pitch = Mathf.Abs(rate - 1.25f) < .0001f;
             entry.Instance.getVolume(out var originalVolume); suppressed = Mathf.Abs(originalVolume) < .0001f;
         }
         finally
         {
-            SoundManager.Instance.SetMasterVolume(master); UpdateVolume(entry);
-            entry.Instance.setPitch(priorPitch); entry.IsPaused = priorInstancePause; Pause(priorPause);
+            SoundManager.Instance.SetMasterVolume(master); SetChannelVolume(priorChannelVolume); entry.Instance.setVolume(priorOriginalVolume); UpdateVolume(entry);
+            entry.Instance.setPitch(priorPitch); entry.Instance.setPaused(priorInstancePause); Pause(priorPause);
+            entry.Channel.getVolume(out var restoredVolume);
+            volumeRestored = Mathf.Abs(restoredVolume - Mathf.Clamp01(master * priorChannelVolume * priorOriginalVolume * entry.Binding.Volume)) < .0001f;
         }
-        return new { available = true, masterMute = mute, pause, pitchTracking = pitch, originalSuppressed = suppressed };
+        return new { available = true, channel = channelName, masterMute = mute, channelMute, volumeTracking, instancePause, volumeRestored,
+            pause, pitchTracking = pitch, originalSuppressed = suppressed };
     }
+    internal bool IsReplacementActive(EventInstance instance) => events.TryGetValue(instance.handle, out var entry) && entry.HasChannel;
+    internal bool ReplacementLoops(EventInstance instance) => events.TryGetValue(instance.handle, out var entry) && entry.HasChannel &&
+        entry.Channel.getMode(out var mode) == RESULT.OK && (mode & MODE.LOOP_NORMAL) != 0;
 }

@@ -1,0 +1,230 @@
+{
+  "source": "ui-v2-generated.png",
+  "sourceSha256": "ee09f83d4f0a0bffee2101af6737babaeddd0ef1d3967a1758c7c990d0fb1862",
+  "output": "ui-final.png",
+  "outputSha256": "8bd7445db34b223e49e75e5291a27ff934fe116dfc191e62a53ccdfbd646ed23",
+  "mode": "ui",
+  "grid": [
+    4,
+    2
+  ],
+  "cellSize": 576,
+  "sourceRowCuts": [
+    0,
+    426,
+    887
+  ],
+  "sourceColumnCuts": [
+    0,
+    444,
+    887,
+    1330,
+    1774
+  ],
+  "sourceColumnCutsByRow": [
+    [
+      0,
+      486,
+      909,
+      1322,
+      1774
+    ],
+    [
+      0,
+      460,
+      887,
+      1320,
+      1774
+    ]
+  ],
+  "effectSeedLuma": null,
+  "effectOutlineRadius": null,
+  "transparentRgbCleared": true,
+  "method": "Background alpha isolation, zero RGB only for removed transparent pixels, and unscaled cell placement; retained artwork RGBA copied verbatim",
+  "cells": [
+    {
+      "sourceVisiblePixels": 118395,
+      "retainedVisiblePixels": 114799,
+      "rgbUnchanged": true,
+      "row": 0,
+      "column": 0,
+      "sourceCell": [
+        0,
+        0,
+        486,
+        426
+      ],
+      "sourceInk": [
+        17,
+        83,
+        484,
+        389
+      ],
+      "destination": [
+        54,
+        135
+      ]
+    },
+    {
+      "sourceVisiblePixels": 114982,
+      "retainedVisiblePixels": 110592,
+      "rgbUnchanged": true,
+      "row": 0,
+      "column": 1,
+      "sourceCell": [
+        486,
+        0,
+        909,
+        426
+      ],
+      "sourceInk": [
+        3,
+        65,
+        412,
+        408
+      ],
+      "destination": [
+        659,
+        116
+      ]
+    },
+    {
+      "sourceVisiblePixels": 37333,
+      "retainedVisiblePixels": 35695,
+      "rgbUnchanged": true,
+      "row": 0,
+      "column": 2,
+      "sourceCell": [
+        909,
+        0,
+        1322,
+        426
+      ],
+      "sourceInk": [
+        21,
+        194,
+        400,
+        294
+      ],
+      "destination": [
+        1250,
+        238
+      ]
+    },
+    {
+      "sourceVisiblePixels": 42498,
+      "retainedVisiblePixels": 39966,
+      "rgbUnchanged": true,
+      "row": 0,
+      "column": 3,
+      "sourceCell": [
+        1322,
+        0,
+        1774,
+        426
+      ],
+      "sourceInk": [
+        37,
+        189,
+        429,
+        301
+      ],
+      "destination": [
+        1820,
+        232
+      ]
+    },
+    {
+      "sourceVisiblePixels": 108783,
+      "retainedVisiblePixels": 106125,
+      "rgbUnchanged": true,
+      "row": 1,
+      "column": 0,
+      "sourceCell": [
+        0,
+        426,
+        460,
+        887
+      ],
+      "sourceInk": [
+        15,
+        25,
+        448,
+        417
+      ],
+      "destination": [
+        71,
+        668
+      ]
+    },
+    {
+      "sourceVisiblePixels": 24586,
+      "retainedVisiblePixels": 22904,
+      "rgbUnchanged": true,
+      "row": 1,
+      "column": 1,
+      "sourceCell": [
+        460,
+        426,
+        887,
+        887
+      ],
+      "sourceInk": [
+        13,
+        197,
+        408,
+        278
+      ],
+      "destination": [
+        666,
+        823
+      ]
+    },
+    {
+      "sourceVisiblePixels": 70920,
+      "retainedVisiblePixels": 66026,
+      "rgbUnchanged": true,
+      "row": 1,
+      "column": 2,
+      "sourceCell": [
+        887,
+        426,
+        1320,
+        887
+      ],
+      "sourceInk": [
+        8,
+        113,
+        429,
+        324
+      ],
+      "destination": [
+        1229,
+        758
+      ]
+    },
+    {
+      "sourceVisiblePixels": 33980,
+      "retainedVisiblePixels": 32320,
+      "rgbUnchanged": true,
+      "row": 1,
+      "column": 3,
+      "sourceCell": [
+        1320,
+        426,
+        1774,
+        887
+      ],
+      "sourceInk": [
+        7,
+        176,
+        439,
+        267
+      ],
+      "destination": [
+        1800,
+        818
+      ]
+    }
+  ]
+}

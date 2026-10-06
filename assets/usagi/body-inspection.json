@@ -1,0 +1,497 @@
+{
+  "source": "body-final.png",
+  "size": [
+    2048,
+    1024
+  ],
+  "grid": [
+    8,
+    4
+  ],
+  "layout": "components",
+  "rectMode": "ink",
+  "padding": 6,
+  "interiorDetailsForReview": [],
+  "resources": {
+    "body.0.0": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        63,
+        808,
+        130,
+        199
+      ],
+      "pivot": [
+        0.5,
+        0.03015075376884422
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.1": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        318,
+        808,
+        131,
+        199
+      ],
+      "pivot": [
+        0.5038167938931297,
+        0.03015075376884422
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.2": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        575,
+        808,
+        131,
+        199
+      ],
+      "pivot": [
+        0.4961832061068702,
+        0.03015075376884422
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.3": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        830,
+        808,
+        131,
+        199
+      ],
+      "pivot": [
+        0.5038167938931297,
+        0.03015075376884422
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.4": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1073,
+        808,
+        157,
+        176
+      ],
+      "pivot": [
+        0.5031847133757962,
+        0.03409090909090909
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.5": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1342,
+        809,
+        131,
+        197
+      ],
+      "pivot": [
+        0.5038167938931297,
+        0.030456852791878174
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.6": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1596,
+        809,
+        135,
+        194
+      ],
+      "pivot": [
+        0.5037037037037037,
+        0.030927835051546393
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.0.7": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1821,
+        808,
+        197,
+        112
+      ],
+      "pivot": [
+        0.5025380710659898,
+        0.05357142857142857
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.0": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        65,
+        552,
+        125,
+        192
+      ],
+      "pivot": [
+        0.504,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.1": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        321,
+        552,
+        125,
+        192
+      ],
+      "pivot": [
+        0.504,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.2": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        577,
+        552,
+        126,
+        192
+      ],
+      "pivot": [
+        0.5,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.3": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        833,
+        552,
+        126,
+        193
+      ],
+      "pivot": [
+        0.5,
+        0.031088082901554404
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.4": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1079,
+        553,
+        147,
+        170
+      ],
+      "pivot": [
+        0.4965986394557823,
+        0.03529411764705882
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.5": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1345,
+        553,
+        126,
+        192
+      ],
+      "pivot": [
+        0.5,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.6": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1600,
+        553,
+        127,
+        187
+      ],
+      "pivot": [
+        0.5039370078740157,
+        0.03208556149732621
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.1.7": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1824,
+        552,
+        191,
+        102
+      ],
+      "pivot": [
+        0.5026178010471204,
+        0.058823529411764705
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.0": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        65,
+        296,
+        125,
+        192
+      ],
+      "pivot": [
+        0.504,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.1": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        320,
+        296,
+        126,
+        192
+      ],
+      "pivot": [
+        0.5079365079365079,
+        0.03125
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.2": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        575,
+        296,
+        130,
+        193
+      ],
+      "pivot": [
+        0.5,
+        0.031088082901554404
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.3": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        828,
+        296,
+        136,
+        193
+      ],
+      "pivot": [
+        0.5,
+        0.031088082901554404
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.4": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1079,
+        297,
+        145,
+        175
+      ],
+      "pivot": [
+        0.503448275862069,
+        0.03428571428571429
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.5": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1344,
+        296,
+        128,
+        194
+      ],
+      "pivot": [
+        0.5,
+        0.030927835051546393
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.6": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1599,
+        296,
+        130,
+        194
+      ],
+      "pivot": [
+        0.5,
+        0.030927835051546393
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.2.7": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1855,
+        297,
+        129,
+        194
+      ],
+      "pivot": [
+        0.5038759689922481,
+        0.030927835051546393
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.0": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        67,
+        41,
+        121,
+        186
+      ],
+      "pivot": [
+        0.5041322314049587,
+        0.03225806451612903
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.1": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        320,
+        40,
+        128,
+        187
+      ],
+      "pivot": [
+        0.5,
+        0.03208556149732621
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.2": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        573,
+        41,
+        134,
+        187
+      ],
+      "pivot": [
+        0.5,
+        0.03208556149732621
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.3": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        830,
+        41,
+        132,
+        186
+      ],
+      "pivot": [
+        0.5,
+        0.03225806451612903
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.4": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1086,
+        41,
+        132,
+        179
+      ],
+      "pivot": [
+        0.5,
+        0.0335195530726257
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.5": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1346,
+        40,
+        123,
+        188
+      ],
+      "pivot": [
+        0.5040650406504065,
+        0.031914893617021274
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.6": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1603,
+        41,
+        122,
+        186
+      ],
+      "pivot": [
+        0.5,
+        0.03225806451612903
+      ],
+      "pixelsPerUnit": 187.0
+    },
+    "body.3.7": {
+      "file": "body-final.png",
+      "kind": "sprite",
+      "rect": [
+        1858,
+        40,
+        123,
+        187
+      ],
+      "pivot": [
+        0.5040650406504065,
+        0.03208556149732621
+      ],
+      "pixelsPerUnit": 187.0
+    }
+  }
+}

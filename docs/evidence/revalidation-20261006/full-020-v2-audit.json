@@ -1,0 +1,4738 @@
+{
+  "packId": "fan.hachiware",
+  "runId": "20261006T052248337Z-c03ee214b8a547ebbcea3fef12306274",
+  "comparison": "native/theme",
+  "pluginSha256": "88920e7154d612abcc7bdc66cdf8914f4171d0c578092acca4618739a7dfc949",
+  "coverage": {
+    "modes": [
+      "basic",
+      "dash",
+      "special"
+    ],
+    "scope": "all",
+    "weapons": [
+      {
+        "id": 0,
+        "name": "0000_SwordAndShield",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1,
+        "name": "0001_SwordAndShield_Tier2_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 2,
+        "name": "0002_SwordAndShield_Tier2_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 3,
+        "name": "0003_SwordAndShield_Tier2_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 4,
+        "name": "0004_SwordAndShield_Tier3_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 5,
+        "name": "0005_SwordAndShield_Tier3_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 6,
+        "name": "0006_SwordAndShield_Tier3_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 7,
+        "name": "0007_SwordAndShield_Tier3_D",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 8,
+        "name": "0008_SwordAndShield_Tier3_E",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 9,
+        "name": "0009_SwordAndShield_Tier3_F",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 10,
+        "name": "0010_GreatSword",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 11,
+        "name": "0011_GreatSword_Tier2_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 12,
+        "name": "0012_GreatSword_Tier2_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 13,
+        "name": "0013_GreatSword_Tier2_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 14,
+        "name": "0014_GreatSword_Tier3_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 15,
+        "name": "0015_GreatSword_Tier3_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 16,
+        "name": "0016_GreatSword_Tier3_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 17,
+        "name": "0017_GreatSword_Purple",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 18,
+        "name": "0018_GreatSword_Tier3_E",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 19,
+        "name": "0019_GreatSword_Tier3_F",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {
+          "special": "native_exception_reproduced_without_skin_hooks_user_approved_exclusion"
+        }
+      },
+      {
+        "id": 20,
+        "name": "0020_Dagger",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 21,
+        "name": "0021_Dagger_Tier2_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 22,
+        "name": "0022_Dagger_Tier2_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 23,
+        "name": "0023_Dagger_Tier2_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 24,
+        "name": "0024_Dagger_Tier3_A",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 25,
+        "name": "0025_Dagger_Tier3_B",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 26,
+        "name": "0026_Dagger_Tier3_C",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 27,
+        "name": "0027_Dagger_Tier3_D",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 28,
+        "name": "0028_Dagger_Tier3_E",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 29,
+        "name": "0029_Dagger_Tier3_F_New",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 100,
+        "name": "0100_Crossbow",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 101,
+        "name": "0101_Crossbow_Rifle",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 102,
+        "name": "0102_Crossbow_Rifle_MG",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 103,
+        "name": "0103_Crossbow_Rifle_Dual",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 104,
+        "name": "0104_Crossbow_Shotgun",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 105,
+        "name": "0105_Crossbow_Shotgun_Advanced",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 106,
+        "name": "0106_Crossbow_Special",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 107,
+        "name": "0107_Crossbow_Special_Burst",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 108,
+        "name": "0108_Crossbow_Fire",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 109,
+        "name": "0109_Crossbow_Fire_Drone",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 110,
+        "name": "0110_Crossbow_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 111,
+        "name": "0111_Crossbow_Lightning_Advanced",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 112,
+        "name": "0112_Crossbow_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 113,
+        "name": "0113_Crossbow_Ice_Infinite",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 114,
+        "name": "0114_Crossbow_Ice_Damage",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 115,
+        "name": "0115_Crossbow_Lightning_Cloud",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 116,
+        "name": "0116_Crossbow_Shotgun_DB",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 117,
+        "name": "0117_Crossbow_Special_Continue",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 118,
+        "name": "0118_Crossbow_Fire_Grenade",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 119,
+        "name": "0119_Crossbow_Poison",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 100,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 120,
+        "name": "0120_Crossbow_Poison_Jellifysh",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 119,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 121,
+        "name": "0121_Crossbow_Poison_Stack",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 119,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 122,
+        "name": "0122_Crossbow_Garand",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 100,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 123,
+        "name": "0123_Crossbow_Garand_Cooldown",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 122,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 124,
+        "name": "0124_Crossbow_Fire_FlameSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 108,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 125,
+        "name": "0125_Crossbow_Rifle_Dash",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 101,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 126,
+        "name": "0126_Crossbow_Lightning_Gatling",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 110,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 127,
+        "name": "0127_Crossbow_Shotgun_C4",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 104,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 128,
+        "name": "0128_Crossbow_Garand_Enhanced",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 122,
+        "type": "Crossbow",
+        "nativeClass": "WeaponSimple_Crossbow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 200,
+        "name": "0200_StaffOld",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "StaffMagic",
+        "nativeClass": "WeaponSimple_Staff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {
+          "special": "native input method is the empty WeaponSimple base implementation"
+        }
+      },
+      {
+        "id": 300,
+        "name": "0300_Bow",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_Bow",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {
+          "special": "native input method is the empty WeaponSimple base implementation"
+        }
+      },
+      {
+        "id": 400,
+        "name": "0400_Katana",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 401,
+        "name": "0401_Katana_Sheath_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 402,
+        "name": "0402_Katana_Sheath_T3_Fast",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 403,
+        "name": "0403_Katana_Sheath_T3_Range",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 404,
+        "name": "0404_Katana_Lightning_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 400,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 405,
+        "name": "0405_Katana_Lightning_T3_Issen",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 404,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 406,
+        "name": "0406_Katana_Fire_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 407,
+        "name": "0407_Katana_Fire_T3_Burn",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 408,
+        "name": "0408_Katana_Fire_T3_Dash",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 409,
+        "name": "0409_Katana_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 410,
+        "name": "0410_Katana_T3_Iaido",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 411,
+        "name": "0411_Katana_T3_Speed",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 412,
+        "name": "0412_Katana_Magic_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 413,
+        "name": "0413_Katana_Magic_T3_MagicCritical",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 414,
+        "name": "0414_Katana_Magic_T3_MagicBlade",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 416,
+        "name": "0416_Katana_Dash_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 417,
+        "name": "0417_Katana_Dash_T3_Parry",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 419,
+        "name": "0419_Katana_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 420,
+        "name": "0420_Katana_Ice_T3",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 421,
+        "name": "0421_Katana_Ice_T3_Spear",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 422,
+        "name": "0422_Katana_Fire_T3_FlameSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 406,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 423,
+        "name": "0423_Katana_Defense_T2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 400,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 424,
+        "name": "0424_Katana_Defense_T3_Stone",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 423,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 425,
+        "name": "0425_Katana_Lightning_T3_TrueDarkCloud",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 404,
+        "type": "Katana",
+        "nativeClass": "WeaponSimple_Katana",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 500,
+        "name": "0500_Staff",
+        "isDefaultWeapon": true,
+        "enhanceFromId": -1,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 501,
+        "name": "0501_Staff_Rolling",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 502,
+        "name": "0502_Staff_Rolling_T3_Protection",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 501,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 503,
+        "name": "0503_Staff_Rolling_T3_Bolt",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 501,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 505,
+        "name": "0505_Staff_Extend",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 506,
+        "name": "0506_Staff_Extend_T3_Guard",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 505,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 507,
+        "name": "0507_Staff_Extend_T3_Crit",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 505,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 509,
+        "name": "0509_Staff_Special",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 510,
+        "name": "0510_Staff_Special_T3_Crystal",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 509,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 513,
+        "name": "0513_Staff_Spear",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 514,
+        "name": "0514_Staff_Spear_T3_Damage",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 513,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 515,
+        "name": "0515_Staff_Spear_T3_Dash",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 513,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 517,
+        "name": "0517_Staff_Fire",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 518,
+        "name": "0518_Staff_Fire_T3_Burn",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 517,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 519,
+        "name": "0519_Staff_Fire_T3_FlameSpear",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 517,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 521,
+        "name": "0521_Staff_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 522,
+        "name": "0522_Staff_Ice_T3_IceSpear",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 521,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 523,
+        "name": "0523_Staff_Ice_T3_Freeze",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 521,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 525,
+        "name": "0525_Staff_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 526,
+        "name": "0526_Staff_Lightning_T3_Chakram",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 525,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 528,
+        "name": "0528_Staff_Lightning_T3_CloudBottle",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 525,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 529,
+        "name": "0529_Staff_ThrowingSpear",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 500,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 530,
+        "name": "0530_Staff_ThrowingSpear_T3Big",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 529,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 531,
+        "name": "0531_Staff_ThrowingSpear_T3Multi",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 529,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 532,
+        "name": "0532_Staff_ThrowingSpear_T3Magic",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 529,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1000,
+        "name": "1000_SwordAndShield_Tier2_CarrotSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1001,
+        "name": "1001_SwordAndShield_Tier3_CarrotCalibur",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1002,
+        "name": "1002_SwordAndShield_Tier2_Hammer",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1003,
+        "name": "1003_SwordAndShield_Tier3_DragonHammer",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1004,
+        "name": "1004_SwordAndShield_Tier2_Magical",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1005,
+        "name": "1005_SwordAndShield_Wand",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 1006,
+        "name": "1006_SwordAndShield_Tier2_Rapier",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1007,
+        "name": "1007_SwordAndShield_Tier3_RapierWide",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1008,
+        "name": "1008_SwordAndShield_Tier3_Magical_Fire",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1009,
+        "name": "1009_SwordAndShield_Tier3_Magical_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1010,
+        "name": "1010_SwordAndShield_Tier3_Magical_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1011,
+        "name": "1011_SwordAndShield_Tier2_Corrosion",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 1012,
+        "name": "1012_SwordAndShield_Tier3_Corrosion",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 1013,
+        "name": "1013_SwordAndShield_Tier2_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1014,
+        "name": "1014_SwordAndShield_Tier3_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1015,
+        "name": "1015_SwordAndShield_Tier3_Hammer_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1016,
+        "name": "1016_SwordANdShield_Tier2_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1017,
+        "name": "1017_SwordANdShield_Tier3_LightningMB",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1018,
+        "name": "1018_SwordANdShield_Tier3_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1019,
+        "name": "1019_SwordAndShield_Tier3_GreenOnionSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1020,
+        "name": "1020_SwordAndShieldDefense",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1023,
+        "name": "1023_SwordAndShield_Tier3_E",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 3,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1024,
+        "name": "1024_SwordAndShield_Tier2_Fire_Incendium",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 0,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1025,
+        "name": "1025_SwordAndShield_Tier3_FlameSword_SolisMissio",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1024,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1026,
+        "name": "1026_SwordAndShield_Tier3_FlameSword_Haetae",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1024,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1028,
+        "name": "1028_SwordAndShield_Tier3_Electric",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1016,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1029,
+        "name": "1029_SwordAndShield_Tier3_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1013,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1030,
+        "name": "1030_SwordAndShield_Tier3_Magical_AllElemental",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1004,
+        "type": "SwordAndShield",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1100,
+        "name": "1100_GreatSword_Tier2_Club",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1101,
+        "name": "1101_GreatSword_Tier3_Club_Spike",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1102,
+        "name": "1102_GreatSword_Tier2_Bone",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1103,
+        "name": "1103_GreatSword_Tier3_Bone",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1104,
+        "name": "1104_GreatSword_Tier2_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1105,
+        "name": "1105_GreatSword_Tier3_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1106,
+        "name": "1106_GreatSword_Ice2_Freeze",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1107,
+        "name": "1107_GreatSword_Tier2_Red",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1108,
+        "name": "1108_GreatSword_Tier3_Red",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1109,
+        "name": "1109_GreatSword_Tier3_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1110,
+        "name": "1110_GreatSword_Tier2_Halberd",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 1111,
+        "name": "1111_GreatSword_Tier3_Halberd_Black",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 11,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1112,
+        "name": "1112_GreatSword_Tier2_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1113,
+        "name": "1113_GreatSword_Tier3_LightningShock",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1114,
+        "name": "1114_GreatSword_Tier3_IceExo",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1115,
+        "name": "1115_GreatSword_Tier3_RedSimple",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1116,
+        "name": "1116_GreatSword_Tier3_RedClub",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1117,
+        "name": "1117_GreatSword_Tier3_PurpleCooldown",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1118,
+        "name": "1118_GreatSword_Tier3_PurpleAttack",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1119,
+        "name": "1119_GreatSword_Tier3_ClubAdvanced",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1120,
+        "name": "1120_GreatSword_Tier3_PurpleCompanion",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1121,
+        "name": "1121_GreatSword_Tier3_BoneBlood",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1102,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1122,
+        "name": "1122_GreatSword_FireT2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1123,
+        "name": "1123_GreatSword_FireT3Snake",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1124,
+        "name": "1124_GreatSword_FireT3FlameSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1200,
+        "name": "1200_Dagger_Tier2_Flame",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1201,
+        "name": "1201_Dagger_Tier3_Flame",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1202,
+        "name": "1202_Dagger_Tier3_FlameBurn",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": null,
+        "nativeClass": null,
+        "selected": true,
+        "skipReason": "no main weapon prefab",
+        "skippedModes": {}
+      },
+      {
+        "id": 1203,
+        "name": "1203_Dagger_Lightning",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1204,
+        "name": "1204_Dagger_Lightning2",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1205,
+        "name": "1205_Dagger_Lightning3",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1206,
+        "name": "1206_Dagger_Tier2_Throw",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1207,
+        "name": "1207_Dagger_Tier3_Throw",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1208,
+        "name": "1208_Dagger_Evasion",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1209,
+        "name": "1209_Dagger_Evasion_3T",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1210,
+        "name": "1210_Dagger_Tier3_ThrowComp",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1206,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1211,
+        "name": "1211_Dagger_FreeParry_Magic",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1212,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1212,
+        "name": "1212_Dagger_FreeParry",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 20,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1213,
+        "name": "1213_Dagger_FreeParry_MP",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1212,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1214,
+        "name": "1214_Dagger_Tier3_FlameSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1200,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1215,
+        "name": "1215_Dagger_Tier2_Ice",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 20,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1216,
+        "name": "1216_Dagger_Ice_Freeze",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1215,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 1217,
+        "name": "1217_Dagger_FrostScythe",
+        "isDefaultWeapon": false,
+        "enhanceFromId": 1215,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 5000,
+        "name": "5000_GreatHammer",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 5001,
+        "name": "5001_Homi",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Dagger",
+        "nativeClass": "WeaponSimple_Dagger",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 5002,
+        "name": "5002_Hoe",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Staff",
+        "nativeClass": "WeaponSimple_QuartterStaff",
+        "selected": true,
+        "skipReason": "not active in installed game: Deprecated",
+        "skippedModes": {}
+      },
+      {
+        "id": 9000,
+        "name": "9000_Golem",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Golem",
+        "nativeClass": "WeaponSimple_Golem",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {
+          "special": "native input method is the empty WeaponSimple base implementation"
+        }
+      },
+      {
+        "id": 9999,
+        "name": "9999_WeaponRandomStart",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "Random",
+        "nativeClass": "WeaponSimple_SwordAndShield",
+        "selected": true,
+        "skipReason": "not active in installed game: SystemOnly",
+        "skippedModes": {}
+      },
+      {
+        "id": 10000,
+        "name": "10000_WeaselKnight'sGreatSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      },
+      {
+        "id": 10001,
+        "name": "10001_Doppelganger'sGreatSword",
+        "isDefaultWeapon": false,
+        "enhanceFromId": -1,
+        "type": "GreatSword",
+        "nativeClass": "WeaponSimple_GreatSword",
+        "selected": true,
+        "skipReason": null,
+        "skippedModes": {}
+      }
+    ],
+    "untested": [
+      "additional combo stages",
+      "variable charge durations",
+      "mine detonation after target movement",
+      "long-lived effects beyond the trial window"
+    ]
+  },
+  "expectedTrials": 524,
+  "recordedTrials": 524,
+  "matchingTrials": [
+    {
+      "id": 0,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.967
+    },
+    {
+      "id": 0,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.322
+    },
+    {
+      "id": 0,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.117
+    },
+    {
+      "id": 1,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.838
+    },
+    {
+      "id": 1,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.004
+    },
+    {
+      "id": 1,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.004
+    },
+    {
+      "id": 2,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 2,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 2,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 3,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.654
+    },
+    {
+      "id": 3,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.008
+    },
+    {
+      "id": 3,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.008
+    },
+    {
+      "id": 4,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.883
+    },
+    {
+      "id": 4,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.008
+    },
+    {
+      "id": 4,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.008
+    },
+    {
+      "id": 5,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.112
+    },
+    {
+      "id": 5,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.008
+    },
+    {
+      "id": 5,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.015
+    },
+    {
+      "id": 6,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.548
+    },
+    {
+      "id": 6,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.015
+    },
+    {
+      "id": 6,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.015
+    },
+    {
+      "id": 7,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.015
+    },
+    {
+      "id": 7,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 7,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0
+    },
+    {
+      "id": 8,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 8,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 8,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.616
+    },
+    {
+      "id": 9,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.266
+    },
+    {
+      "id": 9,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.015
+    },
+    {
+      "id": 9,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 10,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 5.203
+    },
+    {
+      "id": 10,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.364
+    },
+    {
+      "id": 10,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.541
+    },
+    {
+      "id": 11,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.595
+    },
+    {
+      "id": 11,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.899
+    },
+    {
+      "id": 11,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.204
+    },
+    {
+      "id": 12,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.458
+    },
+    {
+      "id": 12,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.333
+    },
+    {
+      "id": 13,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 13,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.967
+    },
+    {
+      "id": 13,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.838
+    },
+    {
+      "id": 14,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.343
+    },
+    {
+      "id": 14,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.991
+    },
+    {
+      "id": 14,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.082
+    },
+    {
+      "id": 15,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.258
+    },
+    {
+      "id": 15,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.214
+    },
+    {
+      "id": 15,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.777
+    },
+    {
+      "id": 16,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 16,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.754
+    },
+    {
+      "id": 17,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.74
+    },
+    {
+      "id": 17,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.61
+    },
+    {
+      "id": 17,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.427
+    },
+    {
+      "id": 18,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.397
+    },
+    {
+      "id": 18,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.967
+    },
+    {
+      "id": 18,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.793
+    },
+    {
+      "id": 19,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 5.31
+    },
+    {
+      "id": 19,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 20,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 20,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.784
+    },
+    {
+      "id": 20,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.031
+    },
+    {
+      "id": 22,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.031
+    },
+    {
+      "id": 22,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.387
+    },
+    {
+      "id": 22,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 23,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.031
+    },
+    {
+      "id": 23,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.129
+    },
+    {
+      "id": 23,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.031
+    },
+    {
+      "id": 26,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.061
+    },
+    {
+      "id": 26,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 27,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 27,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.686
+    },
+    {
+      "id": 27,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 28,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 28,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 28,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.357
+    },
+    {
+      "id": 29,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.235
+    },
+    {
+      "id": 29,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.014
+    },
+    {
+      "id": 100,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 100,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.61
+    },
+    {
+      "id": 100,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.427
+    },
+    {
+      "id": 101,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 101,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.296
+    },
+    {
+      "id": 102,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 102,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.793
+    },
+    {
+      "id": 103,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 103,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.625
+    },
+    {
+      "id": 104,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 104,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 104,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.099
+    },
+    {
+      "id": 105,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 105,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 105,
+      "mode": "special",
+      "fireTimingDifferenceMs": 4.089
+    },
+    {
+      "id": 106,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 106,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.061
+    },
+    {
+      "id": 106,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 107,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 107,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.479
+    },
+    {
+      "id": 107,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 108,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 108,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.601
+    },
+    {
+      "id": 108,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 109,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 109,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 109,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 110,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 110,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.305
+    },
+    {
+      "id": 110,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 111,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 111,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 111,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 112,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 112,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.136
+    },
+    {
+      "id": 113,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 113,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.061
+    },
+    {
+      "id": 114,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 114,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 115,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 115,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.272
+    },
+    {
+      "id": 115,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.784
+    },
+    {
+      "id": 116,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 116,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 116,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.502
+    },
+    {
+      "id": 117,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 117,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.038
+    },
+    {
+      "id": 117,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.845
+    },
+    {
+      "id": 118,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 118,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.061
+    },
+    {
+      "id": 118,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 119,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.456
+    },
+    {
+      "id": 119,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.845
+    },
+    {
+      "id": 120,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.113
+    },
+    {
+      "id": 121,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.967
+    },
+    {
+      "id": 123,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 123,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 124,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 124,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.395
+    },
+    {
+      "id": 124,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.784
+    },
+    {
+      "id": 125,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 125,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 126,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 126,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 127,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 127,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 128,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 128,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 400,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 400,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 400,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 401,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 401,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 401,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 402,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 402,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 402,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 403,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 403,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 403,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 404,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.61
+    },
+    {
+      "id": 404,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 404,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 405,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 405,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 405,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 406,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 406,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 406,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 407,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 407,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 407,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 408,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 408,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 408,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 409,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 409,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 409,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 410,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 410,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 410,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 411,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 411,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 411,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 412,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 412,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 412,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 413,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 413,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 413,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 414,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 414,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 414,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 416,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 416,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.319
+    },
+    {
+      "id": 416,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 417,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 417,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 417,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 419,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 419,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 419,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 420,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 420,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 420,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 421,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 421,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 421,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 422,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 422,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 423,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 423,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 423,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 424,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 424,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 424,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 425,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 425,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 425,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.784
+    },
+    {
+      "id": 500,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 5.005
+    },
+    {
+      "id": 500,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 500,
+      "mode": "special",
+      "fireTimingDifferenceMs": 6.348
+    },
+    {
+      "id": 501,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 501,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 501,
+      "mode": "special",
+      "fireTimingDifferenceMs": 5.249
+    },
+    {
+      "id": 502,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 502,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 502,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.319
+    },
+    {
+      "id": 503,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 505,
+      "mode": "special",
+      "fireTimingDifferenceMs": 5.859
+    },
+    {
+      "id": 506,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 506,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 506,
+      "mode": "special",
+      "fireTimingDifferenceMs": 5.737
+    },
+    {
+      "id": 507,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.028
+    },
+    {
+      "id": 507,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 507,
+      "mode": "special",
+      "fireTimingDifferenceMs": 6.47
+    },
+    {
+      "id": 509,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 509,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.808
+    },
+    {
+      "id": 510,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 510,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.272
+    },
+    {
+      "id": 510,
+      "mode": "special",
+      "fireTimingDifferenceMs": 5.127
+    },
+    {
+      "id": 513,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 7.08
+    },
+    {
+      "id": 513,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 5.127
+    },
+    {
+      "id": 513,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 514,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 514,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 514,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.564
+    },
+    {
+      "id": 515,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.686
+    },
+    {
+      "id": 515,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 515,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.854
+    },
+    {
+      "id": 517,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.296
+    },
+    {
+      "id": 517,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 517,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.564
+    },
+    {
+      "id": 518,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.395
+    },
+    {
+      "id": 518,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 518,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.54
+    },
+    {
+      "id": 519,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 519,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.953
+    },
+    {
+      "id": 521,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 521,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.122
+    },
+    {
+      "id": 521,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 522,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 522,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.854
+    },
+    {
+      "id": 522,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 523,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.808
+    },
+    {
+      "id": 523,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 523,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.052
+    },
+    {
+      "id": 525,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 525,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 525,
+      "mode": "special",
+      "fireTimingDifferenceMs": 6.592
+    },
+    {
+      "id": 526,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.563
+    },
+    {
+      "id": 526,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 526,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.831
+    },
+    {
+      "id": 528,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.028
+    },
+    {
+      "id": 528,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 528,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 529,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.686
+    },
+    {
+      "id": 529,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 529,
+      "mode": "special",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 530,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 530,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.197
+    },
+    {
+      "id": 530,
+      "mode": "special",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 531,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.197
+    },
+    {
+      "id": 531,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 531,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 532,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 532,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 532,
+      "mode": "special",
+      "fireTimingDifferenceMs": 6.348
+    },
+    {
+      "id": 1000,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1000,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1000,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1001,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1001,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1001,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1002,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1002,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1002,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1003,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1003,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1003,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1004,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1004,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1006,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1006,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1006,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1007,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1007,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1007,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1008,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1008,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1009,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1009,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1010,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1010,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1013,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1013,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1013,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1014,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1014,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1014,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1015,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1015,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1015,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1016,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1016,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1016,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1017,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1017,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1017,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1018,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1018,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1018,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0
+    },
+    {
+      "id": 1019,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1019,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1019,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1020,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1020,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1020,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1023,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1023,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1023,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1024,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1024,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1024,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1025,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1025,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1025,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1026,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1026,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1026,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1028,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1028,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1028,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1029,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1029,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1029,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1030,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1030,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1100,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.883
+    },
+    {
+      "id": 1100,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.639
+    },
+    {
+      "id": 1100,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1101,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1101,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1101,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1102,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1102,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1103,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1103,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1104,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1104,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.883
+    },
+    {
+      "id": 1104,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 1105,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1105,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 6.104
+    },
+    {
+      "id": 1105,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.197
+    },
+    {
+      "id": 1106,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1106,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 5.615
+    },
+    {
+      "id": 1106,
+      "mode": "special",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 1107,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1108,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1108,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.441
+    },
+    {
+      "id": 1109,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.197
+    },
+    {
+      "id": 1109,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.441
+    },
+    {
+      "id": 1111,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.883
+    },
+    {
+      "id": 1111,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 1111,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1112,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.883
+    },
+    {
+      "id": 1112,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.686
+    },
+    {
+      "id": 1112,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 1113,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1113,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1113,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.953
+    },
+    {
+      "id": 1114,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1114,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 1114,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.906
+    },
+    {
+      "id": 1116,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 1117,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1117,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1118,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.197
+    },
+    {
+      "id": 1118,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 1118,
+      "mode": "special",
+      "fireTimingDifferenceMs": 4.395
+    },
+    {
+      "id": 1119,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1119,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.395
+    },
+    {
+      "id": 1120,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.953
+    },
+    {
+      "id": 1120,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.662
+    },
+    {
+      "id": 1121,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.709
+    },
+    {
+      "id": 1121,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.953
+    },
+    {
+      "id": 1122,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1122,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 1122,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.953
+    },
+    {
+      "id": 1123,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1123,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1123,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1124,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 1124,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1124,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1200,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1200,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1200,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1201,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1201,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1203,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 4.15
+    },
+    {
+      "id": 1203,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1204,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1204,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1204,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1205,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1205,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1206,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1206,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1206,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1207,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 1207,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.174
+    },
+    {
+      "id": 1207,
+      "mode": "special",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1208,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 1208,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1209,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1209,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1210,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1210,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1210,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 1211,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 4.395
+    },
+    {
+      "id": 1211,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1211,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1212,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1212,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 3.418
+    },
+    {
+      "id": 1212,
+      "mode": "special",
+      "fireTimingDifferenceMs": 2.93
+    },
+    {
+      "id": 1213,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1213,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 1213,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1214,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1214,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1214,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1215,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.244
+    },
+    {
+      "id": 1215,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 2.686
+    },
+    {
+      "id": 1215,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.465
+    },
+    {
+      "id": 1216,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1216,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 1216,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.0
+    },
+    {
+      "id": 1217,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 1.221
+    },
+    {
+      "id": 1217,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.488
+    },
+    {
+      "id": 1217,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 10000,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 5.371
+    },
+    {
+      "id": 10000,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 10000,
+      "mode": "special",
+      "fireTimingDifferenceMs": 0.977
+    },
+    {
+      "id": 10001,
+      "mode": "basic",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 10001,
+      "mode": "dash",
+      "fireTimingDifferenceMs": 0.732
+    },
+    {
+      "id": 10001,
+      "mode": "special",
+      "fireTimingDifferenceMs": 1.709
+    }
+  ],
+  "failedTrials": [
+    {
+      "id": 12,
+      "mode": "special",
+      "reason": "12 special actual attack or guard"
+    },
+    {
+      "id": 16,
+      "mode": "special",
+      "reason": "16 special actual attack or guard"
+    },
+    {
+      "id": 26,
+      "mode": "dash",
+      "reason": "26 dash damage/shape/colliders"
+    },
+    {
+      "id": 29,
+      "mode": "special",
+      "reason": "29 special actual attack or guard"
+    },
+    {
+      "id": 101,
+      "mode": "special",
+      "reason": "101 special actual attack or guard"
+    },
+    {
+      "id": 102,
+      "mode": "special",
+      "reason": "102 special actual attack or guard"
+    },
+    {
+      "id": 103,
+      "mode": "special",
+      "reason": "103 special actual attack or guard"
+    },
+    {
+      "id": 112,
+      "mode": "special",
+      "reason": "112 special actual attack or guard"
+    },
+    {
+      "id": 113,
+      "mode": "special",
+      "reason": "113 special actual attack or guard"
+    },
+    {
+      "id": 114,
+      "mode": "special",
+      "reason": "114 special actual attack or guard"
+    },
+    {
+      "id": 119,
+      "mode": "basic",
+      "reason": "119 basic direct unit damage"
+    },
+    {
+      "id": 120,
+      "mode": "basic",
+      "reason": "120 basic direct unit damage"
+    },
+    {
+      "id": 120,
+      "mode": "special",
+      "reason": "120 special direct unit damage"
+    },
+    {
+      "id": 121,
+      "mode": "basic",
+      "reason": "121 basic direct unit damage"
+    },
+    {
+      "id": 121,
+      "mode": "special",
+      "reason": "121 special direct unit damage"
+    },
+    {
+      "id": 122,
+      "mode": "basic",
+      "reason": "122 basic direct unit damage"
+    },
+    {
+      "id": 122,
+      "mode": "dash",
+      "reason": "122 dash direct unit damage"
+    },
+    {
+      "id": 122,
+      "mode": "special",
+      "reason": "122 special actual attack or guard"
+    },
+    {
+      "id": 123,
+      "mode": "special",
+      "reason": "123 special actual attack or guard"
+    },
+    {
+      "id": 125,
+      "mode": "special",
+      "reason": "125 special actual attack or guard"
+    },
+    {
+      "id": 126,
+      "mode": "special",
+      "reason": "126 special damage/shape/colliders"
+    },
+    {
+      "id": 127,
+      "mode": "special",
+      "reason": "127 special damage/shape/colliders"
+    },
+    {
+      "id": 128,
+      "mode": "special",
+      "reason": "128 special actual attack or guard"
+    },
+    {
+      "id": 200,
+      "mode": "basic",
+      "reason": "200 basic actual attack or guard"
+    },
+    {
+      "id": 200,
+      "mode": "dash",
+      "reason": "200 dash actual attack or guard"
+    },
+    {
+      "id": 300,
+      "mode": "basic",
+      "reason": "300 basic actual attack or guard"
+    },
+    {
+      "id": 300,
+      "mode": "dash",
+      "reason": "300 dash actual attack or guard"
+    },
+    {
+      "id": 422,
+      "mode": "special",
+      "reason": "422 special actual special attack, guard or native secondary variant"
+    },
+    {
+      "id": 503,
+      "mode": "basic",
+      "reason": "503 basic damage/shape/colliders"
+    },
+    {
+      "id": 503,
+      "mode": "dash",
+      "reason": "503 dash damage/shape/colliders"
+    },
+    {
+      "id": 505,
+      "mode": "basic",
+      "reason": "505 basic damage/shape/colliders"
+    },
+    {
+      "id": 505,
+      "mode": "dash",
+      "reason": "505 dash damage/shape/colliders"
+    },
+    {
+      "id": 509,
+      "mode": "basic",
+      "reason": "509 basic damage/shape/colliders"
+    },
+    {
+      "id": 519,
+      "mode": "special",
+      "reason": "519 special actual attack or guard"
+    },
+    {
+      "id": 1004,
+      "mode": "special",
+      "reason": "1004 special native hits"
+    },
+    {
+      "id": 1008,
+      "mode": "special",
+      "reason": "1008 special native hits"
+    },
+    {
+      "id": 1009,
+      "mode": "special",
+      "reason": "1009 special native hits"
+    },
+    {
+      "id": 1010,
+      "mode": "special",
+      "reason": "1010 special native hits"
+    },
+    {
+      "id": 1030,
+      "mode": "special",
+      "reason": "1030 special native hits"
+    },
+    {
+      "id": 1102,
+      "mode": "special",
+      "reason": "1102 special actual attack or guard"
+    },
+    {
+      "id": 1103,
+      "mode": "special",
+      "reason": "1103 special actual attack or guard"
+    },
+    {
+      "id": 1107,
+      "mode": "basic",
+      "reason": "1107 basic direct unit damage"
+    },
+    {
+      "id": 1107,
+      "mode": "dash",
+      "reason": "1107 dash direct unit damage"
+    },
+    {
+      "id": 1108,
+      "mode": "basic",
+      "reason": "1108 basic direct unit damage"
+    },
+    {
+      "id": 1109,
+      "mode": "dash",
+      "reason": "1109 dash direct unit damage"
+    },
+    {
+      "id": 1115,
+      "mode": "basic",
+      "reason": "1115 basic direct unit damage"
+    },
+    {
+      "id": 1115,
+      "mode": "dash",
+      "reason": "1115 dash direct unit damage"
+    },
+    {
+      "id": 1115,
+      "mode": "special",
+      "reason": "1115 special damage/shape/colliders"
+    },
+    {
+      "id": 1116,
+      "mode": "basic",
+      "reason": "1116 basic direct unit damage"
+    },
+    {
+      "id": 1116,
+      "mode": "dash",
+      "reason": "1116 dash direct unit damage"
+    },
+    {
+      "id": 1117,
+      "mode": "dash",
+      "reason": "1117 dash direct unit damage"
+    },
+    {
+      "id": 1119,
+      "mode": "special",
+      "reason": "1119 special actual attack or guard"
+    },
+    {
+      "id": 1120,
+      "mode": "special",
+      "reason": "1120 special damage/shape/colliders"
+    },
+    {
+      "id": 1121,
+      "mode": "special",
+      "reason": "1121 special actual attack or guard"
+    },
+    {
+      "id": 1201,
+      "mode": "special",
+      "reason": "1201 special direct unit damage"
+    },
+    {
+      "id": 1203,
+      "mode": "basic",
+      "reason": "1203 basic direct unit damage"
+    },
+    {
+      "id": 1205,
+      "mode": "special",
+      "reason": "1205 special direct unit damage"
+    },
+    {
+      "id": 1208,
+      "mode": "special",
+      "reason": "1208 special actual attack or guard"
+    },
+    {
+      "id": 1209,
+      "mode": "special",
+      "reason": "1209 special actual attack or guard"
+    },
+    {
+      "id": 9000,
+      "mode": "basic",
+      "reason": "9000 basic actual attack or guard"
+    },
+    {
+      "id": 9000,
+      "mode": "dash",
+      "reason": "9000 dash actual attack or guard"
+    }
+  ],
+  "unexecutedTrials": [],
+  "unexpectedTrials": [],
+  "duplicateTrials": [],
+  "exceptions": [],
+  "hooks": [],
+  "cleanupRecorded": true,
+  "cleanup": {
+    "themeNull": true,
+    "audioChannels": 0,
+    "virtualDeviceRemoved": true,
+    "profile": "",
+    "profileFileAbsent": true
+  },
+  "scope": "Recorded basic/dash/special input trials only; this audit does not grant release approval or verify missing attack variants."
+}

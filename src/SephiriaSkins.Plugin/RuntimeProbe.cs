@@ -25,6 +25,10 @@ internal static class RuntimeProbe
             var type = arguments.GetType().GetField("type");
             type.SetValue(arguments, Enum.Parse(type.FieldType, "k_ELobbyTypePrivate"));
             arguments.GetType().GetField("slots").SetValue(arguments, 2);
+            // The game's manager defaults to the SDK's Group hint, which changes
+            // a newly created lobby to Invisible. Use a session for this fixture.
+            var usage = arguments.GetType().GetField("usageHint");
+            usage.SetValue(arguments, Enum.Parse(usage.FieldType, "Session"));
             lobby.GetType().GetMethod("Create", Type.EmptyTypes).Invoke(lobby, null);
         }
         catch (Exception e) { error = e.GetBaseException().Message; }
@@ -34,6 +38,14 @@ internal static class RuntimeProbe
             while (!(bool)lobby!.GetType().GetProperty("HasLobby").GetValue(lobby) && Time.realtimeSinceStartup < deadline) yield return null;
         }
         var created = error == null && (bool)lobby!.GetType().GetProperty("HasLobby").GetValue(lobby);
+        if (created)
+        {
+            var type = lobby!.GetType().GetProperty("Type");
+            type.SetValue(lobby, Enum.Parse(type.PropertyType, "k_ELobbyTypePrivate"));
+            var deadline = Time.realtimeSinceStartup + 5;
+            while (type.GetValue(lobby).ToString() != "k_ELobbyTypePrivate" && Time.realtimeSinceStartup < deadline) yield return null;
+            if (type.GetValue(lobby).ToString() != "k_ELobbyTypePrivate") error = "Private lobby type did not settle.";
+        }
         done(new
         {
             created,
@@ -46,6 +58,22 @@ internal static class RuntimeProbe
     {
         if (lobby != null && (bool)lobby.GetType().GetProperty("HasLobby").GetValue(lobby)) lobby.GetType().GetMethod("Leave", Type.EmptyTypes).Invoke(lobby, null);
         lobby = null;
+    }
+    public static bool IsPrivateSoloLobby(out object state)
+    {
+        try
+        {
+            var created = lobby != null && (bool)lobby.GetType().GetProperty("HasLobby").GetValue(lobby);
+            var members = created ? (int)lobby!.GetType().GetProperty("MemberCount").GetValue(lobby) : 0;
+            var privacy = created ? lobby!.GetType().GetProperty("Type").GetValue(lobby).ToString() : "";
+            state = new { created, members, privacy, error = (string?)null };
+            return created && members == 1 && privacy == "k_ELobbyTypePrivate";
+        }
+        catch (Exception e)
+        {
+            state = new { created = false, members = 0, privacy = "", error = e.GetBaseException().Message };
+            return false;
+        }
     }
     public static object CheckBodyFrames(Plugin plugin)
     {
@@ -60,6 +88,7 @@ internal static class RuntimeProbe
         var stateField = AccessTools.Field(typeof(Animator2D_Basic), "currentState");
         var frameField = AccessTools.Field(typeof(Animator2D_Basic), "currentFrameIdx");
         var checkedFrames = 0; var failures = 0; var states = 0; var timelineUnchanged = true; var materialsChecked = 0; var particlesChecked = 0;
+        var checkedStates = new HashSet<string>();
         var priorAnimations = new Dictionary<string, Core.CatalogAnimation>(plugin.Catalog.Animations);
         try
         {
@@ -68,7 +97,7 @@ internal static class RuntimeProbe
                 {
                     var key = RuntimeCatalog.AnimationKey("body", set, state);
                     if (!plugin.Theme.Pack.Manifest.Body.TryGetValue(key, out var binding)) continue;
-                    states++; animator.currentSet = set; stateField.SetValue(animator, state);
+                    states++; checkedStates.Add(key); animator.currentSet = set; stateField.SetValue(animator, state);
                     multi.currentSet = set; stateField.SetValue(multi, state);
                     var events = string.Join("\n", state.frameEvents.SelectMany(f => f.events.Select(e => f.frame + ":" + e.componentName + "." + e.methodName)));
                     for (var i = 0; i < state.timeline.Count; i++)
@@ -98,7 +127,36 @@ internal static class RuntimeProbe
             plugin.Visuals.Forget(root); Object.Destroy(root);
             plugin.Catalog.Animations = priorAnimations;
         }
-        return new { checkedFrames, multipleRendererFrames = checkedFrames, materialsChecked, particlesChecked, failures, states, timelineUnchanged };
+        return new { checkedFrames, multipleRendererFrames = checkedFrames, materialsChecked, particlesChecked, failures, states, timelineUnchanged,
+            expectedStates = plugin.Theme.Pack.Manifest.Body.Count, missingStates = plugin.Theme.Pack.Manifest.Body.Keys.Where(k => !checkedStates.Contains(k)).ToArray() };
+    }
+    public static (string Label, string Source, bool DecodeFixture)[] NegativePacks(Plugin plugin, Core.PackEntry entry)
+    {
+        var directory = plugin.Diagnostics.File("negative-" + entry.Pack!.Manifest.Id); Directory.CreateDirectory(directory);
+        void Zip(string path, IEnumerable<KeyValuePair<string, byte[]>> files)
+        {
+            using var archive = System.IO.Compression.ZipFile.Open(path, System.IO.Compression.ZipArchiveMode.Create);
+            foreach (var pair in files)
+            {
+                using var stream = archive.CreateEntry(pair.Key).Open(); stream.Write(pair.Value, 0, pair.Value.Length);
+            }
+        }
+        var traversal = Path.Combine(directory, "traversal.zip");
+        Zip(traversal, new[] { new KeyValuePair<string, byte[]>("../skin.json", entry.Pack.Files["skin.json"]) });
+        var duplicatePath = Path.Combine(directory, "duplicate-path.zip");
+        Zip(duplicatePath, entry.Pack.Files.Concat(new[] { new KeyValuePair<string, byte[]>("SKIN.JSON", entry.Pack.Files["skin.json"]) }));
+        var result = new List<(string, string, bool)> { ("traversal", traversal, false), ("duplicate path", duplicatePath, false) };
+        var png = entry.Pack.Manifest.Resources.Values.FirstOrDefault(r => r.Kind == "sprite" && r.Bundle == null);
+        if (png != null)
+        {
+            var corrupted = Path.Combine(directory, "invalid-decoding.zip");
+            var original = entry.Pack.Files[png.File];
+            // Valid dimensions/IEND for the schema reader, but no IDAT for Unity.
+            var broken = original.Take(33).Concat(original.Skip(original.Length - 12)).ToArray();
+            Zip(corrupted, entry.Pack.Files.Select(p => p.Key == png.File ? new KeyValuePair<string, byte[]>(p.Key, broken) : p));
+            result.Add(("PNG decoding", corrupted, true));
+        }
+        return result.ToArray();
     }
     public static object CheckSelector(Plugin plugin, Action<bool> setOpen)
     {
@@ -182,10 +240,62 @@ internal static class RuntimeProbe
         }
         finally { instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE); instance.release(); }
     }
+    public static IEnumerator CheckAudioEvents(Plugin plugin, Action<object> done)
+    {
+        var cases = new List<object>();
+        var theme = plugin.Theme;
+        if (theme == null) { done(new { available = false, cases }); yield break; }
+        foreach (var binding in theme.Pack.Manifest.Audio.GroupBy(p => p.Value.Channel + ":" + p.Value.Loop).Select(g => g.First()))
+        {
+            var priorOwner = OwnerContext.Push(Ownership.Local);
+            var instance = default(FMOD.Studio.EventInstance);
+            var started = false; var loopMatches = false; object settings = new { available = false };
+            try
+            {
+                instance = FMODUnity.RuntimeManager.CreateInstance(plugin.Catalog.Audio[binding.Key].Path);
+                instance.start();
+                started = plugin.Audio.IsReplacementActive(instance);
+                loopMatches = plugin.Audio.ReplacementLoops(instance) == binding.Value.Loop;
+                settings = plugin.Audio.ProbeSettings(instance);
+            }
+            finally { OwnerContext.Pop(priorOwner); }
+            try
+            {
+                // Native one-shot completion may end the replacement before
+                // its file ends. A looping cue must survive this short window.
+                yield return new WaitForSecondsRealtime(binding.Value.Loop ? .35f : 2f);
+                plugin.Audio.Tick();
+                var naturalEnd = !plugin.Audio.IsReplacementActive(instance);
+                var sustained = plugin.Audio.IsReplacementActive(instance);
+                instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE); plugin.Audio.Tick();
+                var stopped = !plugin.Audio.IsReplacementActive(instance);
+                instance.start();
+                var restarted = plugin.Audio.IsReplacementActive(instance);
+                var releaseMarked = instance.release() == FMOD.RESULT.OK;
+                yield return new WaitForSecondsRealtime(binding.Value.Loop ? .35f : 2f);
+                plugin.Audio.Tick();
+                var nativePlayingAfterRelease = instance.isValid() && instance.getPlaybackState(out var releasedState) == FMOD.RESULT.OK &&
+                    releasedState != FMOD.Studio.PLAYBACK_STATE.STOPPED;
+                // FMOD release marks deferred destruction; it does not stop a
+                // playing event. Preserve the native loop until native stop,
+                // then require both the replacement and marked handle to end.
+                var releasePlaybackTracked = !binding.Value.Loop || !nativePlayingAfterRelease || plugin.Audio.IsReplacementActive(instance);
+                if (instance.isValid()) instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                yield return new WaitForSecondsRealtime(.35f); plugin.Audio.Tick();
+                cases.Add(new { path = plugin.Catalog.Audio[binding.Key].Path, binding.Value.Channel, binding.Value.Loop,
+                    started, loopMatches, settings, naturalEnd, sustained, stopped, restarted, releaseMarked, nativePlayingAfterRelease,
+                    releasePlaybackTracked, nativeReleased = !instance.isValid(), released = !plugin.Audio.IsReplacementActive(instance) });
+            }
+            finally { if (instance.isValid()) { instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE); instance.release(); } }
+        }
+        done(new { available = cases.Count > 0, cases });
+    }
     public static void Capture(string path, Action<object> log)
     {
         Directory.CreateDirectory(Path.GetDirectoryName(path));
-        var target = new RenderTexture(960, 540, 24, RenderTextureFormat.ARGB32);
+        // Keep the active game's actual dimensions; a fixed smaller render
+        // target would reflow the native canvas while documenting UI layouts.
+        var target = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.ARGB32);
         var previous = RenderTexture.active;
         Texture2D? pixels = null;
         var canvases = new List<(UnityEngine.Canvas Canvas, RenderMode Mode, Camera Camera, float Distance)>();

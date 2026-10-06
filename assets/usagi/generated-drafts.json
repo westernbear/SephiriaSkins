@@ -1,0 +1,80 @@
+{
+  "character": "usagi",
+  "generations": [
+    {
+      "file": "body-generated.png",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D body sprite atlas.\nCreate brand-new Chiikawa-series fan art of Usagi: a pale warm-yellow rabbit with two LONG upright ears with pink inner ears, very round head and little body, tiny round white pompom tail, dark brown oval eyes with white highlights, high arched mischievous eyebrows, pink cheeks and little smiling W mouth. No clothing. Keep the complete long ears inside every cell.\nComposition: wide 2048x1024 PNG atlas, exactly 8 columns and 4 rows, 32 equal 256x256 cells. One complete connected UNARMED character per cell, horizontally centered feet, identical character proportions across poses, standing height about 165 pixels (include ears and cape). Leave at least 32 pixels genuinely empty transparent padding around the whole silhouette. Feet baseline about y=210 in each cell except the lying pose. Every ear, tail, paw and cape belongs to the connected body silhouette. No grid lines.\nRow 1 FRONT left to right: standing idle eyes open; same idle blinking; walk left foot forward; walk right foot forward; low leaning dash paws tucked; braced charging paws near chest; flinching hurt eyes shut; lying defeated on side eyes closed, intact ears and tail/cape.\nRow 2 BACK facing away: these same eight poses from behind, ear twitch instead of blinking; absolutely no eyes, nose, mouth or face on any back pose. Preserve the actual back markings and attached tail/cape described above.\nRow 3 FRONT unarmed attack phases: neutral ready; paws draw back to wind up; paws reach forward; broad paw swing; peak follow-through leaning forward; recover paws; return stance; neutral ready. Eight slightly distinct complete character poses, no held object.\nRow 4 BACK unarmed attack phases: those same eight phases from behind with no face. Keep all ears, tail/cape and rear markings intact.\nStyle: clean flat kawaii 2D sprite illustration, thick consistent dark cocoa outline legible at tiny game size, solid original character colors, minimal antialiasing, no gradients, grain or glow. REAL transparent alpha. No weapon, magic, effect, sparks, dust, shadow, ground, floating fragment, text, label, logo, watermark or extra character. Body only; the game supplies separate weapons and effects.\nAll cream-yellow body interiors are solid opaque color, alpha 255; only the exterior is transparent. Keep every outline closed. Fit the complete long ears into every cell without clipping.",
+      "tool": "image_gen",
+      "date": "2026-10-06",
+      "mode": "new generation",
+      "sha256": "58e0532c6f729fd1105922a3ddb0a971f2393466bce1cbd33d0a60ff4cd88ff5",
+      "originalUnmodified": true
+    },
+    {
+      "file": "effects-generated.png",
+      "prompt": "Use case: stylized-concept. Asset type: production game effect-phase atlas.\nCreate brand-new usagi fan-art game effects using warm yellow, cream and soft orange, with quick angular golden streaks and energetic slim zigzag crescents. Exactly 4 columns and 6 rows on a 1024x1536 PNG atlas: 24 equal cells, truly transparent alpha background, at least 36px empty gutters around each cell's ink. Each row uses the same cell center and maximum extent across four phases, changing the amount of ink rather than the center. No character, body part, weapon, text or grid. Keep every ending cell faint but visibly nonempty.\nEach row left to right: BEGINNING, PEAK, RELEASE, FAINT ENDING.\nRow 1 slim open curved attack slash, larger open crescent peak, shortening release, faint short crescent trace.\nRow 2 short horizontal dash streak, broader two-streak peak, shortening release, faint horizontal trace.\nRow 3 small rounded projectile pointing RIGHT, slightly larger with short leftward trail, small fading projectile, faint tiny oval trace.\nRow 4 small impact puff, medium airy impact puff, breaking fading puff, tiny faint puff.\nRow 5 small open circular guard ring, larger HOLLOW ring, thin fading ring, faint short ring arc.\nRow 6 small horizontal revive ellipse with tiny glint above, two restrained light ellipses and tiny glint, fading ellipses, faint short ellipse trace.\nClean flat airy game effects, low-opacity fading phases, restrained thin edges, transparent interiors. Preserve attack direction and enemy visibility. No giant stars, opaque flash disks, bloom, speckles, random pixels, backgrounds or shadows.",
+      "tool": "image_gen",
+      "date": "2026-10-06",
+      "mode": "new generation",
+      "sha256": "c29621e95a2745f4e805ee5894bdcd842f9a56086d9164250a11d4f07c829d0b",
+      "originalUnmodified": true
+    },
+    {
+      "file": "ui-generated.png",
+      "prompt": "Use case: stylized-concept. Asset type: production game UI sprite atlas, not a screenshot.\nCreate a new usagi fan-art UI atlas: EXACTLY 4 columns and 2 rows on a wide 2048x1024 PNG, eight separate centered elements, at least 40px truly empty transparent gutters. Thin repeatable borders and simple corners for nine-slicing. Palette warm yellow, cream and soft orange, with QUIET dark chocolate interiors on every panel/button to keep existing white multilingual text readable. Decorative tiny attached long-rabbit-ear corners stay attached to the outer border. Draw no text or numbers.\nTop row: dark dialogue panel; dark inventory panel; dark normal button; dark selected button with a restrained double border.\nBottom row: a dedicated large FRONT FACE PORTRAIT in a simple round medallion, faithfully recognizable from these traits: Usagi: a pale warm-yellow rabbit with two LONG upright ears with pink inner ears, very round head and little body, tiny round white pompom tail, dark brown oval eyes with white highlights, high arched mischievous eyebrows, pink cheeks and little smiling W mouth. No clothing. Keep the complete long ears inside every cell.; dark horizontal HUD bar with an uncluttered center and tiny attached outer-left motif; dark tooltip panel; dark header panel with thin accent top edge.\nClean flat 2D illustration with consistent dark outlines and transparent alpha outside each sprite. No gradients, grain, glow, central large ornaments, background, grid, watermark, extra portrait outside its cell, full interface, text, number or logo. Portrait is the only character illustration; leave panel centers free for native text.\nEvery panel center is an uninterrupted quiet dark fill. Do not draw any inventory slots, inset boxes, grids or internal dividers; the native game provides those.",
+      "tool": "image_gen",
+      "date": "2026-10-06",
+      "mode": "new generation",
+      "sha256": "cb899ceaf8f5b3b65f7e231a4dcdc1b61a034b061b520ba037b5f32ef25e6558",
+      "originalUnmodified": true
+    },
+    {
+      "file": "weapon-generated.png",
+      "prompt": "Use case: stylized-concept. Asset type: production isolated 2D game weapon sprite.\nA single complete straight YELLOW TORUBOU: a long slim yellow cylindrical baton with one rounded WHITE cap at EACH end. It is a straight rod, with no fork, blade, handle guard, ears, ribbon or ornamental branches. Upright and fully centered. Clean dark-cocoa outline, warm yellow fill and white caps.\n1024x1024 PNG, real transparent alpha, one centered complete weapon inside a single cell with 100px empty padding. Flat kawaii game art with dark outline. No hand, character, shadow, ground, light flare, magic, text, logo or watermark. Do not add the weapon to a body atlas.",
+      "tool": "image_gen",
+      "date": "2026-10-06",
+      "mode": "new generation",
+      "sha256": "6a8523d0cc272dca6127386e01bce947be28344691b8cf562d1235cbc3a33d22",
+      "originalUnmodified": true
+    },
+    {
+      "file": "body-v2-generated.png",
+      "tool": "image_gen",
+      "date": "2026-10-06",
+      "mode": "edit body-generated.png",
+      "prompt": "Use case: precise-object-edit. This is a Usagi production body atlas. Redraw the same 32 unarmed poses in the same four-row, eight-column order at about 70 percent of their current width and height, so each complete silhouette has broad genuinely empty transparent space above the long ears and below the feet. Keep pale warm-yellow opaque body fills, pink inner ears, dark brown outlines, white attached pompom tail, and the same front/back pose sequence. FRONT idle and walking faces have HIGH ARCHED mischievous eyebrows and a playful little W mouth, rather than angry inward-slanted V eyebrows; attack/hurt expressions may vary naturally. BACK poses must remain faceless. All lying poses must include the complete long ears and tail, especially row two column eight which currently reaches the right edge. Exactly 8 columns and 4 rows; no grid. Keep whole character height including ears around 150-165px on a 1774x887 equivalent canvas, with at least 24px empty space around every silhouette. Solid opaque cream/yellow/white fills inside CLOSED outlines; only the exterior background is transparent. No held object, weapon, effect, spark, shadow, detached fragment, text or watermark. Preserve the character's recognizable proportions, long ears and white tail while fitting each whole pose in its cell.",
+      "sha256": "0f3b157288e8a6367b09f6e6b1959ab71bb51ba8e82a13c9947994d706c02863",
+      "originalUnmodified": true
+    }
+  ],
+  "selected": [
+    {
+      "atlas": "body",
+      "file": "body-final.png",
+      "sha256": "6e304bbc689b1ce99b01394bc3f40f74892e09ec2eafea7e42d1316582521783",
+      "inspection": "body-inspection.json",
+      "cleanup": "body-final.cleanup.json"
+    },
+    {
+      "atlas": "effects",
+      "file": "effects-final.png",
+      "sha256": "ad4b7d8f25a78519bd3973563cbccac33fb5a2b78a5fc6d46a4f0cc74fcfda59",
+      "inspection": "effects-inspection.json",
+      "cleanup": "effects-final.cleanup.json"
+    },
+    {
+      "atlas": "ui",
+      "file": "ui-final.png",
+      "sha256": "4bba8449bb49a942addd20aaad74471226dcb5cb9da96d33b5a1e5ec3281b6b4",
+      "inspection": "ui-inspection.json",
+      "cleanup": "ui-final.cleanup.json"
+    },
+    {
+      "atlas": "weapon",
+      "file": "weapon-final.png",
+      "sha256": "128fc3e19ebfccc2e6bc3798ee7bf44cce06f4428786c5acc91fd04821d6c811",
+      "inspection": "weapon-inspection.json",
+      "cleanup": "weapon-final.cleanup.json"
+    }
+  ]
+}

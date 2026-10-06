@@ -1,0 +1,28 @@
+{
+  "packId": "fan.rakko",
+  "runId": "20261006T110846689Z-5e5e57fd80194a988d2c6fad4f23b35a",
+  "pluginSha256": "92a28827d96fce9f01731cc5c3d64f25f9383d76b0c66ee871960952ff78b7b2",
+  "weaponScope": "defaults",
+  "soakMinutes": 0,
+  "cyclePackIds": [],
+  "skippedTrials": {},
+  "arguments": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sephiria\\Sephiria.exe",
+    "--skins-playtest",
+    "--skins-test-pack=fan.rakko",
+    "--skins-test-weapons=defaults",
+    "--skins-playtest-with-visual",
+    "--skins-playtest-with-controls",
+    "--skins-playtest-with-encounter",
+    "--skins-probe-exit",
+    "-screen-fullscreen",
+    "0",
+    "-screen-width",
+    "1280",
+    "-screen-height",
+    "720",
+    "-logFile",
+    "E:\\ProjectStorage\\Game\\SephiriaSkins\\.local\\game-suite-20261006-200844\\fan.rakko.log"
+  ],
+  "startedUtc": "2026-10-06T11:08:46.7477106Z"
+}

@@ -1,0 +1,300 @@
+{
+  "pluginSha256": "95f1c4c276efc1a88ba640acd1ae46dd83bffbb157678ad6a40e9d55313c761e",
+  "scope": "User-reduced release verification: all eight packs switched/restored in one live host, installer-only runtime boot and eight-pack folder/ZIP output. Two complete prior-candidate play runs; final changes only refine cosmetic diagnostics. Earlier production runs remain separate. Not all game content or remote participant views.",
+  "userRequestedReduction": "팩 검증 과한데 좀 줄이자 이제",
+  "omittedByUserRequest": [
+    "60-minute final soak",
+    "six remaining repeated full pack play runs",
+    "16 per-pack persisted fresh startups",
+    "additional final Unity example game regression"
+  ],
+  "listeningEvaluation": "waived by user",
+  "fullPlayPluginSha256": "eac0d9912266b10dc61708416b3bfca0b39eea9f34fe1042e6e78a3e8074564d",
+  "fullPlay": [
+    {
+      "packId": "fan.chiikawa",
+      "runId": "20261006T115406033Z-8dc11d59deb24705bbb7c2ec83173914",
+      "summary": {
+        "combatTrials": 18,
+        "maxFireTimingDifferenceMs": 5.798,
+        "languages": 15,
+        "reloadCycles": 25,
+        "resolutions": 2
+      },
+      "liveOutgoingHits": 8,
+      "liveIncomingHits": 1,
+      "livingBodyFrames": 702,
+      "themedLivingBodyFrames": 702,
+      "mineEncounter": {
+        "available": false,
+        "weapon": 118,
+        "reason": "No nearby native ground corridor with clear pit/obstacle checks and enemy separation; deployment was not attempted."
+      },
+      "visual": {
+        "packId": "fan.chiikawa",
+        "weapons": 6,
+        "fittedWeaponRenderers": 21,
+        "nativeReflectionSnapshots": 6,
+        "attackCaptures": 108,
+        "nativeBackStates": 5,
+        "togglesPassed": true,
+        "uiOffReloadPassed": true,
+        "nativeWaterShoreCaptures": 4,
+        "nativeWaterSurvey": {
+          "waterSurvey": true,
+          "waterTiles": 0,
+          "physicalWaterShoreChecks": 8,
+          "shores": 8,
+          "oversizedMaps": [],
+          "available": true,
+          "reason": "loaded native water tile or PitWater collider with verified solid shore"
+        }
+      },
+      "evidence": [
+        {
+          "file": "chiikawa-candidate3-run.json",
+          "sha256": "5d0517750da14f060a5a144a28ff19dbf90b7e516d1de6f89ee1ef383f802b14"
+        },
+        {
+          "file": "chiikawa-candidate3-play.json",
+          "sha256": "45005ea5f46f449ce42df53c537d537a731bf6699a50cfc15e62ce815fe593e7"
+        },
+        {
+          "file": "chiikawa-candidate3-visual.json",
+          "sha256": "946957ae496188529f6c946924a62b47e37bae51b97117dbff2ab0fae6def4b7"
+        }
+      ]
+    },
+    {
+      "packId": "fan.hachiware",
+      "runId": "20261006T120016161Z-29a5b5176ea847c69d654a17165c20af",
+      "summary": {
+        "combatTrials": 18,
+        "maxFireTimingDifferenceMs": 5.005,
+        "languages": 15,
+        "reloadCycles": 25,
+        "resolutions": 2
+      },
+      "liveOutgoingHits": 11,
+      "liveIncomingHits": 2,
+      "livingBodyFrames": 707,
+      "themedLivingBodyFrames": 707,
+      "mineEncounter": {
+        "available": false,
+        "weapon": 118,
+        "reason": "No nearby native ground corridor with clear pit/obstacle checks and enemy separation; deployment was not attempted."
+      },
+      "visual": {
+        "packId": "fan.hachiware",
+        "weapons": 6,
+        "fittedWeaponRenderers": 21,
+        "nativeReflectionSnapshots": 6,
+        "attackCaptures": 108,
+        "nativeBackStates": 5,
+        "togglesPassed": true,
+        "uiOffReloadPassed": true,
+        "nativeWaterShoreCaptures": 4,
+        "nativeWaterSurvey": {
+          "waterSurvey": true,
+          "waterTiles": 0,
+          "physicalWaterShoreChecks": 8,
+          "shores": 8,
+          "oversizedMaps": [],
+          "available": true,
+          "reason": "loaded native water tile or PitWater collider with verified solid shore"
+        }
+      },
+      "evidence": [
+        {
+          "file": "hachiware-candidate3-run.json",
+          "sha256": "a19c24d2210bd3249a9051cb563ff59a6be482477e1b74f1790d84a376b63afc"
+        },
+        {
+          "file": "hachiware-candidate3-play.json",
+          "sha256": "6ec054cec4f48746e38b4f72f3c6ade3c4f74e6917cb36962a9c34986893d0d0"
+        },
+        {
+          "file": "hachiware-candidate3-visual.json",
+          "sha256": "7b1f8c2f3645fbbcb36abb6b47f563d0cbd0d5414828ed9b5e5b7049d7dcea3f"
+        }
+      ]
+    }
+  ],
+  "cancelledRun": {
+    "packId": "fan.furuhonya",
+    "runId": "20261006T120626184Z-21b31f1d9bc74e6b8aa79e2318196c36",
+    "reason": "User requested fewer pack checks; incomplete run is not counted as a pass.",
+    "restored": {
+      "themeNull": true,
+      "audioChannels": 0,
+      "virtualDeviceRemoved": true,
+      "configBytesRestored": true,
+      "profile": "",
+      "profileFileAbsent": true
+    },
+    "evidence": [
+      {
+        "file": "cancelled-furuhonya-run.json",
+        "sha256": "9aa7bf845cdf43e01685a7e92d5528cd92d9d0b959a6ebeefb6774c2ae0907d1"
+      },
+      {
+        "file": "cancelled-furuhonya-play.json",
+        "sha256": "80f526abf0fbaf5f6265977e36198e04cb5e85a2e42b834fe5964467a161032f"
+      },
+      {
+        "file": "cancelled-furuhonya-visual.json",
+        "sha256": "a5b335b5b7dafa1f3bc453ab55130bb5f5fcc78a35d4ef4550135c049ee398eb"
+      }
+    ]
+  },
+  "cycle": {
+    "runId": "20261006T121827652Z-9f81bedeb3ee483b8248175d87d6b9f2",
+    "summary": {
+      "packIds": [
+        "fan.chiikawa",
+        "fan.furuhonya",
+        "fan.hachiware",
+        "fan.kurimanju",
+        "fan.momonga",
+        "fan.rakko",
+        "fan.shisa",
+        "fan.usagi"
+      ],
+      "rounds": 2,
+      "weapons": 6,
+      "switches": 16,
+      "checkedWeaponRenderers": 216
+    },
+    "evidence": [
+      {
+        "file": "final-cycle-run.json",
+        "sha256": "21caaf1c07913102e683a5721efdd009304e012ed1d84ea216921113f1a14b09"
+      },
+      {
+        "file": "final-cycle-play.json",
+        "sha256": "aaf6e8b5ced5616e6f0b4e193b03be72e5bfb54e4fc42af2723a02002d752a2f"
+      }
+    ]
+  },
+  "cleanInstallerOutput": {
+    "runId": "20261006T122149128Z-76ac688690204b58a4d4602777792014",
+    "summary": {
+      "packs": [
+        {
+          "id": "fan.chiikawa",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.furuhonya",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.hachiware",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.kurimanju",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.momonga",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.rakko",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.shisa",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        },
+        {
+          "id": "fan.usagi",
+          "states": 1100,
+          "frames": 6405,
+          "audioSettingsAvailable": true
+        }
+      ],
+      "cleanupPassed": true
+    },
+    "evidence": [
+      {
+        "file": "final-clean-run.json",
+        "sha256": "644170b29b569b7d58092c5c5d71273cded814f60c37bb02fc1faa544b12ea73"
+      },
+      {
+        "file": "final-clean-output.json",
+        "sha256": "2d5a5172bebcabe032606a4cbebf85fac4ae3b64ece4c76da3fd0e2c497ff40a"
+      },
+      {
+        "file": "final-clean-cleanup.json",
+        "sha256": "b5c412847149ba654db1738fc542000ab6be526131b304d27782928d09feea2e"
+      }
+    ]
+  },
+  "cleanInstallerSetup": {
+    "testedInstaller": "SephiriaSkins-0.2.0-runtime-candidate-95f1.zip",
+    "installerSha256": "76300c1dca0ec5f918c70eb2c067c2849b573cdfcc3d5d76a3f64488723fded0",
+    "preexistingBepInEx": false,
+    "runtimeSource": "Installer only; no runtime or plugins copied from the existing game.",
+    "gameData": "Only local executable/UnityPlayer/CrashHandler copies and read-only test-use directory junctions; never distribute game data.",
+    "scope": "Fresh local game executable copies with game-data junctions; all runtime/plugins came only from the candidate installer. Final archive documentation differs; executable/resource identity is reconciled separately."
+  },
+  "startupLogs": [
+    {
+      "label": "fan.chiikawa",
+      "installerOnly": false,
+      "sha256": "aadc73b078e03b17d61eac354c22fa87fd286eb1679a64eafbd5b865537e3c53",
+      "plugins": [
+        "[Info   :   BepInEx] Loading [Sephiria Skins 0.2.0]",
+        "[Info   :   BepInEx] Loading [Sephiria Build Overlay 0.1.24]"
+      ]
+    },
+    {
+      "label": "fan.hachiware",
+      "installerOnly": false,
+      "sha256": "a1046d0802386cf1271418bc507e8ce05aa5b86f7a517d7d36e3c7fb0a5c86ac",
+      "plugins": [
+        "[Info   :   BepInEx] Loading [Sephiria Skins 0.2.0]",
+        "[Info   :   BepInEx] Loading [Sephiria Build Overlay 0.1.24]"
+      ]
+    },
+    {
+      "label": "cycle",
+      "installerOnly": false,
+      "sha256": "8b095d511282c5d67f458040557b8eef7803137dad91518f1414e38802740b3f",
+      "plugins": [
+        "[Info   :   BepInEx] Loading [Sephiria Skins 0.2.0]",
+        "[Info   :   BepInEx] Loading [Sephiria Build Overlay 0.1.24]"
+      ]
+    },
+    {
+      "label": "output-all",
+      "installerOnly": true,
+      "sha256": "44ad4ca970465aae0a19cce99b32abf5e7f5e4bf4fc50afebe784d8e67b27fbb",
+      "plugins": [
+        "[Info   :   BepInEx] Loading [Sephiria Skins 0.2.0]"
+      ]
+    }
+  ],
+  "restoration": {
+    "configBytesRestored": true,
+    "configSha256": "b978f74f39d094e196872f639af481bf760cc9589cbcd41bb279d8a585e001d6",
+    "unchangedExistingSaveFiles": 27
+  },
+  "completeForUserReducedScope": true
+}
